@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "fce28001-68a0-4ab4-89fe-ffc366d126a9")
 	(paper "A4")
+	(title_block
+		(title "Adjustable Fan Controller")
+		(date "2026-02-27")
+		(rev "1.0")
+		(company "OSSEM")
+	)
 	(lib_symbols
 		(symbol "Connector:Jack-DC"
 			(pin_names
