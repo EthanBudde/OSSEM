@@ -1,0 +1,62 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "e09e0073-4b34-4087-926d-a963f587ec36")
+	(paper "A4")
+	(title_block
+		(title "Integrated System")
+		(date "2026-04-04")
+		(rev "1.0")
+		(company "OSSEM")
+	)
+	(lib_symbols)
+	(sheet
+		(at 113.03 63.5)
+		(size 72.39 63.5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d64a58e5-7375-438d-b343-064b897cc797")
+		(property "Sheetname" "ECU"
+			(at 113.03 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ECU.kicad_sch"
+			(at 113.03 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "integrated_system"
+				(path "/e09e0073-4b34-4087-926d-a963f587ec36"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
