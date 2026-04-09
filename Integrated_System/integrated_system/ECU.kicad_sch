@@ -1556,486 +1556,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "IRLR7843:IRLR7843"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 5.08 0.635 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "IRLR7843"
-				(at 5.08 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "IRLR7843:TO252"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "Infineon Technologies"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "N-Channel 30 V 161A (Tc) 140W (Tc) Surface Mount D-Pak"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "TO-252 Infineon"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/IRLR7843/Infineon/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "IRLR7843"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/IRLR7843/Infineon/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "IRLR7843_0_0"
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 3.175) (xy 0.762 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.54) (xy 0.762 1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.54) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.762) (xy 0.762 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0) (xy 0.762 -0.762)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.905) (xy 0.762 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -2.54) (xy 0.762 -3.175)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.762) (xy 2.032 -0.762) (xy 1.016 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 2.54)
-					(radius 0.3592)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 0.762 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 3.81 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 -2.54)
-					(radius 0.3592)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.508) (xy 3.048 0.254)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 2.54) (xy 3.81 0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 0.508) (xy 3.302 0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 0.508) (xy 3.81 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 0.508) (xy 3.302 -0.254) (xy 4.318 -0.254) (xy 3.81 0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.318 0.508) (xy 3.81 0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.572 0.762) (xy 4.318 0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "G"
-					(at -1.27 -1.905 0)
-					(effects
-						(font
-							(size 0.8128 0.8128)
-						)
-						(justify left bottom)
-					)
-				)
-				(text "D"
-					(at 3.175 3.175 0)
-					(effects
-						(font
-							(size 0.8128 0.8128)
-						)
-						(justify left bottom)
-					)
-				)
-				(text "S"
-					(at 3.175 -3.81 0)
-					(effects
-						(font
-							(size 0.8128 0.8128)
-						)
-						(justify left bottom)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -2.54 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "LM2596:LM2596"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3379,6 +2899,304 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Transistor_FET:IRLB8721PBF"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "IRLB8721PBF"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591"
+				(at 5.08 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "62A Id, 30V Vds, 8.7 mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "N-Channel HEXFET MOSFET Logic-Level"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO?220*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "IRLB8721PBF_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "IRLB8721PBF_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+12V"
 			(power)
 			(pin_numbers
@@ -3775,7 +3593,7 @@
 		(uuid "28b38910-83c1-4a76-9de6-b40c6ff50bd7")
 	)
 	(junction
-		(at 135.89 88.9)
+		(at 138.43 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "36354e65-bb72-4e21-8f75-8570dd23215e")
@@ -3793,10 +3611,10 @@
 		(uuid "406b4748-5604-41d3-8e1e-b738cbaf8054")
 	)
 	(junction
-		(at 135.89 120.65)
+		(at 138.43 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "40cac36b-df3d-423c-8962-49720a5460ae")
+		(uuid "500a2172-f768-4b5a-980e-84f60bbafb85")
 	)
 	(junction
 		(at 80.01 167.64)
@@ -3829,12 +3647,6 @@
 		(uuid "70cd7561-7b13-401d-8a96-1ebe3a0753ca")
 	)
 	(junction
-		(at 135.89 154.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8045ee86-f8db-4cf4-a2b8-97d332b956b8")
-	)
-	(junction
 		(at 127 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3847,6 +3659,18 @@
 		(uuid "b405cc3b-0a4e-4471-99f6-88070489ee9d")
 	)
 	(junction
+		(at 138.43 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b45645f0-bbda-4bd1-a51a-fd9ec64981ec")
+	)
+	(junction
+		(at 127 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c2fff2de-a5f1-4ae7-9f34-e75855a8e254")
+	)
+	(junction
 		(at 82.55 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3857,12 +3681,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e71e3d6a-f4ae-45f7-86b9-abdc153edd90")
-	)
-	(junction
-		(at 127 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fe46ae49-90e8-4728-8ee4-e401c1476d83")
 	)
 	(no_connect
 		(at 76.2 90.17)
@@ -3918,16 +3736,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 91.44) (xy 127 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "022eed01-c3cb-41fd-b603-7942657dbf4b")
-	)
-	(wire
-		(pts
 			(xy 50.8 34.29) (xy 50.8 26.67)
 		)
 		(stroke
@@ -3968,7 +3776,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 88.9) (xy 135.89 88.9)
+			(xy 134.62 88.9) (xy 138.43 88.9)
 		)
 		(stroke
 			(width 0)
@@ -4008,7 +3816,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 96.52) (xy 135.89 99.06)
+			(xy 138.43 96.52) (xy 138.43 99.06)
 		)
 		(stroke
 			(width 0)
@@ -4038,7 +3846,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 154.94) (xy 154.94 154.94)
+			(xy 146.05 154.94) (xy 154.94 154.94)
 		)
 		(stroke
 			(width 0)
@@ -4058,7 +3866,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 146.05) (xy 127 147.32)
+			(xy 127 146.05) (xy 127 149.86)
 		)
 		(stroke
 			(width 0)
@@ -4078,7 +3886,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 154.94) (xy 138.43 154.94)
+			(xy 138.43 154.94) (xy 140.97 154.94)
 		)
 		(stroke
 			(width 0)
@@ -4098,7 +3906,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 80.01) (xy 127 81.28)
+			(xy 127 80.01) (xy 127 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4148,7 +3956,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 88.9) (xy 138.43 88.9)
+			(xy 138.43 88.9) (xy 140.97 88.9)
 		)
 		(stroke
 			(width 0)
@@ -4198,7 +4006,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 123.19) (xy 127 124.46)
+			(xy 127 125.73) (xy 127 127)
 		)
 		(stroke
 			(width 0)
@@ -4235,16 +4043,6 @@
 			(type default)
 		)
 		(uuid "3d5d6b0f-4c92-4b98-8316-a7378c137b58")
-	)
-	(wire
-		(pts
-			(xy 132.08 154.94) (xy 135.89 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3de05855-64ef-4fa5-92ea-81bed9b296fe")
 	)
 	(wire
 		(pts
@@ -4368,7 +4166,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 154.94) (xy 135.89 157.48)
+			(xy 138.43 154.94) (xy 138.43 157.48)
 		)
 		(stroke
 			(width 0)
@@ -4418,6 +4216,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 154.94) (xy 138.43 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "763175a0-3a3e-4412-b07d-7341141f4754")
+	)
+	(wire
+		(pts
 			(xy 134.62 146.05) (xy 127 146.05)
 		)
 		(stroke
@@ -4445,6 +4253,16 @@
 			(type default)
 		)
 		(uuid "828ce3a3-38f2-4c9e-95d1-04985b4d5e89")
+	)
+	(wire
+		(pts
+			(xy 127 95.25) (xy 127 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f6e5a55-4705-4143-ae43-19f1937d2117")
 	)
 	(wire
 		(pts
@@ -4478,16 +4296,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 120.65) (xy 135.89 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "935d281a-2c17-4fd2-883f-ad5fc373e32a")
-	)
-	(wire
-		(pts
 			(xy 165.1 69.85) (xy 165.1 96.52)
 		)
 		(stroke
@@ -4498,7 +4306,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 120.65) (xy 152.4 120.65)
+			(xy 146.05 120.65) (xy 152.4 120.65)
 		)
 		(stroke
 			(width 0)
@@ -4608,7 +4416,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 162.56) (xy 135.89 165.1)
+			(xy 138.43 162.56) (xy 138.43 165.1)
 		)
 		(stroke
 			(width 0)
@@ -4618,7 +4426,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 120.65) (xy 135.89 123.19)
+			(xy 138.43 120.65) (xy 138.43 123.19)
 		)
 		(stroke
 			(width 0)
@@ -4648,7 +4456,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 157.48) (xy 127 160.02)
+			(xy 127 160.02) (xy 127 162.56)
 		)
 		(stroke
 			(width 0)
@@ -4658,7 +4466,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 88.9) (xy 135.89 91.44)
+			(xy 138.43 88.9) (xy 138.43 91.44)
 		)
 		(stroke
 			(width 0)
@@ -4668,7 +4476,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 88.9) (xy 176.53 88.9)
+			(xy 146.05 88.9) (xy 176.53 88.9)
 		)
 		(stroke
 			(width 0)
@@ -4728,7 +4536,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 120.65) (xy 138.43 120.65)
+			(xy 138.43 120.65) (xy 140.97 120.65)
 		)
 		(stroke
 			(width 0)
@@ -4798,13 +4606,23 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 128.27) (xy 135.89 130.81)
+			(xy 138.43 128.27) (xy 138.43 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d6ec140b-d69d-497f-b3ee-5cb0da941aab")
+	)
+	(wire
+		(pts
+			(xy 127 115.57) (xy 127 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9e7f02a-2668-4112-932e-3ac4cf5918c1")
 	)
 	(wire
 		(pts
@@ -4855,6 +4673,16 @@
 			(type default)
 		)
 		(uuid "e9d050bd-f932-4c80-9786-f36a451463f3")
+	)
+	(wire
+		(pts
+			(xy 134.62 120.65) (xy 138.43 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0f76382-48b4-4f44-9f40-c04ce872ec47")
 	)
 	(wire
 		(pts
@@ -5040,7 +4868,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 140.97 88.9 90)
+		(at 143.51 88.9 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5049,7 +4877,7 @@
 		(fields_autoplaced yes)
 		(uuid "09b2ddb6-f561-487e-b6d7-1998b22cb1ac")
 		(property "Reference" "R1"
-			(at 140.97 82.55 90)
+			(at 143.51 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5057,7 +4885,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 140.97 85.09 90)
+			(at 143.51 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5065,7 +4893,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.97 88.9 0)
+			(at 143.51 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5074,7 +4902,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 88.9 0)
+			(at 143.51 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5083,7 +4911,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 140.97 88.9 0)
+			(at 143.51 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5529,233 +5357,6 @@
 		)
 	)
 	(symbol
-		(lib_id "BME280:BME280")
-		(at 60.96 167.64 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2f218b27-c630-4a05-902c-08e101415c54")
-		(property "Reference" "U8"
-			(at 60.96 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BME280"
-			(at 60.96 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BME280:PSON65P250X250X100-8N"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Bosch"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "DESCRIPTION" "Integrated pressure, humidity and temperature sensor; 8-pin 2.5x2.5x0.93mm LGA"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PACKAGE" "LGA-8 Bosch"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PRICE" "4.94 USD"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "LGA-8 Bosch"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/BME280/Bosch/view-part/?ref=eda"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "IPC-7351B"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/BME280/Bosch/view-part/?ref=snap"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "BME280"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=49769&manufacturer=Bosch&part_name=BME280&search_term=None"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "AVAILABILITY" "Good"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Board Mount Humidity Sensors MEMS humidity, pressure and temperature sensor"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b41fd743-323a-4a1c-9e2b-a32dd854928f")
-		)
-		(pin "5"
-			(uuid "1af71559-bfd6-419a-8370-89f15ee42433")
-		)
-		(pin "6"
-			(uuid "a83bf9e6-1b34-42a3-8ec1-dc929c19828d")
-		)
-		(pin "8"
-			(uuid "cef773d7-dba7-4f6b-96c0-16e15d7a8158")
-		)
-		(pin "7"
-			(uuid "02db0166-9e6e-4295-9221-8a9901b4347e")
-		)
-		(pin "3"
-			(uuid "c4f88a00-9f31-4282-ab91-4f78a8ed0ce9")
-		)
-		(pin "4"
-			(uuid "1dcf60b1-6f16-4583-828e-db67fd2e1857")
-		)
-		(pin "1"
-			(uuid "d608f7d5-2b63-4832-aba2-6c2d886ab3a3")
-		)
-		(instances
-			(project ""
-				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "U8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 87.63 44.45 0)
 		(unit 1)
@@ -5889,7 +5490,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 135.89 93.98 180)
+		(at 138.43 93.98 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5898,7 +5499,7 @@
 		(fields_autoplaced yes)
 		(uuid "3694ad6b-ab14-4182-a016-f798a5b0d3e5")
 		(property "Reference" "R4"
-			(at 138.2919 92.7099 0)
+			(at 140.8319 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5907,7 +5508,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 138.2919 95.2499 0)
+			(at 140.8319 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5916,7 +5517,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 93.98 0)
+			(at 138.43 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5925,7 +5526,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.89 93.98 0)
+			(at 138.43 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5934,7 +5535,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 135.89 93.98 0)
+			(at 138.43 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6026,8 +5627,223 @@
 		)
 	)
 	(symbol
+		(lib_id "SCD30:SCD30")
+		(at 60.96 95.25 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b44058e-7917-4daf-81fe-3efb8677f19b")
+		(property "Reference" "U7"
+			(at 60.96 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SCD30"
+			(at 60.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SCD30:MODULE_SCD30"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Sensirion AG"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "7.0mm"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/SCD30/Sensirion/view-part/?ref=eda"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "D1"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SCD30/Sensirion/view-part/?ref=snap"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "SCD30"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=2779194&manufacturer=Sensirion AG&part_name=SCD30&search_term=None"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Carbon Dioxide (CO2), Humidity, Temperature Sensor I2C, Modbus, PWM"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Sensirion"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "348e5f1a-7cde-40ac-af7b-d6699c3efdb1")
+		)
+		(pin "1"
+			(uuid "7f44dd72-d6c2-49b5-ae20-416db8a28e5b")
+		)
+		(pin "7"
+			(uuid "e8f0a05d-561f-4288-822b-ba07c39bfc3c")
+		)
+		(pin "4"
+			(uuid "b295c71d-b5b2-47f1-b775-24a051d04a6d")
+		)
+		(pin "2"
+			(uuid "8fe76c81-323c-488c-ad71-f3feb016e2dd")
+		)
+		(pin "6"
+			(uuid "9e0692de-f221-4977-bd18-0e536b5dff06")
+		)
+		(pin "5"
+			(uuid "67fc4b9a-cffd-49ff-9b5a-ce4ab90ecaa1")
+		)
+		(instances
+			(project ""
+				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 135.89 99.06 0)
+		(at 138.43 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6035,7 +5851,7 @@
 		(dnp no)
 		(uuid "3c036caf-df93-4c23-a45e-ca0e613c7c5e")
 		(property "Reference" "#PWR023"
-			(at 135.89 105.41 0)
+			(at 138.43 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6044,7 +5860,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.446 100.584 0)
+			(at 141.986 100.584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6052,7 +5868,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 99.06 0)
+			(at 138.43 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6061,7 +5877,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 99.06 0)
+			(at 138.43 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6070,7 +5886,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 135.89 99.06 0)
+			(at 138.43 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6091,18 +5907,17 @@
 		)
 	)
 	(symbol
-		(lib_id "IRLR7843:IRLR7843")
-		(at 129.54 118.11 0)
+		(lib_id "Transistor_FET:IRLB8721PBF")
+		(at 129.54 88.9 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "43ce6bd6-e3cb-49d1-8c7d-0546ff4028e2")
-		(property "Reference" "U3"
-			(at 123.19 116.6936 0)
+		(uuid "44347a96-1292-4d9b-a2a5-28a6ec66e359")
+		(property "Reference" "Q2"
+			(at 123.19 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6110,8 +5925,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLR7843"
-			(at 123.19 119.2336 0)
+		(property "Value" "IRLB8721PBF"
+			(at 124.968 90.932 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6119,127 +5934,49 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "IRLR7843:TO252"
-			(at 129.54 118.11 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 124.46 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591"
+			(at 124.46 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 129.54 118.11 0)
+		(property "Description" "62A Id, 30V Vds, 8.7 mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220"
+			(at 129.54 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Description" ""
-			(at 129.54 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Infineon Technologies"
-			(at 129.54 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "N-Channel 30 V 161A (Tc) 140W (Tc) Surface Mount D-Pak"
-			(at 129.54 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "TO-252 Infineon"
-			(at 129.54 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 129.54 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/IRLR7843/Infineon/view-part/?ref=snap"
-			(at 129.54 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "IRLR7843"
-			(at 129.54 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 129.54 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/IRLR7843/Infineon/view-part/?ref=eda"
-			(at 129.54 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "402e2d84-6265-4e98-aac0-7aea339c6940")
 		)
 		(pin "1"
-			(uuid "f48c6e07-c133-4c51-98c8-c0fa98d9df58")
+			(uuid "32976285-7491-4c5a-aa16-82b9e2175c95")
+		)
+		(pin "2"
+			(uuid "780942cb-682d-4b6b-9a50-a925625e92e7")
 		)
 		(pin "3"
-			(uuid "832127ac-8099-4dd7-a837-65f071c208a6")
+			(uuid "e819d1ad-f67d-4a79-86ed-37540bcfbe89")
 		)
 		(instances
 			(project "integrated_system"
 				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "U3")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -6319,7 +6056,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4ba71791-cd9c-4bcb-9e90-d6aaa3a9a22e")
 		(property "Reference" "#PWR09"
 			(at 127 107.95 0)
@@ -6331,7 +6067,7 @@
 			)
 		)
 		(property "Value" "FP_12V"
-			(at 127 99.06 0)
+			(at 127.254 99.568 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6598,161 +6334,6 @@
 		)
 	)
 	(symbol
-		(lib_id "IRLR7843:IRLR7843")
-		(at 129.54 86.36 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "67d78028-46dc-4264-b383-121455528465")
-		(property "Reference" "U2"
-			(at 123.19 84.9436 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IRLR7843"
-			(at 123.19 87.4836 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "IRLR7843:TO252"
-			(at 129.54 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 129.54 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Infineon Technologies"
-			(at 129.54 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "N-Channel 30 V 161A (Tc) 140W (Tc) Surface Mount D-Pak"
-			(at 129.54 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "TO-252 Infineon"
-			(at 129.54 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 129.54 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/IRLR7843/Infineon/view-part/?ref=snap"
-			(at 129.54 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "IRLR7843"
-			(at 129.54 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 129.54 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/IRLR7843/Infineon/view-part/?ref=eda"
-			(at 129.54 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e77afbb1-4bd6-4d10-b836-8bfbaab50563")
-		)
-		(pin "1"
-			(uuid "fddfe671-13aa-4160-894a-176b660f9368")
-		)
-		(pin "3"
-			(uuid "f9e6db99-4c6a-4a61-a701-ecb621fd5e61")
-		)
-		(instances
-			(project ""
-				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "MCU_Module:Adafruit_Feather_HUZZAH32_ESP32")
 		(at 189.23 109.22 0)
 		(unit 1)
@@ -6902,163 +6483,8 @@
 		)
 	)
 	(symbol
-		(lib_id "IRLR7843:IRLR7843")
-		(at 129.54 152.4 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6d13ee2a-b764-4bf1-8a3a-ffaba8cdd5fd")
-		(property "Reference" "U4"
-			(at 123.19 150.9836 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IRLR7843"
-			(at 123.19 153.5236 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "IRLR7843:TO252"
-			(at 129.54 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 129.54 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Infineon Technologies"
-			(at 129.54 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "N-Channel 30 V 161A (Tc) 140W (Tc) Surface Mount D-Pak"
-			(at 129.54 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "TO-252 Infineon"
-			(at 129.54 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 129.54 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/IRLR7843/Infineon/view-part/?ref=snap"
-			(at 129.54 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "IRLR7843"
-			(at 129.54 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 129.54 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/IRLR7843/Infineon/view-part/?ref=eda"
-			(at 129.54 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "aa8183c4-40d6-4751-b882-2ac8c907dd90")
-		)
-		(pin "1"
-			(uuid "7398e409-190b-4536-82a8-14c4177ce3ea")
-		)
-		(pin "3"
-			(uuid "115b8df0-ca7d-4859-8c24-421449f7faf5")
-		)
-		(instances
-			(project "integrated_system"
-				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 135.89 130.81 0)
+		(at 138.43 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7066,7 +6492,7 @@
 		(dnp no)
 		(uuid "712628a5-5f62-447f-8055-0e0df408c021")
 		(property "Reference" "#PWR022"
-			(at 135.89 137.16 0)
+			(at 138.43 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7075,7 +6501,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.446 132.334 0)
+			(at 141.986 132.334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7083,7 +6509,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 130.81 0)
+			(at 138.43 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7092,7 +6518,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 130.81 0)
+			(at 138.43 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7101,7 +6527,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 135.89 130.81 0)
+			(at 138.43 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7191,7 +6617,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 140.97 120.65 90)
+		(at 143.51 120.65 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7200,7 +6626,7 @@
 		(fields_autoplaced yes)
 		(uuid "763cc04a-12b0-474f-aef3-ae1a98f2b28b")
 		(property "Reference" "R2"
-			(at 140.97 114.3 90)
+			(at 143.51 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7208,7 +6634,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 140.97 116.84 90)
+			(at 143.51 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7216,7 +6642,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.97 120.65 0)
+			(at 143.51 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7225,7 +6651,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 120.65 0)
+			(at 143.51 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7234,7 +6660,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 140.97 120.65 0)
+			(at 143.51 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7325,7 +6751,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 135.89 160.02 180)
+		(at 138.43 160.02 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7334,7 +6760,7 @@
 		(fields_autoplaced yes)
 		(uuid "7e9079e9-dfdf-4c25-aa75-2cdb7c6dcf00")
 		(property "Reference" "R6"
-			(at 138.43 158.7499 0)
+			(at 140.97 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7343,7 +6769,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 138.43 161.2899 0)
+			(at 140.97 161.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7352,7 +6778,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 160.02 0)
+			(at 138.43 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7361,7 +6787,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.89 160.02 0)
+			(at 138.43 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7370,7 +6796,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 135.89 160.02 0)
+			(at 138.43 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7388,6 +6814,234 @@
 			(project "integrated_system"
 				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BME280:BME280")
+		(at 60.96 167.64 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86535746-af11-4b7d-82ac-11967e4cb912")
+		(property "Reference" "U6"
+			(at 60.96 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BME280"
+			(at 60.96 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "BME280:PSON65P250X250X100-8N"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Bosch"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DESCRIPTION" "Integrated pressure, humidity and temperature sensor; 8-pin 2.5x2.5x0.93mm LGA"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "LGA-8 Bosch"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "4.94 USD"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "LGA-8 Bosch"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/BME280/Bosch/view-part/?ref=eda"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "IPC-7351B"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/BME280/Bosch/view-part/?ref=snap"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "BME280"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=49769&manufacturer=Bosch&part_name=BME280&search_term=None"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "AVAILABILITY" "Good"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Board Mount Humidity Sensors MEMS humidity, pressure and temperature sensor"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "1ae1925a-d8dc-4b17-ba9e-95d414e0a991")
+		)
+		(pin "2"
+			(uuid "1848e7f8-28d3-4450-8f1a-dc25e2598aa8")
+		)
+		(pin "7"
+			(uuid "e32ce2a3-da90-4ce1-bfaa-f8a3b53b619c")
+		)
+		(pin "6"
+			(uuid "81231191-ed50-45fe-bd87-3dc390bbb6f2")
+		)
+		(pin "4"
+			(uuid "67d6c13a-b125-4185-ac0b-21b8641acfdf")
+		)
+		(pin "1"
+			(uuid "e7853ed0-f980-4262-b1fc-1dc627b3b8e3")
+		)
+		(pin "3"
+			(uuid "eb367324-69c9-4d6d-8739-21d552f24dd0")
+		)
+		(pin "5"
+			(uuid "6567ddf9-5ac6-4309-8a30-898b6f26e213")
+		)
+		(instances
+			(project ""
+				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -7551,7 +7205,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 127 92.71 0)
+		(at 127 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7559,7 +7213,7 @@
 		(dnp no)
 		(uuid "9c3764dd-5e02-4347-a01d-cde070ac8335")
 		(property "Reference" "#PWR011"
-			(at 127 99.06 0)
+			(at 127 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7568,7 +7222,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 131.064 94.234 0)
+			(at 131.064 96.774 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7576,7 +7230,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 92.71 0)
+			(at 127 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7585,7 +7239,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 92.71 0)
+			(at 127 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7594,7 +7248,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 92.71 0)
+			(at 127 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7675,6 +7329,83 @@
 			(project "integrated_system"
 				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:IRLB8721PBF")
+		(at 129.54 154.94 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a171fd46-0a9f-434e-96c3-6b17de1d0574")
+		(property "Reference" "Q4"
+			(at 123.19 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IRLB8721PBF"
+			(at 123.19 156.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 124.46 156.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591"
+			(at 124.46 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "62A Id, 30V Vds, 8.7 mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220"
+			(at 129.54 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4fe89e1b-77da-44c0-aa6f-45aa7964a621")
+		)
+		(pin "2"
+			(uuid "caa5d681-392a-4573-8ad8-8cc8abea56b4")
+		)
+		(pin "3"
+			(uuid "e703a2f9-4a09-4c3d-97a5-9e1841748ace")
+		)
+		(instances
+			(project "integrated_system"
+				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -7954,7 +7685,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 127 160.02 0)
+		(at 127 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7962,7 +7693,7 @@
 		(dnp no)
 		(uuid "cc402430-6242-477a-951b-32cde7b92c32")
 		(property "Reference" "#PWR013"
-			(at 127 166.37 0)
+			(at 127 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7971,7 +7702,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.556 161.544 0)
+			(at 130.556 164.084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7979,7 +7710,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 160.02 0)
+			(at 127 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7988,7 +7719,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 160.02 0)
+			(at 127 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7997,7 +7728,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 160.02 0)
+			(at 127 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8087,6 +7818,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 138.43 125.73 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db60b914-ad61-4e8a-9b03-6cfe9d40d2a6")
+		(property "Reference" "R5"
+			(at 140.97 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 140.97 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 138.43 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "52e27cc2-c1cb-4d2f-91c7-4ab364ab04db")
+		)
+		(pin "2"
+			(uuid "0e45dace-6681-4e95-877b-65bbd2bcc983")
+		)
+		(instances
+			(project "integrated_system"
+				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SGP30:SGP30")
 		(at 60.96 128.27 0)
 		(unit 1)
@@ -8095,8 +7896,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d93d9942-a956-4917-a239-e7103cd5c3a3")
-		(property "Reference" "U6"
+		(uuid "e3bd12c1-bed1-465f-81e3-d88a004b4f3d")
+		(property "Reference" "U5"
 			(at 60.96 115.57 0)
 			(effects
 				(font
@@ -8240,84 +8041,88 @@
 				(hide yes)
 			)
 		)
-		(pin "5"
-			(uuid "d27e878c-ce00-491f-9731-5b6779bee1df")
-		)
-		(pin "2"
-			(uuid "0260b1a2-17ac-494d-91f9-164bbcb13a96")
-		)
 		(pin "1"
-			(uuid "d1bf83ff-b054-44cb-ac5a-57e88724d31a")
-		)
-		(pin "3"
-			(uuid "0ebec28b-0dc1-4e38-9852-da23e5c4524a")
-		)
-		(pin "6"
-			(uuid "d794e2dc-073c-4439-92f7-2e77f51f6426")
+			(uuid "ec3fec61-8bca-4ad2-830c-b8ee4a01c004")
 		)
 		(pin "4"
-			(uuid "6284bd89-7060-4578-8fa0-5180f2e26a1c")
+			(uuid "612f3738-dd63-4309-9b65-8771a95c22c9")
+		)
+		(pin "5"
+			(uuid "2eeb4d56-d6e5-48a1-93e4-6fa23380fa5e")
+		)
+		(pin "3"
+			(uuid "61e503b1-b307-4691-b661-d3981ec81865")
 		)
 		(pin "DIEPAD"
-			(uuid "9c410fcf-9ead-42c7-8d88-beb532139abd")
+			(uuid "1d001aaf-a616-4b0a-8c24-f832423f8573")
+		)
+		(pin "6"
+			(uuid "1254fcb6-17d5-4c91-a307-fa75f12e0afb")
+		)
+		(pin "2"
+			(uuid "aa96d747-3f7c-4f9d-b930-fadf23efe08d")
 		)
 		(instances
 			(project ""
 				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "U6")
+					(reference "U5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 135.89 125.73 180)
+		(lib_id "Transistor_FET:IRLB8721PBF")
+		(at 129.54 120.65 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "db60b914-ad61-4e8a-9b03-6cfe9d40d2a6")
-		(property "Reference" "R5"
-			(at 138.43 124.4599 0)
+		(uuid "e40d8e60-9698-4d40-9c4f-0fe2fdfc458d")
+		(property "Reference" "Q3"
+			(at 123.19 119.3799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 138.43 126.9999 0)
+		(property "Value" "IRLB8721PBF"
+			(at 123.19 121.9199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 135.89 125.73 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 124.46 122.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 135.89 125.73 0)
+		(property "Datasheet" "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591"
+			(at 124.46 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
-			(at 135.89 125.73 0)
+		(property "Description" "62A Id, 30V Vds, 8.7 mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220"
+			(at 129.54 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8326,15 +8131,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "52e27cc2-c1cb-4d2f-91c7-4ab364ab04db")
+			(uuid "0a45faed-04e6-44b8-ac78-2c85cf1ddc2a")
 		)
 		(pin "2"
-			(uuid "0e45dace-6681-4e95-877b-65bbd2bcc983")
+			(uuid "d4398196-370d-4e0a-9406-794bc0916272")
+		)
+		(pin "3"
+			(uuid "1ebe1cd0-e663-42e8-aa63-02471af92324")
 		)
 		(instances
 			(project "integrated_system"
 				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "R5")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -8342,7 +8150,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 127 124.46 0)
+		(at 127 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8350,7 +8158,7 @@
 		(dnp no)
 		(uuid "e557b42b-d5c2-41a6-87d5-2316b9ea9b8b")
 		(property "Reference" "#PWR012"
-			(at 127 130.81 0)
+			(at 127 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8359,7 +8167,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.556 126.238 0)
+			(at 130.556 128.778 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8367,7 +8175,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 124.46 0)
+			(at 127 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8376,7 +8184,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 124.46 0)
+			(at 127 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8385,7 +8193,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 124.46 0)
+			(at 127 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8407,7 +8215,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 135.89 165.1 0)
+		(at 138.43 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8415,7 +8223,7 @@
 		(dnp no)
 		(uuid "e5708272-8396-4800-87de-be4f0271c09d")
 		(property "Reference" "#PWR021"
-			(at 135.89 171.45 0)
+			(at 138.43 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8424,7 +8232,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.446 166.624 0)
+			(at 141.986 166.624 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8432,7 +8240,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 165.1 0)
+			(at 138.43 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8441,7 +8249,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 165.1 0)
+			(at 138.43 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8450,7 +8258,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 135.89 165.1 0)
+			(at 138.43 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8465,220 +8273,6 @@
 			(project "integrated_system"
 				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
 					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SCD30:SCD30")
-		(at 60.96 95.25 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e5fcda00-3ff8-4ddc-a7fa-3ed6abd55a29")
-		(property "Reference" "U5"
-			(at 60.96 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SCD30"
-			(at 60.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SCD30:MODULE_SCD30"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Sensirion AG"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "7.0mm"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SCD30/Sensirion/view-part/?ref=eda"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "D1"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SCD30/Sensirion/view-part/?ref=snap"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "SCD30"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=2779194&manufacturer=Sensirion AG&part_name=SCD30&search_term=None"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Carbon Dioxide (CO2), Humidity, Temperature Sensor I2C, Modbus, PWM"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Sensirion"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "51f2caef-15b2-4382-845d-9ed9a17a0982")
-		)
-		(pin "1"
-			(uuid "a32d8415-bd48-4945-a764-55b774ee9dcb")
-		)
-		(pin "3"
-			(uuid "a3c15cbd-facd-4e1b-9b7f-2fc5190cfcde")
-		)
-		(pin "5"
-			(uuid "684ecae4-ed93-4ae0-b32e-f16184176b81")
-		)
-		(pin "7"
-			(uuid "73ac6a50-1f2f-4695-8569-b5037ecc8ba4")
-		)
-		(pin "6"
-			(uuid "8e274487-7391-40f1-a266-7d8529426402")
-		)
-		(pin "2"
-			(uuid "2685f50d-6f50-4e2c-8315-828c85ab4b53")
-		)
-		(instances
-			(project ""
-				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -8822,7 +8416,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 140.97 154.94 90)
+		(at 143.51 154.94 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8831,7 +8425,7 @@
 		(fields_autoplaced yes)
 		(uuid "f42723b5-60c0-4ce8-90e1-7d416299a078")
 		(property "Reference" "R3"
-			(at 140.97 148.59 90)
+			(at 143.51 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8839,7 +8433,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 140.97 151.13 90)
+			(at 143.51 151.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8847,7 +8441,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.97 154.94 0)
+			(at 143.51 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8856,7 +8450,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 154.94 0)
+			(at 143.51 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8865,7 +8459,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 140.97 154.94 0)
+			(at 143.51 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
