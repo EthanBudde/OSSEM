@@ -11,6 +11,359 @@
 		(company "OSSEM")
 	)
 	(lib_symbols
+		(symbol "BME280:BME280"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -10.1662 13.3431 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "BME280"
+				(at -10.1683 -15.2524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "BME280:PSON65P250X250X100-8N"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Bosch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "DESCRIPTION" "Integrated pressure, humidity and temperature sensor; 8-pin 2.5x2.5x0.93mm LGA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PACKAGE" "LGA-8 Bosch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PRICE" "4.94 USD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "LGA-8 Bosch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/BME280/Bosch/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "IPC-7351B"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/BME280/Bosch/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "BME280"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=49769&manufacturer=Bosch&part_name=BME280&search_term=None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "AVAILABILITY" "Good"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "Board Mount Humidity Sensors MEMS humidity, pressure and temperature sensor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "BME280_0_0"
+				(rectangle
+					(start -10.16 -12.7)
+					(end 10.16 12.7)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -15.24 2.54 0)
+					(length 5.08)
+					(name "CSB"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input clock
+					(at -15.24 0 0)
+					(length 5.08)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -2.54 0)
+					(length 5.08)
+					(name "SDI"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -5.08 0)
+					(length 5.08)
+					(name "SDO"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 15.24 10.16 180)
+					(length 5.08)
+					(name "VDDIO"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 15.24 7.62 180)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 15.24 -10.16 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 15.24 -10.16 180)
+					(length 5.08)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Jack-DC"
 			(pin_names
 				(offset 1.016)
@@ -3026,236 +3379,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SHT40-AD1F-R2:SHT40-AD1F-R2"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -10.16 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "SHT40-AD1F-R2"
-				(at -10.16 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "SHT40-AD1F-R2:SHT4X"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "Sensirion"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "Digital Relative Humidity Temperature Sensor, ±1.8 / max 3.5 %RH, ±0.2 °C, Ultra-Low-Power, with filtermembrane"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "Package"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/SHT40-AD1F-R2/Sensirion/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "SHT40-AD1F-R2"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=12419887&manufacturer=Sensirion&part_name=SHT40-AD1F-R2&search_term=None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/SHT40-AD1F-R2/Sensirion/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "SHT40-AD1F-R2_0_0"
-				(rectangle
-					(start -10.16 -7.62)
-					(end 10.16 7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -15.24 2.54 0)
-					(length 5.08)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 -2.54 0)
-					(length 5.08)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 5.08 180)
-					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 -5.08 180)
-					(length 5.08)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+12V"
 			(power)
 			(pin_numbers
@@ -3676,6 +3799,12 @@
 		(uuid "40cac36b-df3d-423c-8962-49720a5460ae")
 	)
 	(junction
+		(at 80.01 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54337d47-89dc-48c6-9c73-8ca9251bba9e")
+	)
+	(junction
 		(at 82.55 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3730,12 +3859,6 @@
 		(uuid "e71e3d6a-f4ae-45f7-86b9-abdc153edd90")
 	)
 	(junction
-		(at 80.01 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ebe29d80-303c-4990-a96b-17946cdf92cb")
-	)
-	(junction
 		(at 127 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3756,6 +3879,14 @@
 	(no_connect
 		(at 45.72 90.17)
 		(uuid "80ef7e89-b85e-4299-bf23-111c386575c5")
+	)
+	(no_connect
+		(at 76.2 172.72)
+		(uuid "881f60c9-ca7d-4e47-81a5-654fb986f3f6")
+	)
+	(no_connect
+		(at 76.2 165.1)
+		(uuid "c04568f6-aeb8-4f30-b9eb-bd1c89ea1e96")
 	)
 	(no_connect
 		(at 50.8 133.35)
@@ -3977,6 +4108,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 170.18) (xy 82.55 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "253ff5cf-710e-4154-a92f-6effd8dd67a5")
+	)
+	(wire
+		(pts
 			(xy 127 113.03) (xy 134.62 113.03)
 		)
 		(stroke
@@ -4014,6 +4155,16 @@
 			(type default)
 		)
 		(uuid "2a415884-dfd6-4095-a78e-23d7f4e526e3")
+	)
+	(wire
+		(pts
+			(xy 41.91 160.02) (xy 45.72 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cb5769e-333d-4121-aa63-aed2d4d86ec0")
 	)
 	(wire
 		(pts
@@ -4067,7 +4218,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 176.53) (xy 43.18 172.72)
+			(xy 43.18 181.61) (xy 43.18 177.8)
 		)
 		(stroke
 			(width 0)
@@ -4104,6 +4255,16 @@
 			(type default)
 		)
 		(uuid "3fba0a6b-7bc0-4560-bc07-762e75e53abd")
+	)
+	(wire
+		(pts
+			(xy 76.2 167.64) (xy 80.01 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4373bb3a-72af-4442-96a2-221c5a932f9a")
 	)
 	(wire
 		(pts
@@ -4164,26 +4325,6 @@
 			(type default)
 		)
 		(uuid "5c7598fb-0be2-479b-8913-c49939c265e5")
-	)
-	(wire
-		(pts
-			(xy 80.01 130.81) (xy 80.01 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5cb2cfbf-78eb-4145-a939-d39c65e0b853")
-	)
-	(wire
-		(pts
-			(xy 43.18 158.75) (xy 43.18 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f43af45-6f13-43cf-b113-41b32ed4d864")
 	)
 	(wire
 		(pts
@@ -4274,16 +4415,6 @@
 			(type default)
 		)
 		(uuid "747681d4-4bb0-4aa9-8ef9-910fc3922c27")
-	)
-	(wire
-		(pts
-			(xy 76.2 165.1) (xy 80.01 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7af94f1a-3663-4089-8ad1-c63fffaaac1b")
 	)
 	(wire
 		(pts
@@ -4427,7 +4558,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 176.53) (xy 80.01 165.1)
+			(xy 80.01 176.53) (xy 80.01 167.64)
 		)
 		(stroke
 			(width 0)
@@ -4494,16 +4625,6 @@
 			(type default)
 		)
 		(uuid "afdc4a7e-7cdc-458a-b1b1-7287cd63ab2c")
-	)
-	(wire
-		(pts
-			(xy 76.2 170.18) (xy 82.55 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b20022f6-5b09-4cd9-af96-f7a7f2f8e2ee")
 	)
 	(wire
 		(pts
@@ -4574,6 +4695,16 @@
 			(type default)
 		)
 		(uuid "c61edfc8-0f38-4bba-9103-2045cec6da61")
+	)
+	(wire
+		(pts
+			(xy 80.01 130.81) (xy 80.01 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6fe3ffa-0586-46c1-bba3-962d01b660b7")
 	)
 	(wire
 		(pts
@@ -4697,7 +4828,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 172.72) (xy 45.72 172.72)
+			(xy 43.18 177.8) (xy 45.72 177.8)
 		)
 		(stroke
 			(width 0)
@@ -4737,16 +4868,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 162.56) (xy 45.72 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4b03a09-1520-4672-8202-58db971bbb28")
-	)
-	(wire
-		(pts
 			(xy 72.39 35.56) (xy 72.39 34.29)
 		)
 		(stroke
@@ -4767,6 +4888,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 153.67) (xy 41.91 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb38dbd8-825f-4209-96c2-fd286e2f3eab")
+	)
+	(wire
+		(pts
 			(xy 127 74.93) (xy 127 72.39)
 		)
 		(stroke
@@ -4777,7 +4908,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 43.18 158.75 0)
+		(at 41.91 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4786,7 +4917,7 @@
 		(fields_autoplaced yes)
 		(uuid "05fc02ef-a29e-465c-858a-93c32c9b9990")
 		(property "Reference" "#PWR016"
-			(at 43.18 162.56 0)
+			(at 41.91 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4795,7 +4926,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 43.18 153.67 0)
+			(at 41.91 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4803,7 +4934,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 158.75 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4812,7 +4943,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 158.75 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4821,7 +4952,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 43.18 158.75 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5398,7 +5529,7 @@
 		)
 	)
 	(symbol
-		(lib_id "SHT40-AD1F-R2:SHT40-AD1F-R2")
+		(lib_id "BME280:BME280")
 		(at 60.96 167.64 0)
 		(mirror y)
 		(unit 1)
@@ -5406,24 +5537,24 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "24c74b8e-8959-4717-a0b2-c0abe2d474bc")
-		(property "Reference" "U7"
-			(at 60.96 154.94 0)
+		(uuid "2f218b27-c630-4a05-902c-08e101415c54")
+		(property "Reference" "U8"
+			(at 60.96 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SHT40-AD1F-R2"
-			(at 60.96 157.48 0)
+		(property "Value" "BME280"
+			(at 60.96 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "SHT40-AD1F-R2:SHT4X"
+		(property "Footprint" "BME280:PSON65P250X250X100-8N"
 			(at 60.96 167.64 0)
 			(effects
 				(font
@@ -5451,7 +5582,7 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Sensirion"
+		(property "MF" "Bosch"
 			(at 60.96 167.64 0)
 			(effects
 				(font
@@ -5461,7 +5592,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "Digital Relative Humidity Temperature Sensor, ±1.8 / max 3.5 %RH, ±0.2 °C, Ultra-Low-Power, with filtermembrane"
+		(property "DESCRIPTION" "Integrated pressure, humidity and temperature sensor; 8-pin 2.5x2.5x0.93mm LGA"
 			(at 60.96 167.64 0)
 			(effects
 				(font
@@ -5471,7 +5602,77 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "Package"
+		(property "PACKAGE" "LGA-8 Bosch"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "4.94 USD"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "LGA-8 Bosch"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/BME280/Bosch/view-part/?ref=eda"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "IPC-7351B"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/BME280/Bosch/view-part/?ref=snap"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "BME280"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=49769&manufacturer=Bosch&part_name=BME280&search_term=None"
 			(at 60.96 167.64 0)
 			(effects
 				(font
@@ -5491,36 +5692,6 @@
 				(hide yes)
 			)
 		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SHT40-AD1F-R2/Sensirion/view-part/?ref=snap"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "SHT40-AD1F-R2"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=12419887&manufacturer=Sensirion&part_name=SHT40-AD1F-R2&search_term=None"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
 		(property "Availability" "In Stock"
 			(at 60.96 167.64 0)
 			(effects
@@ -5531,7 +5702,7 @@
 				(hide yes)
 			)
 		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SHT40-AD1F-R2/Sensirion/view-part/?ref=eda"
+		(property "AVAILABILITY" "Good"
 			(at 60.96 167.64 0)
 			(effects
 				(font
@@ -5541,22 +5712,44 @@
 				(hide yes)
 			)
 		)
-		(pin "4"
-			(uuid "a3163703-fb55-4306-a36d-2db9e0434ec0")
+		(property "Description_1" "Board Mount Humidity Sensors MEMS humidity, pressure and temperature sensor"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "b7814bfd-1149-4e72-b290-524b6904f2d8")
+			(uuid "b41fd743-323a-4a1c-9e2b-a32dd854928f")
+		)
+		(pin "5"
+			(uuid "1af71559-bfd6-419a-8370-89f15ee42433")
+		)
+		(pin "6"
+			(uuid "a83bf9e6-1b34-42a3-8ec1-dc929c19828d")
+		)
+		(pin "8"
+			(uuid "cef773d7-dba7-4f6b-96c0-16e15d7a8158")
+		)
+		(pin "7"
+			(uuid "02db0166-9e6e-4295-9221-8a9901b4347e")
 		)
 		(pin "3"
-			(uuid "30ab9f84-b9fa-4bbb-b2b8-6d5a9442a441")
+			(uuid "c4f88a00-9f31-4282-ab91-4f78a8ed0ce9")
+		)
+		(pin "4"
+			(uuid "1dcf60b1-6f16-4583-828e-db67fd2e1857")
 		)
 		(pin "1"
-			(uuid "a14cf9ef-dd4c-4f56-b612-a36894677433")
+			(uuid "d608f7d5-2b63-4832-aba2-6c2d886ab3a3")
 		)
 		(instances
 			(project ""
 				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "U7")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -6186,7 +6379,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 43.18 176.53 0)
+		(at 43.18 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6195,7 +6388,7 @@
 		(fields_autoplaced yes)
 		(uuid "4bc613a4-6933-4204-a30a-3c88a0658685")
 		(property "Reference" "#PWR019"
-			(at 43.18 182.88 0)
+			(at 43.18 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6204,7 +6397,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 43.18 181.61 0)
+			(at 43.18 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6212,7 +6405,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 176.53 0)
+			(at 43.18 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6221,7 +6414,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 176.53 0)
+			(at 43.18 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6230,7 +6423,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 176.53 0)
+			(at 43.18 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
