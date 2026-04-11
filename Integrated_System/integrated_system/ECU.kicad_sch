@@ -5142,7 +5142,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1eda23d4-0490-450f-a28f-b966b62fd205")
 		(property "Reference" "J2"
 			(at 115.57 68.58 0)
@@ -5925,7 +5924,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLB8721PBF"
+		(property "Value" "TN0702N3"
 			(at 124.968 90.932 0)
 			(effects
 				(font
@@ -7354,7 +7353,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLB8721PBF"
+		(property "Value" "TN0702N3"
 			(at 123.19 156.2099 0)
 			(effects
 				(font
@@ -8091,7 +8090,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLB8721PBF"
+		(property "Value" "TN0702N3"
 			(at 123.19 121.9199 0)
 			(effects
 				(font
@@ -8500,8 +8499,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Pot1"
-			(at 164.592 62.484 90)
+		(property "Value" "Pot1_Control"
+			(at 162.56 62.484 90)
 			(effects
 				(font
 					(size 1.27 1.27)
