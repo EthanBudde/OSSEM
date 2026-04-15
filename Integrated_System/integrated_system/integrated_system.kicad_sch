@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Integrated System")
-		(date "2026-04-04")
-		(rev "1.0")
+		(date "2026-04-14")
+		(rev "1.1")
 		(company "OSSEM")
 	)
 	(lib_symbols)
