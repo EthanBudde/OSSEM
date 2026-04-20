@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Integrated System")
-		(date "2026-04-14")
-		(rev "1.1")
+		(date "2026-04-20")
+		(rev "1.2")
 		(company "OSSEM")
 	)
 	(lib_symbols
@@ -3841,10 +3841,10 @@
 		)
 		(uuid "cfc4c5d8-f391-4a1d-810c-33e76f3d0100")
 	)
-	(text_box "Either Use this DC-DC Buck converter or use USB power"
+	(text_box "These LEDs are Sensor Indicators controlled by the microcontroller with various uses."
 		(exclude_from_sim no)
-		(at 162.56 33.02 0)
-		(size 16.51 15.24)
+		(at 246.38 91.44 0)
+		(size 16.51 17.78)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3859,12 +3859,12 @@
 			)
 			(justify left top)
 		)
-		(uuid "11bc2b04-1669-45ab-8693-87dc77b09316")
+		(uuid "04ce1a4c-5e57-41ef-8a9b-26d8fa21f586")
 	)
-	(text_box "Each fan will have its own transistor and controlled using the microcontroller. If the fan already has 3 or 4 pins, we don't need a transistor as it can be controlled using the PWM pin."
+	(text_box "Each fan will have its own transistor and controlled using the microcontroller."
 		(exclude_from_sim no)
-		(at 95.25 35.56 0)
-		(size 22.86 24.13)
+		(at 87.63 88.9 0)
+		(size 22.86 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3881,7 +3881,47 @@
 		)
 		(uuid "1573d528-b15c-4142-a749-46b87969585c")
 	)
-	(text_box "This is to power the Fans"
+	(text_box "BME680 is a Temperature/Humidity/Pressure Gas Sensor"
+		(exclude_from_sim no)
+		(at 13.97 163.83 0)
+		(size 27.94 10.16)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "26e323fd-8725-41af-9d1f-81eaf3df936a")
+	)
+	(text_box "SGP30 is a Multi-gas (VOC and CO₂eq) sensor"
+		(exclude_from_sim no)
+		(at 13.97 121.92 0)
+		(size 27.94 10.16)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "3af5e8e5-fc6a-4b37-a417-8ad1098304ac")
+	)
+	(text_box "FP_12V will power each of the fans (12 V)"
 		(exclude_from_sim no)
 		(at 87.63 17.78 0)
 		(size 27.94 5.08)
@@ -3901,10 +3941,30 @@
 		)
 		(uuid "502993e0-17b0-4fcd-8e09-66464179422b")
 	)
-	(text_box "All Sensors use 3.3V power"
+	(text_box "The exact model is ASDS-ZH059 from Amazon"
 		(exclude_from_sim no)
-		(at 45.72 67.31 0)
+		(at 130.81 13.97 0)
 		(size 27.94 7.62)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "63d20e74-46b8-4561-96a5-981d517161c7")
+	)
+	(text_box "All Sensors use 3.3V power and will be soldered on to the back side of the PCB"
+		(exclude_from_sim no)
+		(at 45.72 66.04 0)
+		(size 27.94 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3924,7 +3984,7 @@
 	(text_box "All Sensors Communicate via I2C"
 		(exclude_from_sim no)
 		(at 110.49 180.34 0)
-		(size 25.4 7.62)
+		(size 25.4 6.35)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3941,10 +4001,30 @@
 		)
 		(uuid "66211c92-42c8-42e2-b4ca-b10c02d4fce4")
 	)
-	(text_box "This barrel jack will be used to power the fans and maybe the microconroller if we have time"
+	(text_box "SCD30 has a CO₂ accuracy of ±(30 ppm + 3% MV) @400-10000 ppm"
+		(exclude_from_sim no)
+		(at 13.97 86.36 0)
+		(size 27.94 10.16)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "79ff5d4b-b1f2-453d-a71a-5f8503b736f0")
+	)
+	(text_box "This barrel jack will be the main power supply to the entire ECU."
 		(exclude_from_sim no)
 		(at 12.7 30.48 0)
-		(size 17.78 15.24)
+		(size 17.78 11.43)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -9852,15 +9932,15 @@
 		(fields_autoplaced yes)
 		(uuid "aec17e6a-095f-4bfc-b309-7bebb113b689")
 		(property "Reference" "U?"
-			(at 144.526 23.368 0)
+			(at 143.51 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "DC to DC Buck Converter 12V to 3.3V"
-			(at 144.526 25.908 0)
+		(property "Value" "Mini360 DC to DC Buck Converter 12V to 3.3V"
+			(at 143.51 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
