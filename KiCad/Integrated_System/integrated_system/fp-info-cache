@@ -1,4 +1,4 @@
-27111288807827554
+27116621029762416
 2907
 SOIC16_4X10_ONS
 
@@ -55,6 +55,13 @@ audio belton reverb
 0
 7
 7
+BME680
+PSON80P300X300X100-8N
+
+
+0
+8
+8
 Battery
 BatteryClip_Keystone_54_D16-19mm
 Battery clip for batteries with a diameter between 16-19 mm: https://www.keyelco.com/product.cfm/product_id/826
@@ -63118,13 +63125,6 @@ heatsink
 0
 0
 0
-IRLR7843
-TO252
-<b>SMALL OUTLINE TRANSISTOR</b><p>TS-003
-
-0
-3
-3
 Inductor_SMD
 L_6.3x6.3_H3
 Choke, SMD, 6.3x6.3mm 3mm height
@@ -71483,6 +71483,13 @@ Hairpin_33_mm
 0
 2
 2
+Library
+Mini360
+
+
+0
+0
+0
 Library
 Untitled
 
@@ -98384,6 +98391,20 @@ rotary encoder illuminated switch vertical
 0
 9
 8
+SCD30
+MODULE_SCD30
+
+
+0
+7
+7
+SGP30
+SGP30
+
+
+0
+7
+7
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
