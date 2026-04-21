@@ -59,7 +59,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "integrated_system.kicad_prl",
+    "filename": "ECU.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {

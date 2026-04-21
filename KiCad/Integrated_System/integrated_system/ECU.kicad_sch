@@ -1733,23 +1733,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U1"
-				(at -9.144 2.032 0)
+			(property "Reference" "U4"
+				(at -10.16 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "DC to DC Buck Converter 12V to 3.3V"
-				(at -9.144 -0.508 0)
+			(property "Value" "Mini360 DC to DC Buck Converter 12V to 3.3V"
+				(at -10.16 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Library:Mini360"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2778,7 +2778,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SGP30:SGP30"
+		(symbol "SGP30_1"
 			(pin_names
 				(offset 1.016)
 			)
@@ -2922,7 +2922,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "SGP30_0_0"
+			(symbol "SGP30_1_0_0"
 				(rectangle
 					(start -7.62 -7.62)
 					(end 7.62 7.62)
@@ -5174,6 +5174,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 102.87) (xy 45.72 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "928efafe-009d-4404-a88a-4567b4764cc7")
+	)
+	(wire
+		(pts
 			(xy 127 80.01) (xy 134.62 80.01)
 		)
 		(stroke
@@ -5421,16 +5431,6 @@
 			(type default)
 		)
 		(uuid "b94118ca-7ed4-4503-bb7c-fdd4f16808ce")
-	)
-	(wire
-		(pts
-			(xy 45.72 102.87) (xy 40.64 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba7ed964-6329-4a82-8f0a-625b2c423de8")
 	)
 	(wire
 		(pts
@@ -6981,6 +6981,190 @@
 		)
 	)
 	(symbol
+		(lib_name "SGP30_1")
+		(lib_id "SGP30:SGP30")
+		(at 60.96 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "24d462d4-331f-4e28-af08-109729ca2ff9")
+		(property "Reference" "U1"
+			(at 60.96 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SGP30"
+			(at 60.96 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SGP30:SGP30"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Sensirion AG"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "SGP30, SHTC1 Air Quality, Humidity, Temperature Sensor Arduino Platform Evaluation Expansion Board"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/SGP30/Sensirion/view-part/?ref=eda"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "VALUE" "SGP30"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SGP30/Sensirion/view-part/?ref=snap"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "IC-14776"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "SGP30"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "DIEPAD"
+			(uuid "873edb65-98e5-488d-87dc-750b3b2a8ef4")
+		)
+		(pin "1"
+			(uuid "ce4213b3-8545-4279-bbc7-61ea62489787")
+		)
+		(pin "5"
+			(uuid "8ef946fc-e226-4252-890e-828ed4475719")
+		)
+		(pin "2"
+			(uuid "79e29425-f080-433f-9457-4ca3e9776ca2")
+		)
+		(pin "4"
+			(uuid "09d1f7b4-f33c-4f11-988e-442098efd51f")
+		)
+		(pin "3"
+			(uuid "d20310f0-0197-4bc9-8ee3-4089cf420a99")
+		)
+		(pin "6"
+			(uuid "0502329a-2e23-4e2b-afcb-420e682793ae")
+		)
+		(instances
+			(project ""
+				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 219.71 99.06 0)
 		(mirror y)
@@ -7491,227 +7675,6 @@
 			(project ""
 				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SCD30:SCD30")
-		(at 60.96 95.25 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b44058e-7917-4daf-81fe-3efb8677f19b")
-		(property "Reference" "U1"
-			(at 60.96 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SCD30"
-			(at 60.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SCD30:MODULE_SCD30"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Sensirion AG"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "7.0mm"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SCD30/Sensirion/view-part/?ref=eda"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "D1"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SCD30/Sensirion/view-part/?ref=snap"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "SCD30"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=2779194&manufacturer=Sensirion AG&part_name=SCD30&search_term=None"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Carbon Dioxide (CO2), Humidity, Temperature Sensor I2C, Modbus, PWM"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Sensirion"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "348e5f1a-7cde-40ac-af7b-d6699c3efdb1")
-		)
-		(pin "1"
-			(uuid "7f44dd72-d6c2-49b5-ae20-416db8a28e5b")
-		)
-		(pin "7"
-			(uuid "e8f0a05d-561f-4288-822b-ba07c39bfc3c")
-		)
-		(pin "4"
-			(uuid "b295c71d-b5b2-47f1-b775-24a051d04a6d")
-		)
-		(pin "2"
-			(uuid "8fe76c81-323c-488c-ad71-f3feb016e2dd")
-		)
-		(pin "6"
-			(uuid "9e0692de-f221-4977-bd18-0e536b5dff06")
-		)
-		(pin "5"
-			(uuid "67fc4b9a-cffd-49ff-9b5a-ce4ab90ecaa1")
-		)
-		(instances
-			(project "ECU"
-				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -8684,6 +8647,223 @@
 		)
 	)
 	(symbol
+		(lib_id "BME680:BME680")
+		(at 60.96 167.64 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "67bc681d-1932-4709-b3fb-358d088a00ac")
+		(property "Reference" "U2"
+			(at 60.96 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BME680"
+			(at 60.96 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "BME680:PSON80P300X300X100-8N"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Bosch Sensortec"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" "21135"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "LGA-8 Bosch Tools"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/BME680/Bosch/view-part/?ref=eda"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "1.9"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/BME680/Bosch/view-part/?ref=snap"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "BME680"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Gas, Humidity, Pressure, Temperature Sensor I2C, SPI Output"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Bosch Sensortec"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "1mm"
+			(at 60.96 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d9efe88b-947d-42c0-81c1-a3d740b88f9c")
+		)
+		(pin "6"
+			(uuid "cf9589a0-600d-42bd-aa2a-97e01be7f694")
+		)
+		(pin "4"
+			(uuid "f267a9fe-105c-49e7-82d1-a82044eb2154")
+		)
+		(pin "8"
+			(uuid "cc7317d4-08b4-4c10-87bd-bc437195dc08")
+		)
+		(pin "1"
+			(uuid "324e819a-cf28-41ff-9f0e-af5e3ecebc66")
+		)
+		(pin "7"
+			(uuid "70150ec6-be64-41c4-9d1e-06e19a212485")
+		)
+		(pin "3"
+			(uuid "b759d561-10d2-45db-8d64-3e0f1a798385")
+		)
+		(pin "5"
+			(uuid "444c274e-7f97-4128-ae77-63ece420cc79")
+		)
+		(instances
+			(project ""
+				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MCU_Module:Adafruit_Feather_HUZZAH32_ESP32")
 		(at 189.23 109.22 0)
 		(mirror y)
@@ -9498,6 +9678,220 @@
 			(project "integrated_system"
 				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SCD30:SCD30")
+		(at 60.96 95.25 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7ed24698-c73d-45a5-9cae-5511938425cd")
+		(property "Reference" "U5"
+			(at 60.96 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SCD30"
+			(at 60.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SCD30:MODULE_SCD30"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Sensirion AG"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "7.0mm"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/SCD30/Sensirion/view-part/?ref=eda"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "D1"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SCD30/Sensirion/view-part/?ref=snap"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "SCD30"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=2779194&manufacturer=Sensirion AG&part_name=SCD30&search_term=None"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Carbon Dioxide (CO2), Humidity, Temperature Sensor I2C, Modbus, PWM"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Sensirion"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "abb7edf7-0110-45a2-9f6c-81055c3890b1")
+		)
+		(pin "4"
+			(uuid "52a6da7d-d092-4e7f-8b2a-7a92d6dc5118")
+		)
+		(pin "7"
+			(uuid "04079544-9775-4720-ac16-c91ff8e30800")
+		)
+		(pin "3"
+			(uuid "dbbd9e3b-df51-4890-88eb-1a7045e0aba7")
+		)
+		(pin "5"
+			(uuid "dab61344-c7ec-48f8-beea-f7d656864e5b")
+		)
+		(pin "1"
+			(uuid "caf162d3-9031-43ff-8cbf-19bb7d8de90d")
+		)
+		(pin "6"
+			(uuid "dddde9d7-b95f-49a4-877b-4246f2cd8ccc")
+		)
+		(instances
+			(project ""
+				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -10859,196 +11253,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SGP30:SGP30")
-		(at 60.96 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e3bd12c1-bed1-465f-81e3-d88a004b4f3d")
-		(property "Reference" "U2"
-			(at 60.96 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SGP30"
-			(at 60.96 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SGP30:SGP30"
-			(at 60.96 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 60.96 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Sensirion AG"
-			(at 60.96 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "SGP30, SHTC1 Air Quality, Humidity, Temperature Sensor Arduino Platform Evaluation Expansion Board"
-			(at 60.96 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 60.96 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 60.96 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SGP30/Sensirion/view-part/?ref=eda"
-			(at 60.96 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "VALUE" "SGP30"
-			(at 60.96 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SGP30/Sensirion/view-part/?ref=snap"
-			(at 60.96 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PROD_ID" "IC-14776"
-			(at 60.96 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "Not in stock"
-			(at 60.96 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "SGP30"
-			(at 60.96 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ec3fec61-8bca-4ad2-830c-b8ee4a01c004")
-		)
-		(pin "4"
-			(uuid "612f3738-dd63-4309-9b65-8771a95c22c9")
-		)
-		(pin "5"
-			(uuid "2eeb4d56-d6e5-48a1-93e4-6fa23380fa5e")
-		)
-		(pin "3"
-			(uuid "61e503b1-b307-4691-b661-d3981ec81865")
-		)
-		(pin "DIEPAD"
-			(uuid "1d001aaf-a616-4b0a-8c24-f832423f8573")
-		)
-		(pin "6"
-			(uuid "1254fcb6-17d5-4c91-a307-fa75f12e0afb")
-		)
-		(pin "2"
-			(uuid "aa96d747-3f7c-4f9d-b930-fadf23efe08d")
-		)
-		(instances
-			(project "ECU"
-				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_FET:IRLB8721PBF")
 		(at 129.54 120.65 0)
 		(mirror y)
@@ -11422,230 +11626,6 @@
 			(project "integrated_system"
 				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "BME680:BME680")
-		(at 60.96 167.64 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eed90358-4291-4b6c-a1ef-141b21950133")
-		(property "Reference" "U3"
-			(at 60.96 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BME680"
-			(at 60.96 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BME680:PSON80P300X300X100-8N"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Bosch Sensortec"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PACKAGE_ID" "21135"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "LGA-8 Bosch Tools"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/BME680/Bosch/view-part/?ref=eda"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "1.9"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/BME680/Bosch/view-part/?ref=snap"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "BME680"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Gas, Humidity, Pressure, Temperature Sensor I2C, SPI Output"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Bosch Sensortec"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "1mm"
-			(at 60.96 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "f01884f9-e1d9-4980-be37-b7e154582c8e")
-		)
-		(pin "3"
-			(uuid "6311256c-3e8f-4152-8d1d-db48bd7cbe1f")
-		)
-		(pin "4"
-			(uuid "923719d4-5206-45ef-b5b3-f50ef67b001d")
-		)
-		(pin "2"
-			(uuid "519d265f-c8b3-4237-bfb7-228b3a87ed3c")
-		)
-		(pin "8"
-			(uuid "1f954462-83bd-4258-b794-24bf4b596ea4")
-		)
-		(pin "6"
-			(uuid "34bee9c1-ac2d-4dc3-8f60-9b04d41a65e2")
-		)
-		(pin "1"
-			(uuid "9cd8cd8c-2d4c-4288-bd44-3c99cdb020b4")
-		)
-		(pin "5"
-			(uuid "c18d1a24-8e4d-4bf5-a722-429033c12367")
-		)
-		(instances
-			(project "ECU"
-				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "U2")
 					(unit 1)
 				)
 			)

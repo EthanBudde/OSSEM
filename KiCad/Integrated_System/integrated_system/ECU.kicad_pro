@@ -451,7 +451,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "integrated_system.kicad_pro",
+    "filename": "ECU.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -611,12 +611,8 @@
   },
   "sheets": [
     [
-      "e09e0073-4b34-4087-926d-a963f587ec36",
+      "68e66ac2-e6c8-4149-aa8e-681ce71fac5d",
       "Root"
-    ],
-    [
-      "d64a58e5-7375-438d-b343-064b897cc797",
-      "ECU"
     ]
   ],
   "text_variables": {}
