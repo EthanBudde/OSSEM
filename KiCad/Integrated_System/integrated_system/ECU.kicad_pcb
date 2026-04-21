@@ -137,7 +137,7 @@
 	(footprint "Connector_BarrelJack:BarrelJack_CLIFF_FC681465S_SMT_Horizontal"
 		(layer "F.Cu")
 		(uuid "0315b4fa-ab98-40f9-b33c-66057e7e97e5")
-		(at 198.75 115.5 180)
+		(at 200 107.5 180)
 		(descr "Surface-mount DC Barrel Jack, https://www.cliffuk.co.uk/products/dcconnectors/FC681465S.pdf")
 		(tags "Power Jack SMT")
 		(property "Reference" "J1"
@@ -656,7 +656,7 @@
 	(footprint "TN0702N3-G:TRANS_TP2104N3-G"
 		(layer "F.Cu")
 		(uuid "065f8b3e-abff-4ba3-bd91-0e12ccc6e5c1")
-		(at 165.306004 90.707945)
+		(at 158.543504 88.417945)
 		(property "Reference" "Q3"
 			(at 0.885 -3.689 0)
 			(layer "F.SilkS")
@@ -2400,7 +2400,7 @@
 	(footprint "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "38eecfe1-4891-4c1f-9f35-5d0ceafca3f6")
-		(at 174.25 83.33)
+		(at 167.4875 81.04)
 		(descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D3"
@@ -3985,7 +3985,7 @@
 	(footprint "Module:Adafruit_Feather"
 		(layer "F.Cu")
 		(uuid "4de99733-77fa-4da1-8850-7d51e28f019f")
-		(at 180.68 53.09)
+		(at 175.93 50.84)
 		(descr "Common footprint for the Adafruit Feather series of boards, https://learn.adafruit.com/adafruit-feather/feather-specification")
 		(tags "Adafruit Feather")
 		(property "Reference" "A1"
@@ -6086,7 +6086,7 @@
 	(footprint "TN0702N3-G:TRANS_TP2104N3-G"
 		(layer "F.Cu")
 		(uuid "5e2f3315-73aa-4add-8dbe-3f00edca14fa")
-		(at 165.306004 84.757945)
+		(at 158.543504 82.467945)
 		(property "Reference" "Q2"
 			(at 0.885 -3.689 0)
 			(layer "F.SilkS")
@@ -7884,7 +7884,7 @@
 	(footprint "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "96e34072-4b02-4534-9300-fb40d73a1b7a")
-		(at 174.25 75.25)
+		(at 167.4875 72.96)
 		(descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D1"
@@ -8103,7 +8103,7 @@
 			)
 		)
 		(property "Value" "Mini360 DC to DC Buck Converter 12V to 3.3V"
-			(at 8.5 -3.5 0)
+			(at 6.1375 -3.5 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "3ff1b127-3e9b-4652-86ab-672b16452f57")
@@ -8286,7 +8286,7 @@
 	(footprint "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "afd9cdfd-46b2-4c1d-8c09-939e2826e7f4")
-		(at 174.25 87.37)
+		(at 167.4875 85.08)
 		(descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D4"
@@ -11356,7 +11356,7 @@
 	(footprint "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "e78c63e1-10f9-4a36-99f3-afd646abaa26")
-		(at 174.25 79.29)
+		(at 167.4875 77)
 		(descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D2"
@@ -11561,7 +11561,7 @@
 	(footprint "TN0702N3-G:TRANS_TP2104N3-G"
 		(layer "F.Cu")
 		(uuid "e94b4902-f7a3-4cd8-9bd9-3e09698f9007")
-		(at 165.306004 78.807945)
+		(at 158.543504 76.517945)
 		(property "Reference" "Q1"
 			(at 0.885 -3.689 0)
 			(layer "F.SilkS")
@@ -12375,7 +12375,7 @@
 	(footprint "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "faa3fd8c-e840-451d-a286-f2b8cb518f44")
-		(at 174.25 91.41)
+		(at 167.4875 89.12)
 		(descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D5"
@@ -12577,6 +12577,28 @@
 			)
 		)
 	)
+	(gr_circle
+		(center 104.75 44.5)
+		(end 106.25 44.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "0cbab701-4df8-43d3-805e-98249a6f0708")
+	)
+	(gr_circle
+		(center 104.75 120.75)
+		(end 106.25 120.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "5506632a-9b73-4f29-b35b-c629c665b115")
+	)
 	(gr_rect
 		(start 102.5 42)
 		(end 209 123)
@@ -12588,53 +12610,51 @@
 		(layer "Edge.Cuts")
 		(uuid "5c78063d-005d-47ae-8b74-26e593a6a89b")
 	)
-	(segment
-		(start 154.544 79.226)
-		(end 139.476 79.226)
-		(width 1)
-		(layer "F.Cu")
-		(net 19)
-		(uuid "3a8aebeb-a5f1-47d1-9145-00017f72cb06")
+	(gr_circle
+		(center 206.5 120.75)
+		(end 208 120.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "c4227223-0828-4fa0-b48f-cec5c6888dfc")
 	)
-	(segment
-		(start 139.3635 79.1135)
-		(end 139.3635 78)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 19)
-		(uuid "55bbba27-4965-4c26-82a8-b73adc2a006f")
+	(gr_circle
+		(center 206.25 44.5)
+		(end 207.75 44.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "db71a5a8-dea7-417b-90d1-12a274f8a351")
 	)
-	(segment
-		(start 180.68 53.09)
-		(end 154.544 79.226)
-		(width 1)
-		(layer "F.Cu")
-		(net 19)
-		(uuid "b7397615-91f1-4950-a893-48ce7e3fbbdb")
+	(gr_text "4/21/2026"
+		(at 149.5 46.5 0)
+		(layer "F.SilkS")
+		(uuid "5f6f8825-0e15-4f66-9a55-599dc9defb38")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
 	)
-	(segment
-		(start 139.3635 77.8865)
-		(end 140.75 76.5)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 19)
-		(uuid "d30c9b86-26e8-49a3-a13c-c055ec62c20e")
-	)
-	(segment
-		(start 139.3635 78)
-		(end 139.3635 77.8865)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 19)
-		(uuid "f9faa0c5-a91a-4d48-a54f-d3b7ac1e3feb")
-	)
-	(segment
-		(start 139.476 79.226)
-		(end 139.3635 79.1135)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 19)
-		(uuid "fe73b28c-275c-43be-83dc-b2290068c16e")
+	(gr_text "OSSEM v1.0 "
+		(at 149.5 45 0)
+		(layer "F.SilkS")
+		(uuid "f1dd46b2-2bb6-4448-be9a-78a939d08aad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
 	)
 	(embedded_fonts no)
 )
