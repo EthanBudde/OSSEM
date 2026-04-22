@@ -8305,6 +8305,7 @@
 			(drill 1.22625)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net 30 "FP_12V")
 			(uuid "6769113f-18f8-45f5-9dee-98ec777dc9d1")
 		)
 		(pad "IN-_2" thru_hole circle
@@ -8313,6 +8314,7 @@
 			(drill 1.22625)
 			(layers "*.Cu" "*.Mask" "Eco2.User")
 			(remove_unused_layers no)
+			(net 20 "GND")
 			(uuid "8ccf7d82-7773-467b-8615-958794fc73f9")
 		)
 		(pad "OUT+_3" thru_hole rect
@@ -8321,6 +8323,7 @@
 			(drill 1.22625)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net 16 "Net-(A1-3V3)")
 			(uuid "d9f420f6-41d5-4a98-bd98-dd9980b742bc")
 		)
 		(pad "OUT-_4" thru_hole circle
@@ -8329,6 +8332,7 @@
 			(drill 1.22625)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net 20 "GND")
 			(uuid "c8e840d6-2ce5-483d-8809-65cafbe748f0")
 		)
 		(embedded_fonts no)
