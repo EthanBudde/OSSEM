@@ -1,3 +1,4 @@
+// includes
 #include <Adafruit_Sensor.h>
 #include <Adafruit_SCD30.h>
 #include <Adafruit_SGP30.h>
@@ -10,12 +11,15 @@
 
 #define SEALEVELPRESSURE_HPA (1013.25)
 
+// sensor Objects
 Adafruit_SCD30 scd30;
 Adafruit_SGP30 sgp;
 Adafruit_BME680 bme(&Wire);
 
+// timezone Object
 Timezone myTZ;
 
+// network ssid and pass
 char ssid[]     = "HOWLING-ABYSS";
 char password[] = "bigswag!";
 
@@ -129,7 +133,6 @@ void loop() {
     } if (! bme.performReading()) {
 		return;
 	  }
-
     // scd print block
     Serial.println("[SCD BLOCK]");
     Serial.print(scd30.temperature); Serial.println("[degC]");
@@ -142,14 +145,11 @@ void loop() {
   if (! sgp.IAQmeasure()) {
     return;
   } else {
+	// sgp print block  
     Serial.println("[SGP BLOCK]");
-
     Serial.print(sgp.TVOC); Serial.println("[ppbTVOC]");
     Serial.print(sgp.eCO2); Serial.println("[ppmCO2]");
-
   }
   Serial.println();  Serial.println();  
-  
-  
   delay(900);
 }
