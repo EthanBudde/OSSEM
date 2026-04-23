@@ -100,7 +100,7 @@
 		)
 	)
 	(pad "1V8" thru_hole circle
-		(at 10.4 15.4)
+		(at 10.34 15.4)
 		(size 1.8 1.8)
 		(drill 1.1)
 		(layers "*.Cu" "*.Mask")
@@ -108,7 +108,7 @@
 		(uuid "826316c0-755e-4677-8bb2-a77d1c833cc0")
 	)
 	(pad "GND" thru_hole circle
-		(at 13 15.4)
+		(at 12.88 15.4)
 		(size 1.8 1.8)
 		(drill 1.1)
 		(layers "*.Cu" "*.Mask")
@@ -116,7 +116,7 @@
 		(uuid "2bb98330-30f1-44ea-ac27-610377cb3ae7")
 	)
 	(pad "SCL" thru_hole circle
-		(at 15.6 15.4)
+		(at 15.42 15.4)
 		(size 1.8 1.8)
 		(drill 1.1)
 		(layers "*.Cu" "*.Mask")
@@ -124,7 +124,7 @@
 		(uuid "7d07ef40-2407-4278-aa37-d01e6bee6d20")
 	)
 	(pad "SDA" thru_hole circle
-		(at 18.2 15.4)
+		(at 17.96 15.4)
 		(size 1.8 1.8)
 		(drill 1.1)
 		(layers "*.Cu" "*.Mask")

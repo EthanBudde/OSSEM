@@ -1810,7 +1810,7 @@
 				(pin input line
 					(at -22.86 -11.43 0)
 					(length 2.54)
-					(name "Vin-"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1846,7 +1846,7 @@
 				(pin output line
 					(at 2.54 -11.43 180)
 					(length 2.54)
-					(name "Vout-"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3825,16 +3825,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "VDD (+ 3.3 V)"
-		(exclude_from_sim no)
-		(at 205.486 28.956 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "cfc4c5d8-f391-4a1d-810c-33e76f3d0100")
-	)
 	(text_box "These LEDs are Sensor Indicators controlled by the microcontroller with various uses."
 		(exclude_from_sim no)
 		(at 265.43 91.44 0)
@@ -4234,6 +4224,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b7019a50-c869-4cbc-b66b-b9bf8929626a")
+	)
+	(junction
+		(at 205.74 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c074543f-8874-458c-8ab3-98c8cab76fbc")
 	)
 	(junction
 		(at 135.89 113.03)
@@ -5122,6 +5118,16 @@
 			(type default)
 		)
 		(uuid "6d8e5e56-8abf-461d-95b0-8650ad2ebfef")
+	)
+	(wire
+		(pts
+			(xy 205.74 27.94) (xy 205.74 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fc55b3b-1027-4012-8322-72601e5396cf")
 	)
 	(wire
 		(pts
@@ -8088,6 +8094,71 @@
 			(project "integrated_system"
 				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 205.74 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44438d32-802b-4991-8710-cf4f4edef5d9")
+		(property "Reference" "#PWR010"
+			(at 205.74 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD (+ 3.3 V)"
+			(at 210.566 22.606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 205.74 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c91b192f-e6b5-41a8-bc46-8e4179825cce")
+		)
+		(instances
+			(project "ECU"
+				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
