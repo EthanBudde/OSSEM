@@ -8450,211 +8450,6 @@
 			)
 		)
 	)
-	(footprint "Library:Mini360"
-		(layer "F.Cu")
-		(uuid "b0cdfcd7-4ab6-4b42-acbf-f45ed4a083f4")
-		(at 176.8125 67.6125)
-		(property "Reference" "U4"
-			(at 8.5 -5 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(uuid "6eac1e78-20e0-423e-8009-395f99fe1694")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-		)
-		(property "Value" "Mini360 DC to DC Buck Converter 12V to 3.3V"
-			(at 8.5 -3.5 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "be5df3e5-aedd-4781-9f6d-2972dad703a3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9f9c2acc-1216-4c39-9c1a-076f8b4403c6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f3cef952-98f8-4979-9893-401518d06447")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/aec17e6a-095f-4bfc-b309-7bebb113b689")
-		(sheetname "/")
-		(sheetfile "ECU.kicad_sch")
-		(attr through_hole)
-		(fp_rect
-			(start 0 0)
-			(end 17.6 12)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.SilkS")
-			(uuid "cc54b1cd-fa7a-462f-bfa0-bfa008ab6c61")
-		)
-		(fp_text user "OUT-"
-			(at 10.5 11.5 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(uuid "01689015-4d25-42c9-8305-4006685c0609")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.1)
-				)
-				(justify left bottom)
-			)
-		)
-		(fp_text user "IN-"
-			(at 3 11.5 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(uuid "336a551f-dc9e-4445-8dd6-15c0968093e3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.1)
-				)
-				(justify left bottom)
-			)
-		)
-		(fp_text user "OUT 3V3"
-			(at 4.5 8 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(uuid "6972eb3d-def5-48cb-b1dc-0aca46005137")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.1)
-				)
-				(justify left bottom)
-			)
-		)
-		(fp_text user "IN+"
-			(at 3 2 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(uuid "7a231345-9e97-46a5-bcf7-c594d3d8de64")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.1)
-				)
-				(justify left bottom)
-			)
-		)
-		(fp_text user "OUT+"
-			(at 10.5 2 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(uuid "ae9ea70f-ede7-473a-93e8-ecb9af8b6c60")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.1)
-				)
-				(justify left bottom)
-			)
-		)
-		(fp_text user "IN 4V5 - 30V"
-			(at 3 5 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(uuid "c865e256-1b0e-4a50-85cd-f6067c35d390")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.1)
-				)
-				(justify left bottom)
-			)
-		)
-		(fp_text user "${REFERENCE}"
-			(at 8.5 -2 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "f5ed55b5-e1a0-4c47-929c-342d19a75b17")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at 1.5 1.5)
-			(size 2.54 2.54)
-			(drill 1.5)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 30 "FP_12V")
-			(pinfunction "Vin+")
-			(pintype "input")
-			(uuid "ea80d7b7-cd21-40de-bbc7-26c7eb4f31a6")
-		)
-		(pad "2" thru_hole circle
-			(at 1.5 10.5)
-			(size 2.54 2.54)
-			(drill 1.5)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 20 "GND")
-			(pinfunction "Vin-")
-			(pintype "input")
-			(uuid "cb62a752-8d46-403a-8c29-21202c7b02a2")
-		)
-		(pad "3" thru_hole circle
-			(at 16 1.5)
-			(size 2.54 2.54)
-			(drill 1.5)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 16 "Net-(A1-3V3)")
-			(pinfunction "Vout+")
-			(pintype "output")
-			(uuid "bf89d545-b178-4539-b7c9-f3fb73fcc4cf")
-		)
-		(pad "4" thru_hole circle
-			(at 16 10.5)
-			(size 2.54 2.54)
-			(drill 1.5)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 20 "GND")
-			(pinfunction "Vout-")
-			(pintype "output")
-			(uuid "8af3359a-5f9f-45b2-8e86-ef4a2b6831d8")
-		)
-		(embedded_fonts no)
-	)
 	(footprint "Module:Adafruit_Feather"
 		(layer "F.Cu")
 		(uuid "bca37ad0-d146-4c9c-8890-32b37e64ff69")
@@ -9731,6 +9526,211 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "Library:Mini360"
+		(layer "F.Cu")
+		(uuid "cca05dfe-d0f5-497d-8ad2-dd7b3ef60f6b")
+		(at 175.75 67.5)
+		(property "Reference" "U4"
+			(at 8.5 -5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "79705ce8-59a8-480e-8fc7-44ca7bde4681")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "Mini360 DC to DC Buck Converter 12V to 3.3V"
+			(at 8.5 -3.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "5c5ea426-d7f1-4b6a-a2b1-d96b647a26b3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e4e3058-281a-4027-803d-4a2227197754")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d1cad32e-8a6d-41ec-ad12-f175c7fd46b9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/aec17e6a-095f-4bfc-b309-7bebb113b689")
+		(sheetname "/")
+		(sheetfile "ECU.kicad_sch")
+		(attr through_hole)
+		(fp_rect
+			(start 0 0)
+			(end 17.6 12)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "f8160ebb-63fb-4a84-95e5-e8c659860922")
+		)
+		(fp_text user "IN 4V5 - 30V"
+			(at 3 5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "280a3397-92ae-4f46-a319-567543c30796")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(fp_text user "OUT 3V3"
+			(at 4.5 8 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "29a942a8-9f94-4f44-8521-f9ee9d54744b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(fp_text user "IN+"
+			(at 12 2 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "5aa22ad7-e0a5-4f52-8967-b877e54baabc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(fp_text user "OUT-"
+			(at 3 11 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "5d91d63b-faec-4d67-a1d3-fc1ed357d4f6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(fp_text user "OUT+"
+			(at 3 2 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "78159859-db74-4adf-855b-e72182fd4393")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(fp_text user "IN-"
+			(at 12 11 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "bf4c5b9c-cfc5-4e44-ba3d-8ca3e67622c9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(fp_text user "${REFERENCE}"
+			(at 8.5 -2 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "1409d676-b277-4265-924e-e2ef5d9640ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 16 1.5)
+			(size 2.54 2.54)
+			(drill 1.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 30 "FP_12V")
+			(pinfunction "Vin+")
+			(pintype "input")
+			(uuid "b9546b7a-0427-4eca-9295-6238c1fbd6b4")
+		)
+		(pad "2" thru_hole circle
+			(at 16 10.5)
+			(size 2.54 2.54)
+			(drill 1.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 20 "GND")
+			(pinfunction "Vin-")
+			(pintype "input")
+			(uuid "7652b32a-e420-4666-b6b6-bae1b9e5b42a")
+		)
+		(pad "3" thru_hole circle
+			(at 1.5 1.5)
+			(size 2.54 2.54)
+			(drill 1.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 16 "Net-(A1-3V3)")
+			(pinfunction "Vout+")
+			(pintype "output")
+			(uuid "df3ef84f-5050-4554-9843-da0f420b412a")
+		)
+		(pad "4" thru_hole circle
+			(at 1.5 10.5)
+			(size 2.54 2.54)
+			(drill 1.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 20 "GND")
+			(pinfunction "Vout-")
+			(pintype "output")
+			(uuid "e507c718-4129-4cbd-91a7-03387d411c98")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Button_Switch_THT:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W7.62mm_P2.54mm_LowProfile"
 		(layer "F.Cu")
