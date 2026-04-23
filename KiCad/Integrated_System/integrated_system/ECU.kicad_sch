@@ -6719,7 +6719,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
+		(property "Value" "+12V AC to DC wall adapter"
 			(at 50.8 21.59 0)
 			(effects
 				(font
