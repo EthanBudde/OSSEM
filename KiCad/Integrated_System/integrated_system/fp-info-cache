@@ -1,4 +1,4 @@
-27118401071863343
+27121954934464816
 2907
 SOIC16_4X10_ONS
 
@@ -60,8 +60,8 @@ PSON80P300X300X100-8N
 
 
 0
-11
-11
+7
+7
 Battery
 BatteryClip_Keystone_54_D16-19mm
 Battery clip for batteries with a diameter between 16-19 mm: https://www.keyelco.com/product.cfm/product_id/826
@@ -98403,8 +98403,8 @@ SGP30
 
 
 0
-9
-6
+5
+5
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
@@ -107505,3 +107505,17 @@ Varistor VF
 0
 2
 2
+mini360git
+Mini360_step-down
+
+
+0
+4
+4
+switch_DM
+switch_dm
+
+
+0
+5
+5
