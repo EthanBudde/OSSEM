@@ -2507,47 +2507,7 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Sensirion AG"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "7.0mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/SCD30/Sensirion/view-part/?ref=eda"
+			(property "PARTREV" "D1"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2567,57 +2527,7 @@
 					(hide yes)
 				)
 			)
-			(property "PARTREV" "D1"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/SCD30/Sensirion/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "SCD30"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=2779194&manufacturer=Sensirion AG&part_name=SCD30&search_term=None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "Carbon Dioxide (CO2), Humidity, Temperature Sensor I2C, Modbus, PWM"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
+			(property "MAXIMUM_PACKAGE_HEIGHT" "7.0mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4817,16 +4727,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 148.59) (xy 189.23 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a6aed2e-474b-4c02-bd32-3f308a86a0b6")
-	)
-	(wire
-		(pts
 			(xy 41.91 160.02) (xy 45.72 160.02)
 		)
 		(stroke
@@ -5337,7 +5237,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 142.24) (xy 193.04 148.59)
+			(xy 189.23 142.24) (xy 189.23 148.59)
 		)
 		(stroke
 			(width 0)
@@ -5774,16 +5674,6 @@
 			(type default)
 		)
 		(uuid "c9746cdc-2391-4903-b32d-362405ce61ad")
-	)
-	(wire
-		(pts
-			(xy 193.04 142.24) (xy 189.23 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "caaf1d48-b640-424b-8dc4-8c965f730bf5")
 	)
 	(wire
 		(pts
@@ -8999,6 +8889,131 @@
 		)
 	)
 	(symbol
+		(lib_id "SCD30:SCD30")
+		(at 60.96 95.25 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e29d6f0-b2fe-41cf-ae95-72cf4a54de95")
+		(property "Reference" "U3"
+			(at 60.96 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SCD30"
+			(at 60.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SCD30:MODULE_SCD30"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "D1"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "7.0mm"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Sensirion"
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "d83d85e4-f0d2-42ae-8790-b245b950a1dd")
+		)
+		(pin "4"
+			(uuid "0cc0e60f-d36c-4bea-bae3-583090da09bf")
+		)
+		(pin "5"
+			(uuid "392bd52c-6900-4fe2-8333-3a442864e791")
+		)
+		(pin "1"
+			(uuid "c6937a3c-4464-47ea-b801-72f4627514b1")
+		)
+		(pin "6"
+			(uuid "aac31948-553a-4b54-b251-4c4d8b129ad5")
+		)
+		(pin "2"
+			(uuid "1834aff5-b059-4ece-bde6-bf5f820e1227")
+		)
+		(pin "3"
+			(uuid "e85f6f81-b6e6-413e-be06-924137b6983e")
+		)
+		(instances
+			(project ""
+				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:BSS138")
 		(at 129.54 88.9 0)
 		(mirror y)
@@ -10429,226 +10444,6 @@
 			(project "integrated_system"
 				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
 					(reference "C?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SCD30:SCD30")
-		(at 60.96 95.25 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7ed24698-c73d-45a5-9cae-5511938425cd")
-		(property "Reference" "U5"
-			(at 60.96 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SCD30"
-			(at 60.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SCD30:MODULE_SCD30"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Sensirion AG"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "7.0mm"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SCD30/Sensirion/view-part/?ref=eda"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "D1"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SCD30/Sensirion/view-part/?ref=snap"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "SCD30"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=2779194&manufacturer=Sensirion AG&part_name=SCD30&search_term=None"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Carbon Dioxide (CO2), Humidity, Temperature Sensor I2C, Modbus, PWM"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Sensirion"
-			(at 60.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "abb7edf7-0110-45a2-9f6c-81055c3890b1")
-		)
-		(pin "4"
-			(uuid "52a6da7d-d092-4e7f-8b2a-7a92d6dc5118")
-		)
-		(pin "7"
-			(uuid "04079544-9775-4720-ac16-c91ff8e30800")
-		)
-		(pin "3"
-			(uuid "dbbd9e3b-df51-4890-88eb-1a7045e0aba7")
-		)
-		(pin "5"
-			(uuid "dab61344-c7ec-48f8-beea-f7d656864e5b")
-		)
-		(pin "1"
-			(uuid "caf162d3-9031-43ff-8cbf-19bb7d8de90d")
-		)
-		(pin "6"
-			(uuid "dddde9d7-b95f-49a4-877b-4246f2cd8ccc")
-		)
-		(instances
-			(project ""
-				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-			(project "integrated_system"
-				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "U?")
 					(unit 1)
 				)
 			)
