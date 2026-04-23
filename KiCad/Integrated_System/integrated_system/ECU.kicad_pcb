@@ -2438,6 +2438,39 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "${KICAD9_3DMODEL_DIR}/esp32grabcad/2821 Adafruit ESP8266 Feather v2.step"
+			(offset
+				(xyz -1.5 6.3 11.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 90)
+			)
+		)
+		(model "${KICAD9_3DMODEL_DIR}/esp32grabcad/Female Header Pitch 2.54mm 1x16 red.stp"
+			(offset
+				(xyz -75 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 90)
+			)
+		)
+		(model "${KICAD9_3DMODEL_DIR}/esp32grabcad/Female Header Pitch 2.54mm 1x12 red.stp"
+			(offset
+				(xyz -34.8 -10 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 90)
+			)
+		)
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering"
 		(layer "F.Cu")
@@ -10946,7 +10979,7 @@
 		(layer "Edge.Cuts")
 		(uuid "13982bb3-e45a-4da6-a1e0-a2fe30576f13")
 	)
-	(gr_text "4/22/2026"
+	(gr_text "4/23/2026"
 		(at 143.75 139 0)
 		(layer "F.SilkS")
 		(uuid "5f6f8825-0e15-4f66-9a55-599dc9defb38")
@@ -10982,7 +11015,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "OSSEM v1.2"
+	(gr_text "OSSEM v1.3"
 		(at 143.75 137.5 0)
 		(layer "F.SilkS")
 		(uuid "f1dd46b2-2bb6-4448-be9a-78a939d08aad")
