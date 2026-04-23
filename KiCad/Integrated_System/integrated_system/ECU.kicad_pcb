@@ -2440,7 +2440,7 @@
 		)
 		(model "${KICAD9_3DMODEL_DIR}/esp32grabcad/2821 Adafruit ESP8266 Feather v2.step"
 			(offset
-				(xyz -1.5 6.3 11.5)
+				(xyz -1.5 6.3 3)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -2450,6 +2450,7 @@
 			)
 		)
 		(model "${KICAD9_3DMODEL_DIR}/esp32grabcad/Female Header Pitch 2.54mm 1x16 red.stp"
+			(hide yes)
 			(offset
 				(xyz -75 0 0)
 			)
@@ -2461,6 +2462,7 @@
 			)
 		)
 		(model "${KICAD9_3DMODEL_DIR}/esp32grabcad/Female Header Pitch 2.54mm 1x12 red.stp"
+			(hide yes)
 			(offset
 				(xyz -34.8 -10 0)
 			)
@@ -7775,7 +7777,7 @@
 	(footprint "Library:Mini360"
 		(layer "F.Cu")
 		(uuid "b2ed2b56-5436-42b4-99d3-7b95516d1128")
-		(at 146.0625 74.3625)
+		(at 147.5625 73.8625)
 		(property "Reference" "U4"
 			(at 9.25 -1 0)
 			(unlocked yes)
@@ -10196,6 +10198,28 @@
 			(uuid "07a6180e-9e33-4a50-89b4-308a434c7be9")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/Libraries/SGP30/5-Pin Header - Male - 2.54mm.step"
+			(offset
+				(xyz 7.8 -15.4 4)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -180 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/Libraries/SGP30/SGP30 PCB.STEP"
+			(offset
+				(xyz 12.9 -8.8 4)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "BME680:PSON80P300X300X100-8N"
 		(layer "B.Cu")
@@ -10554,6 +10578,17 @@
 			(uuid "6d898975-b95c-4699-9b80-91fd96f08c06")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/Libraries/BME680/7-Pin Header - Male - 2.54mm.step"
+			(offset
+				(xyz 5.2 -15.4 4.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -180 -0 -0)
+			)
+		)
 	)
 	(footprint "SCD30:MODULE_SCD30"
 		(layer "B.Cu")
@@ -10958,13 +10993,24 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/Libraries/SCD30/SCD30.step"
 			(offset
-				(xyz 26 -12.5 5)
+				(xyz 26 -12.5 6.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
 				(xyz 90 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/Libraries/SCD30/6-Pin Header - Male - 2.54mm.step"
+			(offset
+				(xyz 2.5 -19.1 4.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -180 -0 -90)
 			)
 		)
 	)
