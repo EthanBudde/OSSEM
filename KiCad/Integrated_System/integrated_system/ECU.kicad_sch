@@ -4161,7 +4161,7 @@
 	)
 	(text_box "This is our microcontroller. We may use different types of ESP32s but here is a basic feather."
 		(exclude_from_sim no)
-		(at 213.36 53.34 0)
+		(at 175.26 78.74 0)
 		(size 16.51 16.51)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4280,6 +4280,12 @@
 		(uuid "406b4748-5604-41d3-8e1e-b738cbaf8054")
 	)
 	(junction
+		(at 148.59 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "44ff4ede-9bfc-4315-b13e-06097a948a57")
+	)
+	(junction
 		(at 135.89 176.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4338,12 +4344,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "69735169-f12a-4fe5-a6da-70e6172eb91d")
-	)
-	(junction
-		(at 148.59 182.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7d4eeb62-1c8a-4f34-bf91-fe6db26f4857")
 	)
 	(junction
 		(at 135.89 115.57)
@@ -4915,16 +4915,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 184.15) (xy 163.83 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25dc60b3-3a7c-4f72-9b7f-681aa177f858")
-	)
-	(wire
-		(pts
 			(xy 135.89 113.03) (xy 143.51 113.03)
 		)
 		(stroke
@@ -5112,6 +5102,16 @@
 			(type default)
 		)
 		(uuid "4373bb3a-72af-4442-96a2-221c5a932f9a")
+	)
+	(wire
+		(pts
+			(xy 148.59 193.04) (xy 148.59 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45ab3048-fee6-47ae-8887-ace67963fbf1")
 	)
 	(wire
 		(pts
@@ -6225,6 +6225,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 185.42) (xy 148.59 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e020ef75-3943-4851-8229-fc56f94fc2a8")
+	)
+	(wire
+		(pts
 			(xy 100.33 147.32) (xy 100.33 149.86)
 		)
 		(stroke
@@ -6252,16 +6262,6 @@
 			(type default)
 		)
 		(uuid "e2f8fe54-c35b-4a48-81f5-e1fad37978e6")
-	)
-	(wire
-		(pts
-			(xy 148.59 182.88) (xy 163.83 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e35909c2-3c67-4a1e-bf04-b9c808a6cb77")
 	)
 	(wire
 		(pts
@@ -6342,16 +6342,6 @@
 			(type default)
 		)
 		(uuid "f0f76382-48b4-4f44-9f40-c04ce872ec47")
-	)
-	(wire
-		(pts
-			(xy 163.83 189.23) (xy 163.83 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f245f223-206b-439a-98d3-150e94d91cbb")
 	)
 	(wire
 		(pts
@@ -7308,7 +7298,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small_US")
-		(at 163.83 186.69 0)
+		(at 148.59 190.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7317,7 +7307,7 @@
 		(fields_autoplaced yes)
 		(uuid "1521346a-9c6b-433b-953f-d41f6c76382d")
 		(property "Reference" "C7"
-			(at 166.37 185.5469 0)
+			(at 151.13 189.3569 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7326,7 +7316,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 166.37 188.0869 0)
+			(at 151.13 191.8969 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7335,7 +7325,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 163.83 186.69 0)
+			(at 148.59 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7344,7 +7334,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 186.69 0)
+			(at 148.59 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7353,7 +7343,7 @@
 			)
 		)
 		(property "Description" "capacitor, small US symbol"
-			(at 163.83 186.69 0)
+			(at 148.59 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10435,7 +10425,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 163.83 191.77 0)
+		(at 148.59 194.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10443,7 +10433,7 @@
 		(dnp no)
 		(uuid "6b91c06b-356a-469f-b6df-c4c85dbef672")
 		(property "Reference" "#PWR014"
-			(at 163.83 198.12 0)
+			(at 148.59 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10452,7 +10442,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.894 193.294 0)
+			(at 152.654 195.834 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10460,7 +10450,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 191.77 0)
+			(at 148.59 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10469,7 +10459,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 191.77 0)
+			(at 148.59 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10478,7 +10468,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 191.77 0)
+			(at 148.59 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10663,7 +10653,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.78 190.5 0)
+			(at 141.224 193.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
