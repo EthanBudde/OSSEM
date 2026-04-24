@@ -4059,6 +4059,26 @@
 		)
 		(uuid "502993e0-17b0-4fcd-8e09-66464179422b")
 	)
+	(text_box "Might do a switch instead of a zero ohm resistor to bifuracte the power to the ESP32"
+		(exclude_from_sim no)
+		(at 180.34 34.29 0)
+		(size 21.59 12.7)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "59447f66-126e-4f6c-956a-04e67443d644")
+	)
 	(text_box "The exact model is ASDS-ZH059 from Amazon"
 		(exclude_from_sim no)
 		(at 130.81 13.97 0)
@@ -8113,7 +8133,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2813c056-bb91-4b8c-bf77-78128d4c6312")
 		(property "Reference" "TP5"
 			(at 214.63 163.3219 0)
@@ -8125,7 +8144,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 214.63 165.8619 0)
+			(at 202.184 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
