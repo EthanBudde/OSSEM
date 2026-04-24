@@ -1,0 +1,39 @@
+# example dataset (required comment)
+# time the data was collected, format dd/mm/yy hh/mm (required comment)
+# time data was graphed, format dd/mm/yy hh/mm (required comment)
+
+# all other comments (lines with #) will be ignored
+# data is formatted in blocks with timestamps as seen below
+# one complete entry is all data below a timestamp, before the next
+
+12:34:56.789
+[BME BLOCK]
+12.34[degC]
+56.78[hPaPres]
+90.12[%humid]
+34.56[KOhmsGasR]
+
+[SCD block]
+78.90[degC]
+12.34[%humid]
+5.678[ppmCO2]
+{SCDEND}
+
+[SGP BLOCK]
+9012[ppbTVOC]
+3456[ppmCO2]
+
+# values are always in the same order, and sensors always print in the same order
+# often, the SCD will not return values every iteration (the BME occasionally does this as well)
+# enteries without the SCD data are valid entries, seen below
+
+12:34:56.789
+[BME BLOCK]
+12.34[degC]
+56.78[hPaPres]
+90.12[%humid]
+34.56[KOhmsGasR]
+
+[SGP BLOCK]
+9012[ppbTVOC]
+3456[ppmCO2]
