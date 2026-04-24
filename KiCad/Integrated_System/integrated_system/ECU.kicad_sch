@@ -4122,7 +4122,7 @@
 	)
 	(text_box "All Sensors Communicate via I2C"
 		(exclude_from_sim no)
-		(at 86.36 163.83 0)
+		(at 85.09 165.1 0)
 		(size 25.4 6.35)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4475,6 +4475,10 @@
 		(uuid "27c61bc3-81eb-4d9f-8cfd-c9725cf2a80d")
 	)
 	(no_connect
+		(at 195.58 111.76)
+		(uuid "4ad5d072-9eed-4f3d-8f5d-988c59bbcb34")
+	)
+	(no_connect
 		(at 195.58 96.52)
 		(uuid "50112f12-5370-4f6b-a9ad-31abd8b7ff42")
 	)
@@ -4583,16 +4587,6 @@
 			(type default)
 		)
 		(uuid "07450710-c41d-434c-b586-f2ff964e436d")
-	)
-	(wire
-		(pts
-			(xy 110.49 149.86) (xy 113.03 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0746fb8c-24a8-4e49-a5e5-228b6f7fb6ec")
 	)
 	(wire
 		(pts
@@ -5196,16 +5190,6 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 149.86) (xy 195.58 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ba1b392-389f-48ce-83df-8c9d0b3b38f5")
-	)
-	(wire
-		(pts
 			(xy 148.59 182.88) (xy 148.59 185.42)
 		)
 		(stroke
@@ -5436,6 +5420,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 116.84) (xy 195.58 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "702c9794-2727-455e-a937-1835862b21bd")
+	)
+	(wire
+		(pts
 			(xy 161.29 120.65) (xy 161.29 106.68)
 		)
 		(stroke
@@ -5553,6 +5547,16 @@
 			(type default)
 		)
 		(uuid "87f4001f-7fbe-43b2-b3a8-9521efc7333d")
+	)
+	(wire
+		(pts
+			(xy 107.95 149.86) (xy 110.49 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "897afc2d-f07d-4a95-a86d-c7637e95a26b")
 	)
 	(wire
 		(pts
@@ -8969,6 +8973,7 @@
 	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 179.07 119.38 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8976,7 +8981,7 @@
 		(dnp no)
 		(uuid "472b91e8-dfee-4b1a-8c54-5cc8cc8a645c")
 		(property "Reference" "SW3"
-			(at 179.324 114.808 0)
+			(at 178.816 114.808 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8984,7 +8989,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 179.324 122.682 0)
+			(at 178.816 122.682 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9985,7 +9990,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 106.68 149.86 180)
+		(at 114.3 149.86 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9993,7 +9998,7 @@
 		(dnp no)
 		(uuid "665ea8f5-3011-4c55-80f7-4338ac4e9840")
 		(property "Reference" "D3"
-			(at 111.506 153.67 0)
+			(at 119.126 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10001,7 +10006,7 @@
 			)
 		)
 		(property "Value" "GREEN_LED"
-			(at 104.394 153.162 0)
+			(at 112.014 153.162 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10009,7 +10014,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 106.68 149.86 0)
+			(at 114.3 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10018,7 +10023,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 106.68 149.86 0)
+			(at 114.3 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10027,7 +10032,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 106.68 149.86 0)
+			(at 114.3 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10036,7 +10041,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 106.68 149.86 0)
+			(at 114.3 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10054,12 +10059,6 @@
 			(project "ECU"
 				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-			(project "integrated_system"
-				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "D?")
 					(unit 1)
 				)
 			)
@@ -10582,7 +10581,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 115.57 149.86 90)
+		(at 105.41 149.86 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10591,7 +10590,7 @@
 		(fields_autoplaced yes)
 		(uuid "6e6196eb-1f99-456f-9a32-a3eecf219db2")
 		(property "Reference" "R3"
-			(at 115.57 143.51 90)
+			(at 105.41 143.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10599,7 +10598,7 @@
 			)
 		)
 		(property "Value" "5.1k"
-			(at 115.57 146.05 90)
+			(at 105.41 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10607,7 +10606,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 115.57 149.86 0)
+			(at 105.41 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10616,7 +10615,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 149.86 0)
+			(at 105.41 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10625,7 +10624,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 115.57 149.86 0)
+			(at 105.41 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10643,12 +10642,6 @@
 			(project "ECU"
 				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-			(project "integrated_system"
-				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "R?")
 					(unit 1)
 				)
 			)
@@ -11613,7 +11606,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "95c241a7-eb11-4653-aa7f-dff27e7ec777")
 		(property "Reference" "J3"
 			(at 124.46 102.87 0)
@@ -12292,7 +12284,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "abac39fb-b7c4-4e14-bff4-64815feec3cb")
 		(property "Reference" "SW2"
 			(at 182.88 143.51 0)
