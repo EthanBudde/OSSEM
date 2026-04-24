@@ -11223,19 +11223,6 @@
 		(layer "Edge.Cuts")
 		(uuid "13982bb3-e45a-4da6-a1e0-a2fe30576f13")
 	)
-	(gr_text "Add lots of vias"
-		(at 198 88.25 0)
-		(layer "F.SilkS")
-		(uuid "523379f1-5f0c-4926-903c-2439d053094f")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
 	(gr_text "4/23/2026"
 		(at 143.75 139 0)
 		(layer "F.SilkS")
@@ -11282,6 +11269,25 @@
 				(thickness 0.1)
 			)
 			(justify left bottom)
+		)
+	)
+	(gr_text_box "Notes\n\n- Add more vias"
+		(start 189.75 79.5)
+		(end 223 117.25)
+		(margins 1.0025 1.0025 1.0025 1.0025)
+		(layer "Cmts.User")
+		(uuid "f1bc2450-4e9f-4fae-b8e1-13cf131216f8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left top)
+		)
+		(border yes)
+		(stroke
+			(width 0.1)
+			(type solid)
 		)
 	)
 	(dimension
