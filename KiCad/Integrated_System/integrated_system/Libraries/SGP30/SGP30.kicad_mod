@@ -4,7 +4,7 @@
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 3 -1.5 0)
+		(at 2 -2 0)
 		(layer "F.SilkS")
 		(uuid "45875ef1-e2b7-485a-857f-c52a345c9c66")
 		(effects
@@ -73,8 +73,21 @@
 		(layer "F.SilkS")
 		(uuid "128777d6-8a7a-48d7-b096-247db75c0d2d")
 	)
+	(fp_text user "VDD"
+		(at 6.5 17.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "34c8ba9a-82ad-45cb-ab95-e528c51a4779")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(fp_text user "MOX Gas Sensor"
-		(at 6 -1 0)
+		(at 14.5 -1 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "44dac2df-f228-4240-b0f9-4e42abb86757")
@@ -86,14 +99,53 @@
 			(justify left bottom)
 		)
 	)
+	(fp_text user "SDA"
+		(at 17 17.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "63c60bd8-0357-44e8-9be3-ff403811f18d")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(fp_text user "SGP30"
-		(at 9.5 -3 0)
+		(at 18 -3 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "a0d4d007-ee89-4852-ba50-2efbd5017461")
 		(effects
 			(font
 				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "GND"
+		(at 11.5 17.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a9f2048c-685c-4b73-8081-176dfce6e35e")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "SCL"
+		(at 14.5 17.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d1306a79-85af-4c7b-9c0d-68ad630f9061")
+		(effects
+			(font
+				(size 0.75 0.75)
 				(thickness 0.1)
 			)
 			(justify left bottom)

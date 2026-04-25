@@ -4,7 +4,7 @@
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 6.5 5.5 0)
+		(at 5 3.5 0)
 		(layer "F.SilkS")
 		(uuid "83be1dd3-870f-44c0-a422-7aeca5597d73")
 		(effects
@@ -202,6 +202,58 @@
 		(fill no)
 		(layer "F.Fab")
 		(uuid "b4425dd7-db9a-47a4-932d-7e372ba93263")
+	)
+	(fp_text user "GND"
+		(at 0.5 10.5 270)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "32ee4829-9192-4d02-9127-67a9a4c6d6a5")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.08)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "SCL"
+		(at 0.5 13.5 270)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d0a8ac18-8beb-4b5d-8ce5-0cc8bd15b06e")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.08)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "VDD"
+		(at 0.5 5.5 270)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "de730a78-89bf-4e9a-95b2-1e99b4753b21")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.08)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "SDA"
+		(at 0.5 16 270)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "decc8f27-c201-4293-b6ed-123af696b506")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.08)
+			)
+			(justify left bottom)
+		)
 	)
 	(pad "1" thru_hole circle
 		(at 2.5 6.5 90)
