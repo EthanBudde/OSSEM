@@ -2567,7 +2567,7 @@
 		(property "Reference" "A1"
 			(at 23.3025 -2.84 90)
 			(layer "F.SilkS")
-			(uuid "9f680a83-e952-4e6f-9759-1f774d98859d")
+			(uuid "65d4630f-2fdb-4450-b997-be120265228e")
 			(effects
 				(font
 					(size 1 1)
@@ -2578,7 +2578,7 @@
 		(property "Value" "Adafruit_Feather_HUZZAH32_ESP32"
 			(at 10.16 45.72 0)
 			(layer "F.Fab")
-			(uuid "cf3fad72-5f76-4226-bf68-7a52d96f8988")
+			(uuid "842bb309-fc00-4c63-b134-c3bb11b7347b")
 			(effects
 				(font
 					(size 1 1)
@@ -2591,7 +2591,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "51f056ae-ffe3-4cd2-a592-7b2b4ffc046e")
+			(uuid "27f1ff44-7607-48e2-939a-7c34b46342bf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2604,7 +2604,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6c4e7377-216c-4e41-a93c-65cebc5554a7")
+			(uuid "ca62d88f-8e53-443f-85f2-0355f6fba6c5")
 			(effects
 				(font
 					(size 1.27 1.27)
