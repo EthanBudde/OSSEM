@@ -3,7 +3,7 @@
 #include <Adafruit_SCD30.h>
 #include <Adafruit_SGP30.h>
 #include <Adafruit_BME680.h>
-#include "Arduino.h"
+#include <Arduino.h>
 #include <SPI.h>
 #include <Wire.h>
 
@@ -68,7 +68,7 @@ void blinkPin(int pin, int pattern){
   }
 
   switch(pattern){
-    case 0:
+    case 0:                   // blink confirm - 2 long blinks, for setup
       digitalWrite(pin, HIGH);
       delay(375);
       digitalWrite(pin, LOW);
@@ -78,10 +78,10 @@ void blinkPin(int pin, int pattern){
       digitalWrite(pin, LOW);
       delay(375);
       break;
-    case 1:
+    case 1:                   // enable LED
       digitalWrite(pin, HIGH);
       break;
-    case 2:
+    case 2:                   // disable LED
       digitalWrite(pin, LOW);
       delay(15);
       break;
@@ -91,7 +91,9 @@ void blinkPin(int pin, int pattern){
 }
 
 void setup() {
+  // serial 
   Serial.begin(115200);
+  
   // pinmode
   pinMode(BMEPIN, OUTPUT);
   pinMode(SCDPIN, OUTPUT);
@@ -167,28 +169,33 @@ void setup() {
 
 }
 
-
-
-
-
 void loop() {  
+  bmeRead();
+  scdRead();
+  sgpRead();
+
+  Serial.println();  Serial.println();  
+  delay(100);
+}
+
+void bmeRead(){
   // bme check valid
   if (! bme.performReading()) {
 		return;
 	} else {
-
-  bmeCurrent.temp = bme.temperature;
-  bmeCurrent.pressure = bme.pressure / 100.0;
-  bmeCurrent.humid = bme.humidity;
-  bmeCurrent.gasr = bme.gas_resistance / 1000.0;
-  }
-
-  if((bmeCurrent.temp == bmeLast.temp) || (bmeCurrent.pressure == bmeLast.temp) || (bmeCurrent.temp == bmeLast.temp) || (bmeCurrent.temp == bmeLast.temp)){
-    return;
-  }else{ 
     // bme oplight on
     blinkPin(BMEPIN, 1);
 
+    bmeCurrent.temp = bme.temperature;
+    bmeCurrent.pres = bme.pressure / 100.0;
+    bmeCurrent.humid = bme.humidity;
+    bmeCurrent.gasr = bme.gas_resistance / 1000.0;
+  }
+
+  if((bmeCurrent.temp == bmeLast.temp) || (bmeCurrent.pres == bmeLast.pres) || (bmeCurrent.humid == bmeLast.humid) || (bmeCurrent.gasr == bmeLast.gasr)){
+    return; 
+  }else{ 
+    
     // bme print block
     Serial.println("[BME BLOCK]");
     Serial.print(bme.temperature); Serial.println("[degC]");
@@ -197,29 +204,43 @@ void loop() {
     Serial.print(bme.gas_resistance / 1000.0); Serial.println("[KOhmsGasR]");
     Serial.println();
 
-    // bme oplight off
-    blinkPin(BMEPIN, 2);
+    bmeLast = bmeCurrent;
   }
+  // bme oplight off
+    blinkPin(BMEPIN, 2);
+}
 
+void scdRead(){
   //ping scd for valid data reading
   if (scd30.dataReady()) {
     if (!scd30.read()){ 
       return; 
-    }
-    // scd oplight on
-    blinkPin(SCDPIN, 1);
+    } else {
+      // scd oplight on
+      blinkPin(SCDPIN, 1);
 
-    // scd print block
-    Serial.println("[SCD BLOCK]");
-    Serial.print(scd30.temperature); Serial.println("[degC]");
-    Serial.print(scd30.relative_humidity); Serial.println("[%humid]");
-	  Serial.print(scd30.CO2, 3); Serial.println("[ppmCO2]");
-    Serial.println();
-  
+      scdCurrent.temp = scd30.temperature;
+      scdCurrent.humid = scd30.relative_humidity;
+      scdCurrent.co2 = scd30.CO2;
+
+      if((scdCurrent.temp == scdLast.temp)||(scdCurrent.humid == scdLast.humid)||(scdCurrent.co2 == scdLast.co2)){
+        return;
+      } else {
+        // scd print block
+        Serial.println("[SCD BLOCK]");
+        Serial.print(scd30.temperature); Serial.println("[degC]");
+        Serial.print(scd30.relative_humidity); Serial.println("[%humid]");
+	      Serial.print(scd30.CO2, 3); Serial.println("[ppmCO2]");
+        Serial.println();
+        scdLast = scdCurrent;
+      }
     //sgp oplight off
     blinkPin(SCDPIN, 2);
-  }
+    }
+  }  
+}
 
+void sgpRead(){
   // sgp data valid
   if (! sgp.IAQmeasure()) {
     return;
@@ -227,14 +248,19 @@ void loop() {
     // sgp oplight on
     blinkPin(SGPPIN, 1);
 
-	  // sgp print block  
+    sgpCurrent.tvoc = sgp.TVOC;
+    sgpCurrent.co2 = sgp.eCO2;
+  }
+
+  if((sgpCurrent.tvoc == sgpLast.tvoc)||(sgpCurrent.tvoc == sgpLast.tvoc)){
+    return;
+  } else {
+    // sgp print block  
     Serial.println("[SGP BLOCK]");
     Serial.print(sgp.TVOC); Serial.println("[ppbTVOC]");
     Serial.print(sgp.eCO2); Serial.println("[ppmCO2]");
-  
-    //sgp oplight off
-    blinkPin(SGPPIN, 2);
+    sgpLast = sgpCurrent;
   }
-  Serial.println();  Serial.println();  
-  delay(100);
+  //sgp oplight off
+  blinkPin(SGPPIN, 2);
 }
