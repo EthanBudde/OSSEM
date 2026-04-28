@@ -17,10 +17,32 @@ Adafruit_SCD30 scd30;
 Adafruit_SGP30 sgp;
 Adafruit_BME680 bme(&Wire);
 
-//blinkpin command
-  //checks pin valid output
-  //blinks selected pattern at selected pin
+struct bmeValues{
+  float temp;
+  float pres;
+  float humid;
+  float gasr;
+};
 
+bmeValues bmeCurrent, bmeLast;
+
+struct scdValues{
+  float temp;
+  float humid;
+  float co2;  
+};
+
+scdValues scdCurrent, scdLast;
+
+struct sgpValues{
+  int tvoc;
+  int co2;
+};
+
+sgpValues sgpCurrent, sgpLast;
+
+//getPinMode
+//  checks pin is valid port, returns pin type
 uint32_t getPinMode(uint32_t pin) {
   uint32_t bit = digitalPinToBitMask(pin);
   uint32_t port = digitalPinToPort(pin);
@@ -36,6 +58,9 @@ uint32_t getPinMode(uint32_t pin) {
   }
 }
 
+//blinkpin
+  //checks pin valid output
+  //blinks selected pattern at selected pin
 void blinkPin(int pin, int pattern){
   if(getPinMode(pin) != OUTPUT) {
     // some error notation
@@ -142,26 +167,40 @@ void setup() {
 
 }
 
+
+
+
+
 void loop() {  
   // bme check valid
   if (! bme.performReading()) {
 		return;
-	}
+	} else {
 
-  // bme oplight on
-  blinkPin(BMEPIN, 1);
+  bmeCurrent.temp = bme.temperature;
+  bmeCurrent.pressure = bme.pressure / 100.0;
+  bmeCurrent.humid = bme.humidity;
+  bmeCurrent.gasr = bme.gas_resistance / 1000.0;
+  }
 
-  // bme print block
-  Serial.println("[BME BLOCK]");
-  Serial.print(bme.temperature); Serial.println("[degC]");
-  Serial.print(bme.pressure / 100.0); Serial.println("[hPaPres]");
-  Serial.print(bme.humidity); Serial.println("[%humid]");
-  Serial.print(bme.gas_resistance / 1000.0); Serial.println("[KOhmsGasR]");
-  Serial.println();
+  if((bmeCurrent.temp == bmeLast.temp) || (bmeCurrent.pressure == bmeLast.temp) || (bmeCurrent.temp == bmeLast.temp) || (bmeCurrent.temp == bmeLast.temp)){
+    return;
+  }else{ 
+    // bme oplight on
+    blinkPin(BMEPIN, 1);
 
-  // bme oplight off
-  blinkPin(BMEPIN, 2);
-  
+    // bme print block
+    Serial.println("[BME BLOCK]");
+    Serial.print(bme.temperature); Serial.println("[degC]");
+    Serial.print(bme.pressure / 100.0); Serial.println("[hPaPres]");
+    Serial.print(bme.humidity); Serial.println("[%humid]");
+    Serial.print(bme.gas_resistance / 1000.0); Serial.println("[KOhmsGasR]");
+    Serial.println();
+
+    // bme oplight off
+    blinkPin(BMEPIN, 2);
+  }
+
   //ping scd for valid data reading
   if (scd30.dataReady()) {
     if (!scd30.read()){ 
@@ -197,5 +236,5 @@ void loop() {
     blinkPin(SGPPIN, 2);
   }
   Serial.println();  Serial.println();  
-  delay(900);
+  delay(100);
 }
