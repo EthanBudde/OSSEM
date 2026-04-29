@@ -4,7 +4,7 @@ from matplotlib.ticker import FuncFormatter
 metadata = []
 
 # function: compute_ylim
-# inputs:   series
+# inputs  : series
 #           trim ratio          default 0.05
 #           margin ratio        default 0.1
 #           extra pad ratio     default 0.05, 
@@ -40,8 +40,10 @@ def compute_auto_ylim(series, trim_ratio=0.05, margin_ratio=0.1, extra_pad_ratio
 
     return (low, high)
 
-# compute_pressure_ylim
-# 
+# function: compute_pressure_ylim
+# inputs  : series
+# returns : min_v - pad
+#           min_v + pad
 def compute_pressure_ylim(series):
     clean = [v for v in series if v is not None]
     if not clean:
@@ -55,6 +57,16 @@ def compute_pressure_ylim(series):
 
 
 # remake or remove
+# function: finalize_entry
+# inputs  : current
+#           last_bme !!!!!!!!!!!!!!!!!!
+#           last_sgp
+#           last_scd
+# returns : current
+#           last_bme !!!!!!!!!!!!!!!!!!
+#           last_sgp
+#           last_scd
+
 def finalize_entry(current, last_sgp, last_scd):
     if current is None:
         return None, last_sgp, last_scd
@@ -75,6 +87,10 @@ def finalize_entry(current, last_sgp, last_scd):
     return current, last_sgp, last_scd
 
 # organize and comment the shit out of
+
+# function: parse_data_file
+# inputs  : file_path
+# outputs : data_container 
 def parse_data_file(file_path):
     data_container = [] # generic data container
 
@@ -187,7 +203,12 @@ def parse_data_file(file_path):
 def format_time(x, pos):
     return f"{int(x)}"
 
-# 
+# function: plot_data
+# inputs  : data
+#           BMEcx
+#           SCDcx
+#           SGPcx
+#           override
 def plot_data(data, BMEcx, SCDcx, SGPcx, override):
     # strip empty ?
     data = [d for d in data if d is not None]
