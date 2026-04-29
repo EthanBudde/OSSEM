@@ -179,7 +179,7 @@ def parse_data_file(file_path):
                         continue
 
                     # enter scd parsing block
-                    if "SCD block" in line:
+                    if "SCD BLOCK" in line:
                         current_block = "SCD"
                         scd_idx = 0
                         continue
