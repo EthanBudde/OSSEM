@@ -50,8 +50,6 @@ void setup() {
     waitForSync();
     myTZ.setLocation(F("America/Los_Angeles"));
   }
-  // timezone sync and location
-  
   
   // bme wakeup
   if (!bme.begin()) {

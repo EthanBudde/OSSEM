@@ -83,7 +83,7 @@ void blinkPin(int pin, int pattern){
       break;
     case 2:                   // disable LED
       digitalWrite(pin, LOW);
-      delay(15);
+      delay(20);
       break;
     default:
       return;
@@ -192,7 +192,9 @@ void bmeRead(){
     bmeCurrent.gasr = bme.gas_resistance / 1000.0;
   }
 
-  if((bmeCurrent.temp == bmeLast.temp) || (bmeCurrent.pres == bmeLast.pres) || (bmeCurrent.humid == bmeLast.humid) || (bmeCurrent.gasr == bmeLast.gasr)){
+  if((bmeCurrent.temp == bmeLast.temp) && (bmeCurrent.pres == bmeLast.pres) && (bmeCurrent.humid == bmeLast.humid) && (bmeCurrent.gasr == bmeLast.gasr)){
+    // bme oplight off
+    blinkPin(BMEPIN, 2);
     return; 
   }else{ 
     
@@ -223,7 +225,9 @@ void scdRead(){
       scdCurrent.humid = scd30.relative_humidity;
       scdCurrent.co2 = scd30.CO2;
 
-      if((scdCurrent.temp == scdLast.temp)||(scdCurrent.humid == scdLast.humid)||(scdCurrent.co2 == scdLast.co2)){
+      if((scdCurrent.temp == scdLast.temp)&&(scdCurrent.humid == scdLast.humid)&&(scdCurrent.co2 == scdLast.co2)){
+        //sgp oplight off
+        blinkPin(SCDPIN, 2);
         return;
       } else {
         // scd print block
@@ -252,7 +256,9 @@ void sgpRead(){
     sgpCurrent.co2 = sgp.eCO2;
   }
 
-  if((sgpCurrent.tvoc == sgpLast.tvoc)||(sgpCurrent.tvoc == sgpLast.tvoc)){
+  if((sgpCurrent.tvoc == sgpLast.tvoc)&&(sgpCurrent.tvoc == sgpLast.tvoc)){
+    //sgp oplight off
+    blinkPin(SGPPIN, 2);
     return;
   } else {
     // sgp print block  
