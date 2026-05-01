@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Integrated ECU System")
-		(date "2026-04-28")
-		(rev "1.6")
+		(date "2026-04-30")
+		(rev "1.7")
 		(company "OSSEM (Open-Source Smart Espresso Machine)")
 		(comment 1 "EE Hardware Engineers: David Mazhnikov, Roman Sulza")
 	)
