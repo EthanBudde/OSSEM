@@ -1940,6 +1940,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:1N5819WS"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N5819WS"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-323"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?323*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N5819WS_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N5819WS_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "LM2596:LM2596"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4078,7 +4228,7 @@
 	)
 	(text_box "BME680 is a Temperature, Humidity, Pressure Gas Sensor"
 		(exclude_from_sim no)
-		(at 13.97 163.83 0)
+		(at 13.97 162.56 0)
 		(size 19.05 17.78)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4176,7 +4326,7 @@
 		)
 		(uuid "502993e0-17b0-4fcd-8e09-66464179422b")
 	)
-	(text_box "Might do a switch instead of a zero ohm resistor to bifuracte the power to the ESP32"
+	(text_box "Zero ohm resistor to bifurcate power to the ESP32"
 		(exclude_from_sim no)
 		(at 180.34 34.29 0)
 		(size 21.59 12.7)
@@ -4275,6 +4425,26 @@
 			(justify left top)
 		)
 		(uuid "79ff5d4b-b1f2-453d-a71a-5f8503b736f0")
+	)
+	(text_box "This diode protects the sensors and buck converter from USB power\nSchottky diode 1N5819 has lower voltage drop (0.2 - 0.4V)\nTake this into consideration..."
+		(exclude_from_sim no)
+		(at 220.98 49.53 0)
+		(size 31.75 19.05)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a0c321a7-3ee3-4b04-b740-33384214b7be")
 	)
 	(text_box "This barrel jack will be the main power supply to the entire ECU."
 		(exclude_from_sim no)
@@ -5270,7 +5440,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 31.75) (xy 205.74 78.74)
+			(xy 205.74 31.75) (xy 205.74 52.07)
 		)
 		(stroke
 			(width 0)
@@ -5817,6 +5987,16 @@
 			(type default)
 		)
 		(uuid "8f172922-4f89-4577-b6cf-dd7eac447326")
+	)
+	(wire
+		(pts
+			(xy 205.74 59.69) (xy 205.74 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f4fa717-aac4-4316-9fdf-ff4545767e95")
 	)
 	(wire
 		(pts
@@ -7701,7 +7881,7 @@
 				)
 			)
 		)
-		(property "Value" "Red_LED"
+		(property "Value" "Blue_LED_3"
 			(at 246.38 103.378 0)
 			(effects
 				(font
@@ -8357,7 +8537,7 @@
 				)
 			)
 		)
-		(property "Value" "Yellow_LED"
+		(property "Value" "Blue_LED_2"
 			(at 246.38 96.774 0)
 			(effects
 				(font
@@ -11513,6 +11693,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N5819WS")
+		(at 205.74 55.88 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e94472c-b4f2-440d-a42e-0c7ac88d0900")
+		(property "Reference" "D13"
+			(at 208.28 54.9274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N5819WS"
+			(at 208.28 57.4674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+			(at 210.185 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+			(at 205.74 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+			(at 205.74 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e899958c-e2cb-4a7c-891e-0296bb4b8bd3")
+		)
+		(pin "2"
+			(uuid "025fdd6c-4c6b-4604-865c-780f6cdf6811")
+		)
+		(instances
+			(project ""
+				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small_US")
 		(at 36.83 163.83 0)
 		(unit 1)
@@ -12132,7 +12382,7 @@
 				)
 			)
 		)
-		(property "Value" "Green_LED"
+		(property "Value" "Blue_LED_1"
 			(at 246.126 89.916 0)
 			(effects
 				(font
@@ -13297,7 +13547,7 @@
 		(dnp no)
 		(uuid "d572bf76-6b34-4d2c-b9d9-648ae5b30c0d")
 		(property "Reference" "SW4"
-			(at 233.68 109.22 0)
+			(at 233.68 109.982 0)
 			(effects
 				(font
 					(size 1.27 1.27)
