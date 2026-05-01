@@ -4,7 +4,7 @@ from matplotlib.ticker import FuncFormatter
 metadata = []
 
 # function: compute_ylim
-# inputs:   series
+# inputs  : series
 #           trim ratio          default 0.05
 #           margin ratio        default 0.1
 #           extra pad ratio     default 0.05, 
@@ -40,41 +40,74 @@ def compute_auto_ylim(series, trim_ratio=0.05, margin_ratio=0.1, extra_pad_ratio
 
     return (low, high)
 
-# compute_pressure_ylim
-# 
+# function: compute_pressure_ylim
+# inputs  : series
+# returns : min_v - pad
+#           min_v + pad
 def compute_pressure_ylim(series):
+    # remove null entries
     clean = [v for v in series if v is not None]
+
+    # failsafe for empty set
     if not clean:
         return (0, 1)
 
+    # find boundaries
     min_v = min(clean)
     max_v = max(clean)
 
+    # pad boundaries proportionally, return
     pad = (max_v - min_v) * 0.1 if max_v != min_v else 0.1
     return (min_v - pad, max_v + pad)
 
 
 # remake or remove
-def finalize_entry(current, last_sgp, last_scd):
-    if current is None:
-        return None, last_sgp, last_scd
+# function: finalize_entry
+# inputs  : current
+#           last_bme
+#           last_sgp
+#           last_scd
+# returns : current
+#           last_bme
+#           last_sgp
+#           last_scd
 
+def finalize_entry(current, last_bme, last_sgp, last_scd):
+    # skip empty entry
+    if current is None:
+        return None, last_bme, last_sgp, last_scd
+
+    # patch missing bme data
+    if None in current["BMEvalues"]:
+        current["BMEvalues"] = last_bme.copy()
+    else:
+        last_bme = current["BMEvalues"].copy()
+
+    # patch missing sgp data
     if current["SGPvalues"] is None:
         current["SGPvalues"] = last_sgp.copy()
     else:
         last_sgp = current["SGPvalues"].copy()
 
+    # patch missing scd data
     if None in current["SCDvalues"]:
         current["SCDvalues"] = last_scd.copy()
     else:
         last_scd = current["SCDvalues"].copy()
 
-    if None in current["BMEvalues"]:
-        return None, last_sgp, last_scd
+    # reject fully invalid packet
+    if (
+        None in current["BMEvalues"] or
+        current["SGPvalues"] is None or
+        None in current["SCDvalues"]
+    ):
+        return None, last_bme, last_sgp, last_scd
 
-    return current, last_sgp, last_scd
+    return current, last_bme, last_sgp, last_scd
 
-# organize and comment the shit out of
+# function: parse_data_file
+# inputs  : file_path
+# outputs : data_container 
 def parse_data_file(file_path):
     data_container = [] # generic data container
 
@@ -87,7 +120,7 @@ def parse_data_file(file_path):
     try:
         with open(file_path, 'r') as file:
 
-            # 
+            # initialize packet state
             current = None
             current_block = None
 
@@ -95,83 +128,106 @@ def parse_data_file(file_path):
             for index, raw_line in enumerate(file):
                 line = raw_line.strip()
 
+                # skip blank lines
                 if not line:
                     continue
 
+                # parse metadata headers
                 if line[0] == '#':
                     metadata.append(line[1:])
                     continue
-                #
+
                 try:
+                    # detect timestamp header
                     if ':' in line and '.' in line:
 
-                        #
-                        finished, last_sgp, last_scd = finalize_entry(current, last_sgp, last_scd)
+                        # close prior packet
+                        finished, last_bme, last_sgp, last_scd = finalize_entry(
+                            current,
+                            last_bme,
+                            last_sgp,
+                            last_scd
+                        )
+
                         if finished:
                             data_container.append(finished)
 
+                        # split timestamp fields
                         hr, mn, rest = line.split(':')
                         sec, ms = rest.split('.')
 
-                        #
+                        # create new packet
                         current = {
                             "index": index,
                             "timestamp_hr": int(hr),
                             "timestamp_min": int(mn),
                             "timestamp_s": int(sec),
                             "timestamp_ms": int(ms),
-                            "BMEvalues": [None]*4,
-                            "SCDvalues": [None]*3,
+                            "BMEvalues": [None] * 4,
+                            "SCDvalues": [None] * 3,
                             "SGPvalues": None
                         }
 
+                        # reset active block tracker
                         current_block = None
                         continue
 
-                    #
+                    # enter bme parsing block
                     if "BME BLOCK" in line:
                         current_block = "BME"
                         bme_idx = 0
                         continue
 
-                    if "SCD block" in line:
+                    # enter scd parsing block
+                    if "SCD BLOCK" in line:
                         current_block = "SCD"
                         scd_idx = 0
                         continue
 
+                    # enter sgp parsing block
                     if "SGP BLOCK" in line:
                         current_block = "SGP"
                         sgp_vals = []
                         continue
 
+                    # close scd block
                     if "{SCDEND}" in line:
                         current_block = None
                         continue
 
-                    #
+                    # parse numeric sensor values
                     if '[' in line and ']' in line:
                         val = float(line.split('[')[0])
 
-                        #
+                        # assign bme values
                         if current_block == "BME":
                             current["BMEvalues"][bme_idx] = val
                             bme_idx += 1
 
+                        # assign scd values
                         elif current_block == "SCD":
                             current["SCDvalues"][scd_idx] = val
                             scd_idx += 1
 
+                        # assign sgp values
                         elif current_block == "SGP":
                             sgp_vals.append(val)
                             if len(sgp_vals) == 2:
                                 current["SGPvalues"] = sgp_vals.copy()
 
+                # ignore malformed lines
                 except (ValueError, IndexError):
                     continue
             # LINE PARSING END
 
-            # 
-            finished, last_sgp, last_scd = finalize_entry(current, last_sgp, last_scd)
+            # finalize last packet
+            finished, last_bme, last_sgp, last_scd = finalize_entry(
+                current,
+                last_bme,
+                last_sgp,
+                last_scd
+            )
+
             if finished:
                 data_container.append(finished)
 
@@ -183,11 +239,17 @@ def parse_data_file(file_path):
     return data_container
 
 
+
 # time format
 def format_time(x, pos):
     return f"{int(x)}"
 
-# 
+# function: plot_data
+# inputs  : data
+#           BMEcx
+#           SCDcx
+#           SGPcx
+#           override
 def plot_data(data, BMEcx, SCDcx, SGPcx, override):
     # strip empty ?
     data = [d for d in data if d is not None]
