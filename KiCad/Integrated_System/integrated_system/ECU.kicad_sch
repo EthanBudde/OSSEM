@@ -4426,7 +4426,7 @@
 		)
 		(uuid "79ff5d4b-b1f2-453d-a71a-5f8503b736f0")
 	)
-	(text_box "This diode protects the sensors and buck converter from USB power\nSchottky diode 1N5819 has lower voltage drop (0.2 - 0.4V)\nTake this into consideration..."
+	(text_box "This diode protects the sensors and buck converter from USB power\nSchottky diode 1N5819 has lower voltage drop (0.6 - 0.9V)\nTake this into consideration..."
 		(exclude_from_sim no)
 		(at 220.98 49.53 0)
 		(size 31.75 19.05)

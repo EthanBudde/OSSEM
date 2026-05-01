@@ -13710,7 +13710,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text_box "Notes\n\n- Make Bill of materials\n- All errors are fixed\n- Warnings can be ignored \n- Is board edge clearnace violation okay to ignore?"
+	(gr_text_box "Notes\n\n- Make Bill of materials\n- All errors are fixed\n- Warnings can be ignored \n- Is board edge clearnace violation okay to ignore?\n\n\n"
 		(start 180.875 86)
 		(end 214.125 123.75)
 		(margins 1.0025 1.0025 1.0025 1.0025)
@@ -13727,6 +13727,162 @@
 		(stroke
 			(width 0.1)
 			(type solid)
+		)
+	)
+	(dimension
+		(type orthogonal)
+		(layer "B.Cu")
+		(uuid "075ac780-4f50-4b24-8c1b-27e680da6cc1")
+		(pts
+			(xy 105 65) (xy 172.5 65)
+		)
+		(height -8.866)
+		(orientation 0)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 0)
+			(precision 4)
+			(suppress_zeroes yes)
+		)
+		(style
+			(thickness 0.2)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "67.5"
+			(at 138.75 54.334 0)
+			(layer "B.Cu")
+			(uuid "075ac780-4f50-4b24-8c1b-27e680da6cc1")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+				(justify mirror)
+			)
+		)
+	)
+	(dimension
+		(type orthogonal)
+		(layer "B.Cu")
+		(uuid "0930fce0-162c-40b2-a19e-afb820c776a1")
+		(pts
+			(xy 107.442 67.818) (xy 107.442 139.954)
+		)
+		(height -7.62)
+		(orientation 1)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 0)
+			(precision 4)
+			(suppress_zeroes yes)
+		)
+		(style
+			(thickness 0.2)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "72.136"
+			(at 98.022 103.886 90)
+			(layer "B.Cu")
+			(uuid "0930fce0-162c-40b2-a19e-afb820c776a1")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+				(justify mirror)
+			)
+		)
+	)
+	(dimension
+		(type orthogonal)
+		(layer "B.Cu")
+		(uuid "95e287a1-9243-43e0-bcb7-38521e959f07")
+		(pts
+			(xy 105 142.5) (xy 105 65)
+		)
+		(height -11.274)
+		(orientation 1)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 0)
+			(precision 4)
+			(suppress_zeroes yes)
+		)
+		(style
+			(thickness 0.2)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "77.5"
+			(at 91.926 103.75 90)
+			(layer "B.Cu")
+			(uuid "95e287a1-9243-43e0-bcb7-38521e959f07")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+				(justify mirror)
+			)
+		)
+	)
+	(dimension
+		(type orthogonal)
+		(layer "B.Cu")
+		(uuid "c738f8a2-ad25-47c2-9574-8cca3237f964")
+		(pts
+			(xy 169.926 67.564) (xy 107.442 67.564)
+		)
+		(height -6.35)
+		(orientation 0)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 0)
+			(precision 4)
+			(suppress_zeroes yes)
+		)
+		(style
+			(thickness 0.2)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "62.484"
+			(at 138.684 59.414 0)
+			(layer "B.Cu")
+			(uuid "c738f8a2-ad25-47c2-9574-8cca3237f964")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+				(justify mirror)
+			)
 		)
 	)
 	(segment
