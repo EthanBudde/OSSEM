@@ -51,8 +51,27 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|167000000|88500000|97adb2d1-435b-425f-acdb-31b4f5368f9d|00000000-0000-0000-0000-000000000000",
+          "Edited the local footprint silkscreen (Postive indicator triangle). Okay to ignore."
+        ],
+        [
+          "lib_footprint_mismatch|167000000|99875000|63965ab0-5d03-4cff-9485-931ea9a6639e|00000000-0000-0000-0000-000000000000",
+          "Edited the local footprint silkscreen (Postive indicator triangle). Okay to ignore."
+        ],
+        [
+          "lib_footprint_mismatch|167077500|77205000|a821c737-7bef-40af-8dfc-8c06e5261393|00000000-0000-0000-0000-000000000000",
+          "Edited the local footprint silkscreen (Postive indicator triangle). Okay to ignore."
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -180,7 +199,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,7 +228,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -226,7 +252,16 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_mismatch|1536700|254000|aec17e6a-095f-4bfc-b309-7bebb113b689|00000000-0000-0000-0000-000000000000|||",
+        "This symbol was edited. So warning can be ignored."
+      ],
+      [
+        "lib_symbol_mismatch|609600|1282700|24d462d4-331f-4e28-af08-109729ca2ff9|00000000-0000-0000-0000-000000000000|||",
+        "This symbol was edited. So warning can be ignored."
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -411,9 +446,9 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
-      "footprint_filter": "ignore",
+      "footprint_filter": "warning",
       "footprint_link_issues": "warning",
-      "four_way_junction": "ignore",
+      "four_way_junction": "warning",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
@@ -431,13 +466,13 @@
       "pin_not_connected": "error",
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
-      "power_pin_not_driven": "warning",
+      "power_pin_not_driven": "ignore",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
-      "simulation_model_issue": "ignore",
-      "single_global_label": "ignore",
+      "simulation_model_issue": "warning",
+      "single_global_label": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -469,10 +504,20 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "track_width": 0.5,
+        "via_diameter": 0.8,
+        "via_drill": 0.5,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.2,
+        "name": "power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.0,
+        "via_diameter": 0.8,
+        "via_drill": 0.5
       }
     ],
     "meta": {
@@ -480,7 +525,24 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "power",
+        "pattern": "VDD (+ 3.3 V)"
+      },
+      {
+        "netclass": "power",
+        "pattern": "FP_12V"
+      },
+      {
+        "netclass": "power",
+        "pattern": "+12V DC wall adapter"
+      },
+      {
+        "netclass": "power",
+        "pattern": "Net-(U4-Vout+)"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

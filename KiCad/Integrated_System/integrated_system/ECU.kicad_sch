@@ -1312,7 +1312,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Small_US"
+		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1332,7 +1332,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "C_Small_US"
+			(property "Value" "C_Small"
 				(at 0.254 -2.032 0)
 				(effects
 					(font
@@ -1350,7 +1350,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1359,7 +1359,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "capacitor, small US symbol"
+			(property "Description" "Unpolarized capacitor, small symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1368,7 +1368,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "cap capacitor"
+			(property "ki_keywords" "capacitor cap"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1386,7 +1386,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "C_Small_US_0_1"
+			(symbol "C_Small_0_1"
 				(polyline
 					(pts
 						(xy -1.524 0.508) (xy 1.524 0.508)
@@ -1399,12 +1399,12 @@
 						(type none)
 					)
 				)
-				(arc
-					(start -1.524 -0.762)
-					(mid 0 -0.3734)
-					(end 1.524 -0.762)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -1412,7 +1412,7 @@
 					)
 				)
 			)
-			(symbol "C_Small_US_1_1"
+			(symbol "C_Small_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
@@ -1773,174 +1773,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:1N4004"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "1N4004"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-				(at 0 -4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "400V 1A General Purpose Rectifier Diode, DO-41"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D*DO?41*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "1N4004_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "1N4004_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Diode:1N5819WS"
+		(symbol "Diode:SS14"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1959,7 +1792,7 @@
 					)
 				)
 			)
-			(property "Value" "1N5819WS"
+			(property "Value" "SS14"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -1967,7 +1800,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_SMD:D_SOD-323"
+			(property "Footprint" "Diode_SMD:D_SMA"
 				(at 0 -4.445 0)
 				(effects
 					(font
@@ -1976,7 +1809,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+			(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1985,7 +1818,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+			(property "Description" "40V 1A Schottky Diode, SMA"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2003,7 +1836,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "D*SOD?323*"
+			(property "ki_fp_filters" "D*SMA*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2012,7 +1845,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "1N5819WS_0_1"
+			(symbol "SS14_0_1"
 				(polyline
 					(pts
 						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
@@ -2050,7 +1883,7 @@
 					)
 				)
 			)
-			(symbol "1N5819WS_1_1"
+			(symbol "SS14_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -4226,7 +4059,27 @@
 		)
 		(uuid "1573d528-b15c-4142-a749-46b87969585c")
 	)
-	(text_box "BME680 is a Temperature, Humidity, Pressure Gas Sensor"
+	(text_box "Connected to ground to disable the 3.3V regulator"
+		(exclude_from_sim no)
+		(at 166.37 85.09 0)
+		(size 25.4 8.89)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "20f15a8b-45d3-47b4-bdf6-b7833012cad2")
+	)
+	(text_box "BME688 is a Temperature, Humidity, Pressure Gas Sensor"
 		(exclude_from_sim no)
 		(at 13.97 162.56 0)
 		(size 19.05 17.78)
@@ -4426,26 +4279,6 @@
 		)
 		(uuid "79ff5d4b-b1f2-453d-a71a-5f8503b736f0")
 	)
-	(text_box "This diode protects the sensors and buck converter from USB power\nSchottky diode 1N5819 has lower voltage drop (0.6 - 0.9V)\nTake this into consideration..."
-		(exclude_from_sim no)
-		(at 220.98 49.53 0)
-		(size 31.75 19.05)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "a0c321a7-3ee3-4b04-b740-33384214b7be")
-	)
 	(text_box "This barrel jack will be the main power supply to the entire ECU."
 		(exclude_from_sim no)
 		(at 12.7 30.48 0)
@@ -4468,7 +4301,7 @@
 	)
 	(text_box "This is our microcontroller. We may use different types of ESP32s but here is a basic feather."
 		(exclude_from_sim no)
-		(at 175.26 78.74 0)
+		(at 217.17 53.34 0)
 		(size 16.51 16.51)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4485,6 +4318,26 @@
 			(justify left top)
 		)
 		(uuid "bc696fb5-a002-44cf-b0f8-a34412575c7e")
+	)
+	(text_box "Currently switch 2 is in no use."
+		(exclude_from_sim no)
+		(at 167.64 143.51 0)
+		(size 10.16 12.7)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "cdab9567-552f-473d-8304-16b82c717a0d")
 	)
 	(text_box "SW4 Will control the pre-vent & post-vent & LEDs?"
 		(exclude_from_sim no)
@@ -4789,10 +4642,6 @@
 		(uuid "4ad5d072-9eed-4f3d-8f5d-988c59bbcb34")
 	)
 	(no_connect
-		(at 195.58 96.52)
-		(uuid "50112f12-5370-4f6b-a9ad-31abd8b7ff42")
-	)
-	(no_connect
 		(at 76.2 90.17)
 		(uuid "599578c0-3903-4625-b0b0-104d85a73f90")
 	)
@@ -4817,7 +4666,7 @@
 		(uuid "80ef7e89-b85e-4299-bf23-111c386575c5")
 	)
 	(no_connect
-		(at 187.96 154.94)
+		(at 193.04 154.94)
 		(uuid "84af925e-cfca-4876-83cf-42d3198c3359")
 	)
 	(no_connect
@@ -4851,6 +4700,10 @@
 	(no_connect
 		(at 220.98 116.84)
 		(uuid "d5390c6e-b058-4284-824d-7b5e265eb355")
+	)
+	(no_connect
+		(at 74.93 36.83)
+		(uuid "da6d4d51-73e5-4e76-8caa-47fe9ab8ed5f")
 	)
 	(no_connect
 		(at 50.8 133.35)
@@ -4940,7 +4793,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 149.86) (xy 195.58 149.86)
+			(xy 193.04 149.86) (xy 195.58 149.86)
 		)
 		(stroke
 			(width 0)
@@ -5390,16 +5243,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 36.83) (xy 74.93 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3fe2a97e-cbb4-4b5b-9051-d2011aeca6cd")
-	)
-	(wire
-		(pts
 			(xy 99.06 115.57) (xy 101.6 115.57)
 		)
 		(stroke
@@ -5440,7 +5283,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 31.75) (xy 205.74 52.07)
+			(xy 205.74 31.75) (xy 205.74 78.74)
 		)
 		(stroke
 			(width 0)
@@ -5517,16 +5360,6 @@
 			(type default)
 		)
 		(uuid "488c10c1-4504-4c02-9982-acbf5f48662e")
-	)
-	(wire
-		(pts
-			(xy 74.93 46.99) (xy 74.93 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "489c5958-35f5-4819-a0d5-ce93b25853d6")
 	)
 	(wire
 		(pts
@@ -5990,16 +5823,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 59.69) (xy 205.74 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f4fa717-aac4-4316-9fdf-ff4545767e95")
-	)
-	(wire
-		(pts
 			(xy 107.95 191.77) (xy 107.95 193.04)
 		)
 		(stroke
@@ -6240,7 +6063,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 146.05) (xy 176.53 152.4)
+			(xy 181.61 144.78) (xy 181.61 152.4)
 		)
 		(stroke
 			(width 0)
@@ -6350,7 +6173,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 152.4) (xy 177.8 152.4)
+			(xy 181.61 152.4) (xy 182.88 152.4)
 		)
 		(stroke
 			(width 0)
@@ -6450,16 +6273,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 55.88) (xy 74.93 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c055354b-6a8f-47a0-ab81-85f1d1314e9e")
-	)
-	(wire
-		(pts
 			(xy 134.62 173.99) (xy 171.45 173.99)
 		)
 		(stroke
@@ -6507,6 +6320,16 @@
 			(type default)
 		)
 		(uuid "c888acad-1127-4fd3-8b90-83ef056ea79f")
+	)
+	(wire
+		(pts
+			(xy 195.58 96.52) (xy 191.77 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c88b7936-8752-4942-b680-f9204fc9c719")
 	)
 	(wire
 		(pts
@@ -7277,7 +7100,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 176.53 146.05 0)
+		(at 181.61 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7285,7 +7108,7 @@
 		(dnp no)
 		(uuid "0e48c4d0-bc35-4fca-9840-158ef3d8a181")
 		(property "Reference" "#PWR05"
-			(at 176.53 149.86 0)
+			(at 181.61 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7294,7 +7117,7 @@
 			)
 		)
 		(property "Value" "VDD (+ 3.3 V)"
-			(at 181.356 140.716 0)
+			(at 178.308 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7302,7 +7125,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 176.53 146.05 0)
+			(at 181.61 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7311,7 +7134,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 176.53 146.05 0)
+			(at 181.61 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7320,7 +7143,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 176.53 146.05 0)
+			(at 181.61 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7347,7 +7170,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small_US")
+		(lib_id "Device:C_Small")
 		(at 35.56 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7357,7 +7180,7 @@
 		(fields_autoplaced yes)
 		(uuid "0f60e18d-a4cc-447b-ac26-c1757b5e15d7")
 		(property "Reference" "C3"
-			(at 38.1 87.7569 0)
+			(at 38.1 87.6362 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7366,7 +7189,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 38.1 90.2969 0)
+			(at 38.1 90.1762 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7383,7 +7206,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 35.56 88.9 0)
 			(effects
 				(font
@@ -7392,7 +7215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "capacitor, small US symbol"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 35.56 88.9 0)
 			(effects
 				(font
@@ -7580,78 +7403,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 74.93 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "10cd79ae-f192-49a8-8b63-711a83e68b2c")
-		(property "Reference" "#PWR0111"
-			(at 74.93 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 74.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f167c622-19e1-4e15-9407-123298db20ae")
-		)
-		(instances
-			(project "ECU"
-				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
-					(reference "#PWR0111")
-					(unit 1)
-				)
-			)
-			(project "integrated_system"
-				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 135.89 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7740,7 +7491,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V AC to DC wall adapter"
+		(property "Value" "+12V DC wall adapter"
 			(at 50.8 21.59 0)
 			(effects
 				(font
@@ -7794,7 +7545,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small_US")
+		(lib_id "Device:C_Small")
 		(at 92.71 190.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7804,7 +7555,7 @@
 		(fields_autoplaced yes)
 		(uuid "1521346a-9c6b-433b-953f-d41f6c76382d")
 		(property "Reference" "C7"
-			(at 95.25 189.3569 0)
+			(at 95.25 189.2362 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7813,7 +7564,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 95.25 191.8969 0)
+			(at 95.25 191.7762 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7830,7 +7581,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 92.71 190.5 0)
 			(effects
 				(font
@@ -7839,7 +7590,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "capacitor, small US symbol"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 92.71 190.5 0)
 			(effects
 				(font
@@ -8019,6 +7770,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:SS14")
+		(at 143.51 109.22 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d3b289e-e1a5-452b-9c4a-a7ce745df982")
+		(property "Reference" "D6"
+			(at 146.05 107.6324 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS14"
+			(at 146.05 110.1724 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 139.065 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+			(at 143.51 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 1A Schottky Diode, SMA"
+			(at 143.51 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1b432aad-7202-4259-9746-90d0cf133c0f")
+		)
+		(pin "1"
+			(uuid "df6301a2-80ef-4830-94ff-64a32315e05c")
+		)
+		(instances
+			(project ""
+				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 157.48 41.91 0)
 		(unit 1)
@@ -8158,100 +7979,6 @@
 			(project ""
 				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
 					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N4004")
-		(at 143.51 76.2 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "21f90f6f-7264-4f40-a690-7bf3a304bc30")
-		(property "Reference" "D6"
-			(at 146.05 74.9299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4004"
-			(at 146.05 77.4699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 139.065 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 143.51 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "400V 1A General Purpose Rectifier Diode, DO-41"
-			(at 143.51 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 143.51 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 143.51 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c133b0cd-61dd-486d-9237-4823714f5c7e")
-		)
-		(pin "1"
-			(uuid "43b6fcd9-dcb4-43a7-90c0-5fb3302d6141")
-		)
-		(instances
-			(project "ECU"
-				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
-					(reference "D6")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -8740,6 +8467,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:SS14")
+		(at 143.51 76.2 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d7457d4-45be-4f65-b418-bce298dfbe4b")
+		(property "Reference" "D4"
+			(at 146.05 74.6124 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS14"
+			(at 146.05 77.1524 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 139.065 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+			(at 143.51 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 1A Schottky Diode, SMA"
+			(at 143.51 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0d3137b9-eae4-44af-9fb9-8702288899b2")
+		)
+		(pin "1"
+			(uuid "7f552edf-488d-4d0d-a5a0-9c49ad0e0396")
+		)
+		(instances
+			(project ""
+				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 92.71 184.15 0)
 		(unit 1)
@@ -8877,6 +8674,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 191.77 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "314c4897-0bfb-49a9-97fe-ed08acf2d248")
+		(property "Reference" "#PWR016"
+			(at 191.77 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 191.77 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 191.77 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "750f58d0-fb44-4c66-b919-ec2fb5682d95")
+		)
+		(instances
+			(project "ECU"
+				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 212.09 158.75 0)
 		(unit 1)
@@ -8938,76 +8801,6 @@
 			(project "ECU"
 				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
 					(reference "TP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 74.93 44.45 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "322e84a6-c6c5-4357-bf5f-d73ce61e3495")
-		(property "Reference" "R4"
-			(at 77.47 43.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "5.1k"
-			(at 77.47 45.7199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 74.93 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 74.93 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 74.93 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "642150b3-0773-44e7-a046-0de0320e8d55")
-		)
-		(pin "2"
-			(uuid "c9376f10-7b67-4885-a468-b8876e16a943")
-		)
-		(instances
-			(project "ECU"
-				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
-					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -9586,82 +9379,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 74.93 52.07 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "48561631-b58d-413c-ba36-2cfe4ddabbdd")
-		(property "Reference" "D4"
-			(at 71.12 56.896 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RED_LED"
-			(at 68.326 52.578 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 74.93 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 74.93 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 74.93 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 74.93 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b9d0ef75-2350-411d-9cde-6e9a451fae4e")
-		)
-		(pin "2"
-			(uuid "d6c32416-84f3-4d18-80e1-b9814a921686")
-		)
-		(instances
-			(project "ECU"
-				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 104.14 115.57 90)
 		(unit 1)
@@ -10011,100 +9728,6 @@
 			(project "integrated_system"
 				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
 					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N4004")
-		(at 143.51 142.24 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4c354d8c-bf8f-4e37-a473-058e8e9ae254")
-		(property "Reference" "D8"
-			(at 146.05 140.9699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4004"
-			(at 146.05 143.5099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 139.065 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 143.51 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "400V 1A General Purpose Rectifier Diode, DO-41"
-			(at 143.51 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 143.51 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 143.51 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "90979f38-559e-4538-b36e-27f5ab04a528")
-		)
-		(pin "1"
-			(uuid "7196921c-ca7e-47f8-ab09-c6bb4eb84c8b")
-		)
-		(instances
-			(project "ECU"
-				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-			(project "integrated_system"
-				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -10769,7 +10392,7 @@
 				)
 			)
 		)
-		(property "Value" "BME680"
+		(property "Value" "BME688"
 			(at 60.96 152.4 0)
 			(effects
 				(font
@@ -11693,77 +11316,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N5819WS")
-		(at 205.74 55.88 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7e94472c-b4f2-440d-a42e-0c7ac88d0900")
-		(property "Reference" "D13"
-			(at 208.28 54.9274 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1N5819WS"
-			(at 208.28 57.4674 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 210.185 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
-			(at 205.74 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
-			(at 205.74 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e899958c-e2cb-4a7c-891e-0296bb4b8bd3")
-		)
-		(pin "2"
-			(uuid "025fdd6c-4c6b-4604-865c-780f6cdf6811")
-		)
-		(instances
-			(project ""
-				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
-					(reference "D13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small_US")
+		(lib_id "Device:C_Small")
 		(at 36.83 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11773,7 +11326,7 @@
 		(fields_autoplaced yes)
 		(uuid "7e9a6196-b36e-4a80-af76-a47887739fb5")
 		(property "Reference" "C5"
-			(at 39.37 162.6869 0)
+			(at 39.37 162.5662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11782,7 +11335,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 39.37 165.2269 0)
+			(at 39.37 165.1062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11799,7 +11352,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 36.83 163.83 0)
 			(effects
 				(font
@@ -11808,7 +11361,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "capacitor, small US symbol"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 36.83 163.83 0)
 			(effects
 				(font
@@ -12265,100 +11818,6 @@
 			(project "integrated_system"
 				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
 					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N4004")
-		(at 143.51 109.22 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96cd70b4-f97d-4095-ac77-faa7991162a2")
-		(property "Reference" "D7"
-			(at 146.05 107.9499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4004"
-			(at 146.05 110.4899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 139.065 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 143.51 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "400V 1A General Purpose Rectifier Diode, DO-41"
-			(at 143.51 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 143.51 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 143.51 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "85ca0b52-3e05-4a2e-87dd-92d4ded3cb26")
-		)
-		(pin "1"
-			(uuid "cc48cc0d-2b6c-4caa-8ef1-686b4397c66b")
-		)
-		(instances
-			(project "ECU"
-				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
-					(reference "D7")
-					(unit 1)
-				)
-			)
-			(project "integrated_system"
-				(path "/e09e0073-4b34-4087-926d-a963f587ec36/d64a58e5-7375-438d-b343-064b897cc797"
-					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -12877,7 +12336,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPDT")
-		(at 182.88 152.4 0)
+		(at 187.96 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12885,7 +12344,7 @@
 		(dnp no)
 		(uuid "abac39fb-b7c4-4e14-bff4-64815feec3cb")
 		(property "Reference" "SW2"
-			(at 182.88 143.51 0)
+			(at 187.96 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12893,7 +12352,7 @@
 			)
 		)
 		(property "Value" "SW_SPDT"
-			(at 182.88 146.05 0)
+			(at 187.96 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12901,7 +12360,7 @@
 			)
 		)
 		(property "Footprint" "switch_DM:switch_dm"
-			(at 182.88 152.4 0)
+			(at 187.96 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12910,7 +12369,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 182.88 160.02 0)
+			(at 187.96 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12919,7 +12378,7 @@
 			)
 		)
 		(property "Description" "Switch, single pole double throw"
-			(at 182.88 152.4 0)
+			(at 187.96 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13605,6 +13064,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:SS14")
+		(at 143.51 142.24 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d674ee65-7653-4a82-8525-ba0a57a79a24")
+		(property "Reference" "D7"
+			(at 146.05 140.6524 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS14"
+			(at 146.05 143.1924 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 139.065 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+			(at 143.51 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 1A Schottky Diode, SMA"
+			(at 143.51 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cfc86bd7-9144-4177-b271-eac62d3e98e8")
+		)
+		(pin "1"
+			(uuid "a7551cd5-c1d2-46eb-ae5e-b8273f88ecdd")
+		)
+		(instances
+			(project ""
+				(path "/68e66ac2-e6c8-4149-aa8e-681ce71fac5d"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 238.76 135.89 0)
 		(unit 1)
@@ -14184,7 +13713,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small_US")
+		(lib_id "Device:C_Small")
 		(at 114.3 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14194,7 +13723,7 @@
 		(fields_autoplaced yes)
 		(uuid "f081cd21-66e2-4349-82bc-8d228aaf92e9")
 		(property "Reference" "C2"
-			(at 116.84 34.4169 0)
+			(at 116.84 34.2962 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14203,7 +13732,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 116.84 36.9569 0)
+			(at 116.84 36.8362 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14220,7 +13749,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 114.3 35.56 0)
 			(effects
 				(font
@@ -14229,7 +13758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "capacitor, small US symbol"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 114.3 35.56 0)
 			(effects
 				(font
@@ -14332,7 +13861,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small_US")
+		(lib_id "Device:C_Small")
 		(at 36.83 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14342,7 +13871,7 @@
 		(fields_autoplaced yes)
 		(uuid "f28a3a69-709c-400f-9160-6e5b68b822ad")
 		(property "Reference" "C4"
-			(at 39.37 124.5869 0)
+			(at 39.37 124.4662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14351,7 +13880,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 39.37 127.1269 0)
+			(at 39.37 127.0062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14368,7 +13897,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 36.83 125.73 0)
 			(effects
 				(font
@@ -14377,7 +13906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "capacitor, small US symbol"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 36.83 125.73 0)
 			(effects
 				(font
