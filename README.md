@@ -16,7 +16,15 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
 </p>
 
 <p align="center">
-  <img src="img/full_PCB.png" width="500">
+  <img src="img/ECU_schematic_v1.8.png" width="500">
+</p>
+
+<p align="center">
+  <em>Smart Espresso Machine – Schematic v1.8</em>
+</p>
+
+<p align="center">
+  <img src="img/PCB_all_layers.png" width="500">
 </p>
 
 <p align="center">
@@ -37,4 +45,28 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
 
 <p align="center">
   <em>Smart Espresso Machine – 3D PCB Back</em>
+</p>
+
+<p align="center">
+  <img src="img/PCB_front.png" width="500">
+</p>
+
+<p align="center">
+  <em>Smart Espresso Machine – PCB front</em>
+</p>
+
+<p align="center">
+  <img src="img/PCB_back.png" width="500">
+</p>
+
+<p align="center">
+  <em>Smart Espresso Machine – PCB back</em>
+</p>
+
+<p align="center">
+  <img src="img/PCB_back_dimensions.png" width="500">
+</p>
+
+<p align="center">
+  <em>Smart Espresso Machine – PCB back with dimensions</em>
 </p>
