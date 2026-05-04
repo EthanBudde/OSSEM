@@ -71,3 +71,10 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
   <em>Smart Espresso Machine – PCB v1.8 back with dimensions</em>
 </p>
 
+## Acknowledgments
+This project builds on:
+- Gaggiuino (open-source espresso control system)
+- Adafruit sensor libraries
+- KiCad component libraries
+
+All third-party resources are used in accordance with their respective licenses.
