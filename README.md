@@ -77,4 +77,6 @@ This project builds on:
 - Adafruit sensor libraries
 - KiCad component libraries
 
+PCB renders generated using OSH Park
+
 All third-party resources are used in accordance with their respective licenses.
