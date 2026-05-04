@@ -70,3 +70,11 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
 <p align="center">
   <em>Smart Espresso Machine – PCB v1.8 back with dimensions</em>
 </p>
+
+<p align="center">
+  <img src="img/ptr-ms_testing.png" width="500">
+</p>
+
+<p align="center">
+  <em>PTR-MS Testing in the Healthy Buildings Research Lab</em>
+</p>
