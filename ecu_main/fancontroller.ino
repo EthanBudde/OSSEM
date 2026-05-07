@@ -1,3 +1,4 @@
+//Three modes to control fan speed
 // Board: Adafruit ESP32 Feather / HUZZAH32
 
 
