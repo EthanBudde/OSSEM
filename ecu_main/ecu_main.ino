@@ -14,6 +14,28 @@
 #define SCDPIN 27
 #define SGPPIN 12
 
+const int FAN_PIN = 26;
+const int BUTTON_PIN = 13;
+
+const int PWM_FREQ = 25000;
+const int PWM_RESOLUTION = 8;
+
+bool trigger = false;
+
+int fanMode = 0;
+
+int fanSpeed[] = {
+  0,
+  90,
+  160,
+  255
+};
+
+int lastButtonReading = HIGH;
+int stableButtonState = HIGH;
+unsigned long lastDebounceTime = 0;
+const unsigned long debounceDelay = 50;
+
 // sensor Objects
 Adafruit_SCD30 scd30;
 Adafruit_SGP30 sgp;
@@ -111,9 +133,17 @@ void setup() {
   pinMode(BMEPIN, OUTPUT);
   pinMode(SCDPIN, OUTPUT);
   pinMode(SGPPIN, OUTPUT);
+  
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
 
+  ledcAttach(FAN_PIN, PWM_FREQ, PWM_RESOLUTION);
+  ledcWrite(FAN_PIN, fanSpeed[fanMode]);
+
+  Serial.println("ESP32 Feather HUZZAH32 fan control started.");
+  Serial.println("Mode 0: OFF");
+  
   blinkPin(BMEPIN, 1);
-	blinkPin(SCDPIN, 1);
+  blinkPin(SCDPIN, 1);
   blinkPin(SGPPIN, 1);
 
   //while (!Serial) delay(10);	// will pause until serial terminal open
@@ -138,27 +168,10 @@ void setup() {
     waitForSync();
     myTZ.setLocation(F("America/Los_Angeles"));
   }
-    
   
   blinkPin(BMEPIN, 2);
-	blinkPin(SCDPIN, 2);
+  blinkPin(SCDPIN, 2);
   blinkPin(SGPPIN, 2);
-
-  // bme wakeup
-  if (!bme.begin()) {
-		Serial.println("Could not find a valid BME680 sensor, check wiring!");
-		while (1);
-	}
-
-	// bme constants init 
-	bme.setTemperatureOversampling(BME680_OS_8X);
-	bme.setHumidityOversampling(BME680_OS_2X);
-	bme.setPressureOversampling(BME680_OS_4X);	
-	bme.setIIRFilterSize(BME680_FILTER_SIZE_3);
-	bme.setGasHeater(320, 150); // 320*C for 150 ms
-
-  // bme blink confirm
-  blinkPin(BMEPIN, 0);
 
   // sgp wakeup
   if (! sgp.begin()){
@@ -211,17 +224,54 @@ void setup() {
 
   // scd blink confirm
   blinkPin(SCDPIN, 0);
+
+
+  // bme wakeup
+  if (!bme.begin()) {
+		Serial.println("Could not find a valid BME680 sensor, check wiring!");
+		while (1);
+	}
+
+  // bme constants init 
+	bme.setTemperatureOversampling(BME680_OS_8X);
+	bme.setHumidityOversampling(BME680_OS_2X);
+	bme.setPressureOversampling(BME680_OS_4X);	
+	bme.setIIRFilterSize(BME680_FILTER_SIZE_3);
+	bme.setGasHeater(320, 150); // 320*C for 150 ms
+
+  // bme blink confirm
+  blinkPin(BMEPIN, 0);
+
+  // change this
+  for(int i=0;i<11;i++){
+      scdCurrent.temp = scd30.temperature;
+      scdCurrent.humid = scd30.relative_humidity;
+      scdCurrent.co2 = scd30.CO2;
+  }
 }
 
 void loop() {
-  // timestamp
-  if(count == 0){Serial.println(myTZ.dateTime("H:i:s.v"));}
+  //button check
+  if
+  readButton();
   
-  bmeRead();
+  // timestamp
+  if(count == 0){
+	// button flag enable
+	if(trigger) {
+	  Serial.print("!");
+	  trigger = False;
+    }  
+	  Serial.println(myTZ.dateTime("H:i:s.v"));
+	}
+  
+  // refactor for controlability, testing
+  // try/except with a nonblocking timer?
   scdRead();
   sgpRead();
+  bmeRead();
 
-  Serial.println();  Serial.println();  
+  Serial.println();  
   delay(50);
 }
 
@@ -317,3 +367,44 @@ void sgpRead(){
   //sgp oplight off
   blinkPin(SGPPIN, 2);
 }
+
+void fanToggle(){
+  fanMode++;
+  if (fanMode > 3) {		
+    fanMode = 0;
+  }
+ 
+  ledcWrite(FAN_PIN, fanSpeed[fanMode]);
+
+  Serial.print("Fan mode: ");
+  Serial.print(fanMode);
+  Serial.print(" | PWM: ");
+  Serial.println(fanSpeed[fanMode]);
+}
+
+void shadeToggle(){
+	trigger = true;
+}
+void readButton(){
+  int reading = digitalRead(BUTTON_PIN);
+
+  if (reading != lastButtonReading) {
+    lastDebounceTime = millis();
+  }
+
+  if ((millis() - lastDebounceTime) > debounceDelay) {
+    if (reading != stableButtonState) {
+      stableButtonState = reading;
+
+      if (stableButtonState == LOW) {
+	    fanToggle();
+      }
+    }
+  }
+
+  lastButtonReading = reading;	
+}
+
+
+  	
+	
