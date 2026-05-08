@@ -136,7 +136,12 @@ def parse_data_file(file_path):
                 if line[0] == '#':
                     metadata.append(line[1:])
                     continue
-
+                   
+                if line[0] == '!':
+                    timerflag = True
+                else:
+                    timerflag = False
+                
                 try:
                     # detect timestamp header
                     if ':' in line and '.' in line:
@@ -163,6 +168,7 @@ def parse_data_file(file_path):
                             "timestamp_min": int(mn),
                             "timestamp_s": int(sec),
                             "timestamp_ms": int(ms),
+                            "mark": timerflag,
                             "BMEvalues": [None] * 4,
                             "SCDvalues": [None] * 3,
                             "SGPvalues": None
@@ -188,11 +194,6 @@ def parse_data_file(file_path):
                     if "SGP BLOCK" in line:
                         current_block = "SGP"
                         sgp_vals = []
-                        continue
-
-                    # close scd block
-                    if "{SCDEND}" in line:
-                        current_block = None
                         continue
 
                     # parse numeric sensor values
@@ -263,11 +264,16 @@ def plot_data(data, BMEcx, SCDcx, SGPcx, override):
     time_coords = [
         d['timestamp_min'] * 60 + d['timestamp_s'] + d['timestamp_ms']/1000.0
         for d in data
-    ]
-
+        ]
+    mark_coords = [
+        d['timestamp_min'] * 60 + d['timestamp_s'] + d['timestamp_ms']/1000.0
+        for d in data if d['mark'] is true
+        ]
+    
     # establish start time, time coordinates array from data array
     start = time_coords[0]
     time_coords = [t - start for t in time_coords]
+    mark_coords = [t - start for t in mark_coords]
 
     # labels
     # todo: move somewhere more overtly declared
@@ -340,10 +346,17 @@ def plot_data(data, BMEcx, SCDcx, SGPcx, override):
         else:
             ylim = compute_auto_ylim(series[idx])
 
+        # x/y limits
         ax.set_ylim(ylim)
         ax.set_xlim(min(time_coords), max(time_coords))
+
+        # ??
         ax.xaxis.set_major_formatter(FuncFormatter(format_time))
 
+        # highlighting
+        ax.axvspan(mark_coords[0], mark_coords[1], color='0.9')
+
+    # ??disable graphs we don't want to see
     for j in range(graphAmnt, len(axes)):
         axes[j].set_visible(False)
 
