@@ -1,3 +1,25 @@
+# current function set
+# compute_ylim
+# compute_pressure_ylim
+# finalize_entry
+# parse_data_file
+# format_time
+# plot_data
+
+# goal:
+#   reduce the current processing flow for each cell of data
+#       combining some functions, reducing logical abstraction to reduce function set
+#   create more modular functions that can be called for two modes of operation
+#       set graphing - visualizing a full set of data given as a file
+#           sets are always full (always all sensors tracking concurrently)
+#           can be reduced to single graphs or given as a full set (default)
+#       live graphing - visualizing a live data stream
+#           right now we're arbitrating what that live datastream is (files as datapackets sent via network integration)
+#           live graphs will print single graphs or full graphs of the set (default)
+
+# goalset
+#   
+
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 
@@ -231,6 +253,8 @@ def parse_data_file(file_path):
 
             if finished:
                 data_container.append(finished)
+
+            timerflag = False    
 
     # ERROR CASE: file not found
     except FileNotFoundError:
