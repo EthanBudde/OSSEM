@@ -1,0 +1,29 @@
+Reference,Qty,Value,Description,Footprint,MANUFACTURER,MP,Datasheet
+A1,1,Adafruit_Feather_HUZZAH32_ESP32,Microcontroller module with ESP32 MCU,Module:Adafruit_Feather,Adafruit,,https://cdn-learn.adafruit.com/downloads/pdf/adafruit-huzzah32-esp32-feather.pdf
+"C1,C6",2,100u,"Polarized capacitor, small US symbol",Capacitor_SMD:CP_Elec_6.3x7.7,DigiKey,,~
+"C2,C3,C4,C5,C7",5,0.1u,"Unpolarized capacitor, small symbol",Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,DigiKey,,~
+D1,1,YELLOW_LED,Light emitting diode,LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder,DigiKey,,~
+"D2,D3,D5",3,GREEN_LED,Light emitting diode,LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder,DigiKey,,~
+"D4,D6,D7",3,SS14,"40V 1A Schottky Diode, SMA",Diode_SMD:D_SMA,DigiKey,,https://www.vishay.com/docs/88746/ss12.pdf
+D9,1,Blue_LED_1,Light emitting diode,LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder,DigiKey,,~
+D10,1,Blue_LED_2,Light emitting diode,LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder,DigiKey,,~
+D11,1,Blue_LED_3,Light emitting diode,LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder,DigiKey,,~
+J1,1,Jack-DC,DC Barrel Jack,Connector_BarrelJack:BarrelJack_GCT_DCJ200-10-A_Horizontal,DigiKey,,~
+J2,1,Fan 1,"Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)","TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",DigiKey,,~
+J3,1,Fan 2,"Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)","TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",DigiKey,,~
+J4,1,Fan 3,"Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)","TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",DigiKey,,~
+J6,1,Conn_02x04_Counter_Clockwise,"Generic connector, double row, 02x04, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)",Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical,DigiKey,,~
+"Q1,Q2,Q3",3,BSS138,"50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23",Package_TO_SOT_SMD:SOT-23_Handsoldering,DigiKey,,https://www.onsemi.com/pub/Collateral/BSS138-D.PDF
+"R1,R2,R3,R5",4,5.1k,"Resistor, small US symbol",Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,DigiKey,,~
+"R6,R7,R8",3,10k,"Resistor, small US symbol",Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,DigiKey,,~
+"R9,R10,R11",3,100,"Resistor, small US symbol",Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,DigiKey,,~
+"R12,R13,R14",3,1k,"Resistor, small US symbol",Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,DigiKey,,~
+"R15,R16",2,4.7k,"Resistor, small US symbol",Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,DigiKey,,~
+R17,1,0,"Resistor, small US symbol",Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,DigiKey,,~
+"SW1,SW2",2,SW_SPDT,"Switch, single pole double throw",switch_DM:switch_dm,DigiKey,,~
+"SW3,SW4",2,SW_Push,"Push button switch, generic, two pins",Button_Switch_THT:SW_PUSH_6mm,DigiKey,,~
+"TP1,TP2,TP3,TP4,TP5",5,TestPoint,test point,Connector_Pin:Pin_D0.7mm_L6.5mm_W1.8mm_FlatFork,DigiKey,,~
+U3,1,SCD30,,SCD30:MODULE_SCD30,Sensirion,,
+U4,1,Mini360 DC to DC Buck Converter 12V to 3.3V,,Library:Mini360,Amazon,,
+U2,1,BME688,,BME680:PSON80P300X300X100-8N,Bosch Sensortec,BME680,
+U1,1,SGP30,,SGP30:SGP30,Adafruit,SGP30,
