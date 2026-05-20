@@ -1,3 +1,25 @@
+# current function set
+# compute_ylim
+# compute_pressure_ylim
+# finalize_entry
+# parse_data_file
+# format_time
+# plot_data
+
+# goal:
+#   reduce the current processing flow for each cell of data
+#       combining some functions, reducing logical abstraction to reduce function set
+#   create more modular functions that can be called for two modes of operation
+#       set graphing - visualizing a full set of data given as a file
+#           sets are always full (always all sensors tracking concurrently)
+#           can be reduced to single graphs or given as a full set (default)
+#       live graphing - visualizing a live data stream
+#           right now we're arbitrating what that live datastream is (files as datapackets sent via network integration)
+#           live graphs will print single graphs or full graphs of the set (default)
+
+# goalset
+#   
+
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 
@@ -136,7 +158,12 @@ def parse_data_file(file_path):
                 if line[0] == '#':
                     metadata.append(line[1:])
                     continue
-
+                   
+                if line[0] == '!':
+                    timerflag = True
+                else:
+                    timerflag = False
+                
                 try:
                     # detect timestamp header
                     if ':' in line and '.' in line:
@@ -163,6 +190,7 @@ def parse_data_file(file_path):
                             "timestamp_min": int(mn),
                             "timestamp_s": int(sec),
                             "timestamp_ms": int(ms),
+                            "mark": timerflag,
                             "BMEvalues": [None] * 4,
                             "SCDvalues": [None] * 3,
                             "SGPvalues": None
@@ -188,11 +216,6 @@ def parse_data_file(file_path):
                     if "SGP BLOCK" in line:
                         current_block = "SGP"
                         sgp_vals = []
-                        continue
-
-                    # close scd block
-                    if "{SCDEND}" in line:
-                        current_block = None
                         continue
 
                     # parse numeric sensor values
@@ -231,6 +254,8 @@ def parse_data_file(file_path):
             if finished:
                 data_container.append(finished)
 
+            timerflag = False    
+
     # ERROR CASE: file not found
     except FileNotFoundError:
         print("File not found.")
@@ -263,11 +288,16 @@ def plot_data(data, BMEcx, SCDcx, SGPcx, override):
     time_coords = [
         d['timestamp_min'] * 60 + d['timestamp_s'] + d['timestamp_ms']/1000.0
         for d in data
-    ]
-
+        ]
+    mark_coords = [
+        d['timestamp_min'] * 60 + d['timestamp_s'] + d['timestamp_ms']/1000.0
+        for d in data if d['mark'] is true
+        ]
+    
     # establish start time, time coordinates array from data array
     start = time_coords[0]
     time_coords = [t - start for t in time_coords]
+    mark_coords = [t - start for t in mark_coords]
 
     # labels
     # todo: move somewhere more overtly declared
@@ -340,10 +370,17 @@ def plot_data(data, BMEcx, SCDcx, SGPcx, override):
         else:
             ylim = compute_auto_ylim(series[idx])
 
+        # x/y limits
         ax.set_ylim(ylim)
         ax.set_xlim(min(time_coords), max(time_coords))
+
+        # ??
         ax.xaxis.set_major_formatter(FuncFormatter(format_time))
 
+        # highlighting
+        ax.axvspan(mark_coords[0], mark_coords[1], color='0.9')
+
+    # ??disable graphs we don't want to see
     for j in range(graphAmnt, len(axes)):
         axes[j].set_visible(False)
 
