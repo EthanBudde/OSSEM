@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Integrated ECU System")
-		(date "2026-05-02")
-		(rev "1.8")
+		(date "2026-05-22")
+		(rev "1.8.1")
 		(company "OSSEM (Open-Source Smart Espresso Machine)")
 		(comment 1 "EE Hardware Engineers: David Mazhnikov, Roman Sulza")
 	)
@@ -4019,6 +4019,26 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Vent Button"
+		(exclude_from_sim no)
+		(at 231.394 119.126 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "54b65ad5-e90e-4804-8043-c0978834a6f4")
+	)
+	(text "Fan Speed Button"
+		(exclude_from_sim no)
+		(at 179.07 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5dba46e2-93ef-482f-9f44-9811d2275afb")
+	)
 	(text_box "These LEDs are Sensor Indicators controlled by the microcontroller with various uses."
 		(exclude_from_sim no)
 		(at 265.43 91.44 0)
@@ -4139,7 +4159,7 @@
 		)
 		(uuid "3af5e8e5-fc6a-4b37-a417-8ad1098304ac")
 	)
-	(text_box "SW3 Controlls Fan 1 (Interior)"
+	(text_box "SW3 Control Fan Speed"
 		(exclude_from_sim no)
 		(at 177.8 128.27 0)
 		(size 16.51 7.62)
@@ -4339,7 +4359,7 @@
 		)
 		(uuid "cdab9567-552f-473d-8304-16b82c717a0d")
 	)
-	(text_box "SW4 Will control the pre-vent & post-vent & LEDs?"
+	(text_box "SW4 Will control the pre-vent & post-vent."
 		(exclude_from_sim no)
 		(at 245.11 114.3 0)
 		(size 21.59 8.89)
@@ -14170,7 +14190,7 @@
 				)
 			)
 		)
-		(property "Value" "YELLOW_LED"
+		(property "Value" "GREEN_LED"
 			(at 108.204 84.582 0)
 			(effects
 				(font
