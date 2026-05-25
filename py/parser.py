@@ -284,28 +284,23 @@ def plot_data(data, BMEcx, SCDcx, SGPcx, override):
         print("No valid data.")
         return
 
-    # calculate timestamps for printing
+# New function added: buildSeries
+# Constructor for turning packetized data into graphable arrays
+def buildSeries(data):
+    # added d['timestamp_hr'] * 3600 so any session that is over 59 minutes now has the right time coords
     time_coords = [
-        d['timestamp_min'] * 60 + d['timestamp_s'] + d['timestamp_ms']/1000.0
+        d['timestamp_hr'] * 3600 + d['timestamp_min'] * 60 + d['timestamp_s'] + d['timestamp_ms'] / 1000.0
         for d in data
-        ]
+    ] 
     mark_coords = [
-        d['timestamp_min'] * 60 + d['timestamp_s'] + d['timestamp_ms']/1000.0
-        for d in data if d['mark'] is true
-        ]
+        d['timestamp_hr'] * 3600 + d['timestamp_min'] * 60 + d['timestamp_s'] + d['timestamp_ms'] / 1000.0
+        for d in data if d['mark'] == True
+    ]
     
     # establish start time, time coordinates array from data array
     start = time_coords[0]
     time_coords = [t - start for t in time_coords]
     mark_coords = [t - start for t in mark_coords]
-
-    # labels
-    # todo: move somewhere more overtly declared
-    labels = [
-        "BME Temp (°C)", "BME Pressure (hPa)", "BME Humidity (%)", "BME Gas (KΩ)",
-        "SCD Temp (°C)", "SCD Humidity (%)", "SCD CO2 (ppm)",
-        "SGP TVOC (ppb)", "SGP CO2 (ppm)"
-    ]
 
     # series labels corresponding with input style
     # alphabetical order on sensors is canonical
@@ -320,7 +315,20 @@ def plot_data(data, BMEcx, SCDcx, SGPcx, override):
         [d['SGPvalues'][0] for d in data],
         [d['SGPvalues'][1] for d in data],
     ]
+    return time_coords, mark_coords, series
+    
+    # establish start time, time coordinates array from data array
+    time_coords, mark_coords, series = buildSeries(data)
 
+    # labels
+    # todo: move somewhere more overtly declared
+    labels = [
+        "BME Temp (°C)", "BME Pressure (hPa)", "BME Humidity (%)", "BME Gas (KΩ)",
+        "SCD Temp (°C)", "SCD Humidity (%)", "SCD CO2 (ppm)",
+        "SGP TVOC (ppb)", "SGP CO2 (ppm)"
+    ]
+
+    
     # enabled sensor data packages for printing
     enabled = []
 
