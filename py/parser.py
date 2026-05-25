@@ -1,7 +1,170 @@
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 
+#global constants
+
 metadata = []
+
+LABELS = [
+    "BME Temp (°C)",
+    "BME Pressure (hPa)",
+    "BME Humidity (%)",
+    "BME Gas (KΩ)",
+    "SCD Temp (°C)",
+    "SCD Humidity (%)",
+    "SCD CO2 (ppm)",
+    "SGP TVOC (ppb)",
+    "SGP CO2 (ppm)"
+]
+
+SERIES_MAP = [
+    ("BMEvalues", 0),
+    ("BMEvalues", 1),
+    ("BMEvalues", 2),
+    ("BMEvalues", 3),
+    ("SCDvalues", 0),
+    ("SCDvalues", 1),
+    ("SCDvalues", 2),
+    ("SGPvalues", 0),
+    ("SGPvalues", 1)
+]
+
+#stream_packets
+def stream_packets(source_type, source):
+
+    
+    #file source
+    if source_type == "file":
+        metadata.clear()
+
+        try:
+
+            with open(source, 'r') as file:
+                current_lines = []              #current readings
+                for raw_line in file:           #line parse
+                    line = raw_line.strip()     #remove whitespace, '\n'
+                    if not line:                #skip empty lines
+                        continue
+
+                    # metadata
+                    if line.startswith('#'):        #comments
+                        metadata.append(line[1:])   #append to metadata container
+                        continue
+
+                    # timestamp = packet boundary
+                    if ':' in line and '.' in line:             #we're looking at a timestamp
+                        if current_lines:                       #checking if we're inside a packet already
+                            yield parse_packet(current_lines)   #we yield this instead of returning for run-time graphing
+                        current_lines = [line]                  #start the new packet buffer
+
+                    else:                                       #we aren't looking at a timestamp
+`                        current_lines.append(line)
+
+                # final packet
+                if current_lines:
+                    yield parse_packet(current_lines)
+
+        except FileNotFoundError:
+            raise FileNotFoundError(
+                f"unable to locate file: {source}"
+            )
+
+    #serial source
+    elif source_type == "serial":
+
+        #oos  
+        pass
+
+    #network source
+    elif source_type == "network":
+
+        #oos maybe
+        pass
+
+
+#parse_packet
+def parse_packet(lines):
+
+    #what the packet will contain
+    packet = {
+        "timestamp_hr": 0,
+        "timestamp_min": 0,
+        "timestamp_s": 0,
+        "timestamp_ms": 0,
+        "mark": False,
+        "BMEvalues": [None] * 4,
+        "SCDvalues": [None] * 3,
+        "SGPvalues": [None] * 2
+    }
+
+    #different blocks for each sensor's data
+    #allows them to show up ooo, not all at once, etc
+    current_block = None
+
+    #indexes for blocks
+    bme_idx = 0
+    scd_idx = 0
+    sgp_idx = 0
+
+    #per-line parsing
+    for line in lines:
+        #timestamp
+        if ':' in line and '.' in line:
+
+            #mark lines (for shading
+            if line.startswith('!'):
+                packet["mark"] = True
+                line = line[1:]
+
+            #split timestamp, isolate hr+min/s+ms
+            hr, mn, rest = line.split(':')
+            sec, ms = rest.split('.')
+
+            #place in associated spots in packet
+            packet["timestamp_hr"] = int(hr)
+            packet["timestamp_min"] = int(mn)
+            packet["timestamp_s"] = int(sec)
+            packet["timestamp_ms"] = int(ms)
+            continue
+
+        #data block detection
+        if "BME BLOCK" in line:
+            current_block = "BME"
+            continue
+
+        if "SCD BLOCK" in line:
+            current_block = "SCD"
+            continue
+
+        if "SGP BLOCK" in line:
+            current_block = "SGP"
+            continue
+
+        #values from containers
+        if '[' in line and ']' in line:
+            try:
+                value = float(line.split('[')[0])   #grab value on line
+
+                #pack to associated packet
+                if current_block == "BME":
+                    if bme_idx < 4:
+                        packet["BMEvalues"][bme_idx] = value
+                        bme_idx += 1
+
+                elif current_block == "SCD":
+                    if scd_idx < 3:
+                        packet["SCDvalues"][scd_idx] = value
+                        scd_idx += 1
+
+                elif current_block == "SGP":
+                    if sgp_idx < 2:
+                        packet["SGPvalues"][sgp_idx] = value
+                        sgp_idx += 1
+
+            except ValueError:
+                continue
+
+return packet
 
 # function: compute_ylim
 # inputs  : series
