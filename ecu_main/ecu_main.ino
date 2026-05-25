@@ -252,7 +252,6 @@ void setup() {
 
 void loop() {
   //button check
-  if
   readButton();
   
   // timestamp
@@ -260,7 +259,7 @@ void loop() {
 	// button flag enable
 	if(trigger) {
 	  Serial.print("!");
-	  trigger = False;
+	  trigger = false;
     }  
 	  Serial.println(myTZ.dateTime("H:i:s.v"));
 	}
@@ -397,7 +396,8 @@ void readButton(){
       stableButtonState = reading;
 
       if (stableButtonState == LOW) {
-	    fanToggle();
+	    //fanToggle();
+      shadeToggle();
       }
     }
   }
