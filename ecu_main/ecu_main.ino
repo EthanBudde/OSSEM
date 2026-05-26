@@ -14,15 +14,18 @@
 #define SCDPIN 27
 #define SGPPIN 12
 
-const int FAN_PIN = 26;
-const int BUTTON_PIN = 13;
+const int FAN1_PIN = 26;
+const int FAN2_PIN = 25;
+const int BUTTON1_PIN = 13;
+const int BUTTON2_PIN = 36;
 
 const int PWM_FREQ = 25000;
 const int PWM_RESOLUTION = 8;
 
 bool trigger = false;
 
-int fanMode = 0;
+int fanMode = 1;
+int reading[2];
 
 int fanSpeed[] = {
   0,
@@ -31,8 +34,8 @@ int fanSpeed[] = {
   255
 };
 
-int lastButtonReading = HIGH;
-int stableButtonState = HIGH;
+int lastButtonReading[2];
+int stableButtonState[2] = {1, 1};
 unsigned long lastDebounceTime = 0;
 const unsigned long debounceDelay = 50;
 
@@ -45,10 +48,13 @@ Adafruit_BME680 bme(&Wire);
 Timezone myTZ;
 
 // network ssid and pass
-char ssid[]     = "HOWLING-ABYSS";
-char password[] = "bigswag!";
+char ssid[]     = "Dav";
+char password[] = "00000000";
 
 int count = 0;
+int t_dataBegin = 0;
+
+bool dumbTimestamps = false;
 
 // coherence structs, last/current holders
 struct bmeValues{
@@ -134,10 +140,14 @@ void setup() {
   pinMode(SCDPIN, OUTPUT);
   pinMode(SGPPIN, OUTPUT);
   
-  pinMode(BUTTON_PIN, INPUT_PULLUP);
+  pinMode(BUTTON1_PIN, INPUT_PULLUP);
+  pinMode(BUTTON2_PIN, INPUT_PULLUP);
 
-  ledcAttach(FAN_PIN, PWM_FREQ, PWM_RESOLUTION);
-  ledcWrite(FAN_PIN, fanSpeed[fanMode]);
+  ledcAttach(FAN1_PIN, PWM_FREQ, PWM_RESOLUTION);
+  ledcWrite(FAN1_PIN, fanSpeed[fanMode]);
+
+  ledcAttach(FAN2_PIN, PWM_FREQ, PWM_RESOLUTION);
+  ledcWrite(FAN2_PIN, fanSpeed[fanMode]);
 
   Serial.println("ESP32 Feather HUZZAH32 fan control started.");
   Serial.println("Mode 0: OFF");
@@ -252,18 +262,24 @@ void setup() {
 
 void loop() {
   //button check
-  readButton();
+  readButton(BUTTON1_PIN, 1);
+  readButton(BUTTON2_PIN, 2);
   
   // timestamp
-  if(count == 0){
-	// button flag enable
-	if(trigger) {
+  if(trigger) {
 	  Serial.print("!");
-	  trigger = false;
-    }  
+    trigger = false;
+  }
+  if(dumbTimestamps == false){
 	  Serial.println(myTZ.dateTime("H:i:s.v"));
-	}
-  
+	}else if(dumbTimestamps == true){
+    char buffer[10];
+    int time = (millis() - t_dataBegin) / 1000; 
+    sprintf(buffer, "%03d", ((millis() - t_dataBegin) % 1000));
+    Serial.print(time); Serial.print("."); Serial.println(buffer);
+  }
+ 
+
   // refactor for controlability, testing
   // try/except with a nonblocking timer?
   scdRead();
@@ -367,44 +383,52 @@ void sgpRead(){
   blinkPin(SGPPIN, 2);
 }
 
-void fanToggle(){
+void fanControl(){
   fanMode++;
   if (fanMode > 3) {		
     fanMode = 0;
   }
  
-  ledcWrite(FAN_PIN, fanSpeed[fanMode]);
+  ledcWrite(FAN1_PIN, fanSpeed[fanMode]);
+  ledcWrite(FAN2_PIN, fanSpeed[fanMode]);
 
-  Serial.print("Fan mode: ");
+  //Serial.print("Fan mode: ");
   Serial.print(fanMode);
-  Serial.print(" | PWM: ");
+  //Serial.print(" | PWM: ");
   Serial.println(fanSpeed[fanMode]);
 }
 
 void shadeToggle(){
-	trigger = true;
-}
-void readButton(){
-  int reading = digitalRead(BUTTON_PIN);
-
-  if (reading != lastButtonReading) {
-    lastDebounceTime = millis();
+	if((t_dataBegin == 0)&&(dumbTimestamps)){
+    t_dataBegin = millis();
+  } else { 
+    trigger = true;
   }
+}
 
+
+void readButton(int pin, int work){
+  reading[work] = digitalRead(pin);
+  
   if ((millis() - lastDebounceTime) > debounceDelay) {
-    if (reading != stableButtonState) {
-      stableButtonState = reading;
+    if (reading[work] != stableButtonState[work]) {
+      stableButtonState[work] = reading[work];
 
-      if (stableButtonState == LOW) {
-	    //fanToggle();
-      shadeToggle();
-      }
+      if (stableButtonState[work] == LOW) {
+        switch(pin){
+          case(BUTTON1_PIN):
+            fanControl();
+            break;
+          case(BUTTON2_PIN):
+            //fanControl();
+            break;
+          default:
+            Serial.println("undefined button input detected.");
+            break;
+        }
+      } 
     }
   }
 
-  lastButtonReading = reading;	
+  lastButtonReading[work] = reading[work];	
 }
-
-
-  	
-	
