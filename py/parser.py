@@ -171,7 +171,7 @@ return packet
 #           trim ratio          default 0.05
 #           margin ratio        default 0.1
 #           extra pad ratio     default 0.05, 
-def compute_auto_ylim(series, trim_ratio=0.05, margin_ratio=0.1, extra_pad_ratio=0.05):
+def computeYlim(series, mode='auto'):
     # makes worker array of values in series input  
     clean = [v for v in series if v is not None]
 
@@ -507,9 +507,9 @@ def plot_data(data, BMEcx, SCDcx, SGPcx, override):
 
         # 
         if idx == 1:
-            ylim = compute_pressure_ylim(series[idx])
+            ylim = computeYlim(series[idx], mode='pressure')
         else:
-            ylim = compute_auto_ylim(series[idx])
+            ylim = computeYlim(series[idx])
 
         # x/y limits
         ax.set_ylim(ylim)
