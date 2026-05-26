@@ -14,15 +14,17 @@
 #define SCDPIN 27
 #define SGPPIN 12
 
-const int FAN_PIN = 26;
-const int BUTTON_PIN = 13;
+const int FAN1_PIN = 25;
+const int FAN2_PIN = 26;
+const int BUTTON_PIN_VENT = 13;
 
 const int PWM_FREQ = 25000;
 const int PWM_RESOLUTION = 8;
 
 bool trigger = false;
 
-int fanMode = 0;
+bool ventEnabled = false;
+int fanMode = 1;
 
 int fanSpeed[] = {
   0,
@@ -134,10 +136,13 @@ void setup() {
   pinMode(SCDPIN, OUTPUT);
   pinMode(SGPPIN, OUTPUT);
   
-  pinMode(BUTTON_PIN, INPUT_PULLUP);
+  pinMode(BUTTON_PIN_VENT, INPUT_PULLUP);
 
-  ledcAttach(FAN_PIN, PWM_FREQ, PWM_RESOLUTION);
-  ledcWrite(FAN_PIN, fanSpeed[fanMode]);
+  ledcAttach(FAN1_PIN, PWM_FREQ, PWM_RESOLUTION);
+  ledcWrite(FAN1_PIN, fanSpeed[fanMode]);
+
+  ledcAttach(FAN2_PIN, PWM_FREQ, PWM_RESOLUTION);
+  ledcWrite(FAN2_PIN, fanSpeed[fanMode]);
 
   Serial.println("ESP32 Feather HUZZAH32 fan control started.");
   Serial.println("Mode 0: OFF");
@@ -251,8 +256,9 @@ void setup() {
 }
 
 void loop() {
+
+  
   //button check
-  if
   readButton();
   
   // timestamp
@@ -260,7 +266,7 @@ void loop() {
 	// button flag enable
 	if(trigger) {
 	  Serial.print("!");
-	  trigger = False;
+	  trigger = false;
     }  
 	  Serial.println(myTZ.dateTime("H:i:s.v"));
 	}
@@ -368,13 +374,16 @@ void sgpRead(){
   blinkPin(SGPPIN, 2);
 }
 
+
 void fanToggle(){
   fanMode++;
-  if (fanMode > 3) {		
+
+  if (fanMode > 3) {
     fanMode = 0;
   }
- 
-  ledcWrite(FAN_PIN, fanSpeed[fanMode]);
+
+  ledcWrite(FAN1_PIN, fanSpeed[fanMode]);
+  ledcWrite(FAN2_PIN, fanSpeed[fanMode]);
 
   Serial.print("Fan mode: ");
   Serial.print(fanMode);
@@ -382,11 +391,8 @@ void fanToggle(){
   Serial.println(fanSpeed[fanMode]);
 }
 
-void shadeToggle(){
-	trigger = true;
-}
 void readButton(){
-  int reading = digitalRead(BUTTON_PIN);
+  int reading = digitalRead(BUTTON_PIN_VENT);
 
   if (reading != lastButtonReading) {
     lastDebounceTime = millis();
@@ -397,14 +403,13 @@ void readButton(){
       stableButtonState = reading;
 
       if (stableButtonState == LOW) {
-	    fanToggle();
+        fanToggle();
       }
     }
   }
 
-  lastButtonReading = reading;	
+  lastButtonReading = reading;
 }
-
 
   	
 	
