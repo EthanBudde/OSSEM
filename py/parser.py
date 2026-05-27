@@ -223,50 +223,35 @@ def compute_pressure_ylim(series):
     pad = (max_v - min_v) * 0.1 if max_v != min_v else 0.1
     return (min_v - pad, max_v + pad)
 
-
-# remake or remove
-# function: finalize_entry
-# inputs  : current
-#           last_bme
-#           last_sgp
-#           last_scd
-# returns : current
-#           last_bme
-#           last_sgp
-#           last_scd
-
-def finalize_entry(current, last_bme, last_sgp, last_scd):
-    # skip empty entry
-    if current is None:
-        return None, last_bme, last_sgp, last_scd
-
-    # patch missing bme data
-    if None in current["BMEvalues"]:
-        current["BMEvalues"] = last_bme.copy()
+# Function: normalizePacket replacing finalize_entry
+#  Repairs incomplete packets using last values, removes empty or corrupted packets, error checking
+def normalizePacket(packet, state):
+    if packet is None:
+        return None, state
+ 
+    if None in packet["BMEvalues"]:
+        packet["BMEvalues"] = state["bme"].copy()
     else:
-        last_bme = current["BMEvalues"].copy()
-
-    # patch missing sgp data
-    if current["SGPvalues"] is None:
-        current["SGPvalues"] = last_sgp.copy()
+        state["bme"] = packet["BMEvalues"].copy()
+ 
+    if packet["SGPvalues"] is None:
+        packet["SGPvalues"] = state["sgp"].copy()
     else:
-        last_sgp = current["SGPvalues"].copy()
-
-    # patch missing scd data
-    if None in current["SCDvalues"]:
-        current["SCDvalues"] = last_scd.copy()
+        state["sgp"] = packet["SGPvalues"].copy()
+ 
+    if None in packet["SCDvalues"]:
+        packet["SCDvalues"] = state["scd"].copy()
     else:
-        last_scd = current["SCDvalues"].copy()
-
-    # reject fully invalid packet
+        state["scd"] = packet["SCDvalues"].copy()
+ 
     if (
-        None in current["BMEvalues"] or
-        current["SGPvalues"] is None or
-        None in current["SCDvalues"]
+        None in packet["BMEvalues"] or
+        packet["SGPvalues"] is None or
+        None in packet["SCDvalues"]
     ):
-        return None, last_bme, last_sgp, last_scd
-
-    return current, last_bme, last_sgp, last_scd
+        return None, state
+ 
+    return packet, state
 
 # function: parse_data_file
 # inputs  : file_path
@@ -274,11 +259,9 @@ def finalize_entry(current, last_bme, last_sgp, last_scd):
 def parse_data_file(file_path):
     data_container = [] # generic data container
 
-    # laggy sensor redundancy
-    last_bme = [0, 0, 0, 0]
-    last_sgp = [0, 0]
-    last_scd = [0, 0, 0]
-
+    # fixed with None so missing first packet sensors are rejected & not zeroed
+    state = {"bme": [None]*4, "sgp": [None]*2, "scd": [None]*3}
+    
     # file parsing block
     try:
         with open(file_path, 'r') as file:
@@ -309,13 +292,8 @@ def parse_data_file(file_path):
                     # detect timestamp header
                     if ':' in line and '.' in line:
 
-                        # close prior packet
-                        finished, last_bme, last_sgp, last_scd = finalize_entry(
-                            current,
-                            last_bme,
-                            last_sgp,
-                            last_scd
-                        )
+                    # close prior packet
+                       finished, state = normalizePacket(current, state)
 
                         if finished:
                             data_container.append(finished)
@@ -385,13 +363,8 @@ def parse_data_file(file_path):
             # LINE PARSING END
 
             # finalize last packet
-            finished, last_bme, last_sgp, last_scd = finalize_entry(
-                current,
-                last_bme,
-                last_sgp,
-                last_scd
-            )
-
+             finished, state = normalizePacket(current, state)
+            
             if finished:
                 data_container.append(finished)
 
