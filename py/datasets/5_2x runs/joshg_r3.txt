@@ -1,0 +1,2445 @@
+#Josh’s Gaggiuino Run 3:
+#5/26/2026, 5:25 PM
+#5/27/2026, 6:30 PM
+
+17:25:06.212
+[SGP BLOCK]
+352[ppbTVOC]
+565[ppmCO2]
+[BME BLOCK]
+29.03[degC]
+1005.48[hPaPres]
+28.68[%humid]
+86.17[KOhmsGasR]
+
+
+
+
+17:25:06.688
+[SCD BLOCK]
+26.40[degC]
+37.51[%humid]
+527.553[ppmCO2]
+
+
+[SGP BLOCK]
+403[ppbTVOC]
+589[ppmCO2]
+[BME BLOCK]
+29.01[degC]
+1005.48[hPaPres]
+28.68[%humid]
+84.13[KOhmsGasR]
+
+
+
+
+17:25:07.192
+[SGP BLOCK]
+436[ppbTVOC]
+596[ppmCO2]
+[BME BLOCK]
+29.02[degC]
+1005.48[hPaPres]
+28.68[%humid]
+83.14[KOhmsGasR]
+
+
+
+
+17:25:07.669
+[SGP BLOCK]
+481[ppbTVOC]
+641[ppmCO2]
+[BME BLOCK]
+29.02[degC]
+1005.49[hPaPres]
+28.69[%humid]
+80.03[KOhmsGasR]
+
+
+
+
+17:25:08.146
+[SGP BLOCK]
+536[ppbTVOC]
+698[ppmCO2]
+[BME BLOCK]
+29.03[degC]
+1005.49[hPaPres]
+28.69[%humid]
+76.51[KOhmsGasR]
+
+
+
+
+17:25:08.622
+[SGP BLOCK]
+616[ppbTVOC]
+740[ppmCO2]
+[BME BLOCK]
+29.03[degC]
+1005.49[hPaPres]
+28.71[%humid]
+75.29[KOhmsGasR]
+
+
+
+
+17:25:09.098
+[SCD BLOCK]
+26.40[degC]
+38.98[%humid]
+528.310[ppmCO2]
+
+
+[SGP BLOCK]
+742[ppbTVOC]
+785[ppmCO2]
+[BME BLOCK]
+29.02[degC]
+1005.48[hPaPres]
+28.68[%humid]
+73.04[KOhmsGasR]
+
+
+
+
+17:25:09.602
+[SGP BLOCK]
+869[ppbTVOC]
+807[ppmCO2]
+[BME BLOCK]
+29.02[degC]
+1005.48[hPaPres]
+28.69[%humid]
+72.36[KOhmsGasR]
+
+
+
+
+17:25:10.079
+[SGP BLOCK]
+990[ppbTVOC]
+830[ppmCO2]
+[BME BLOCK]
+29.03[degC]
+1005.49[hPaPres]
+28.69[%humid]
+71.27[KOhmsGasR]
+
+
+
+
+17:25:10.555
+[SGP BLOCK]
+1149[ppbTVOC]
+947[ppmCO2]
+[BME BLOCK]
+29.04[degC]
+1005.48[hPaPres]
+28.68[%humid]
+69.13[KOhmsGasR]
+
+
+
+
+17:25:11.031
+[SCD BLOCK]
+26.43[degC]
+39.94[%humid]
+526.867[ppmCO2]
+
+
+[SGP BLOCK]
+1381[ppbTVOC]
+1107[ppmCO2]
+[BME BLOCK]
+29.02[degC]
+1005.47[hPaPres]
+28.67[%humid]
+65.93[KOhmsGasR]
+
+
+
+
+17:25:11.535
+[SGP BLOCK]
+1695[ppbTVOC]
+1140[ppmCO2]
+[BME BLOCK]
+29.03[degC]
+1005.48[hPaPres]
+28.68[%humid]
+62.96[KOhmsGasR]
+
+
+
+
+17:25:12.012
+[SGP BLOCK]
+1970[ppbTVOC]
+1130[ppmCO2]
+[BME BLOCK]
+29.04[degC]
+1005.48[hPaPres]
+28.67[%humid]
+60.85[KOhmsGasR]
+
+
+
+
+17:25:12.488
+[SGP BLOCK]
+2214[ppbTVOC]
+1130[ppmCO2]
+[BME BLOCK]
+29.04[degC]
+1005.48[hPaPres]
+28.67[%humid]
+60.21[KOhmsGasR]
+
+
+
+
+17:25:12.964
+[SCD BLOCK]
+26.38[degC]
+40.41[%humid]
+522.344[ppmCO2]
+
+
+[SGP BLOCK]
+2789[ppbTVOC]
+1727[ppmCO2]
+[BME BLOCK]
+29.03[degC]
+1005.48[hPaPres]
+28.67[%humid]
+58.72[KOhmsGasR]
+
+
+
+
+17:25:13.468
+[SGP BLOCK]
+5952[ppbTVOC]
+4827[ppmCO2]
+[BME BLOCK]
+29.03[degC]
+1005.48[hPaPres]
+28.70[%humid]
+55.91[KOhmsGasR]
+
+
+
+
+17:25:13.945
+[SGP BLOCK]
+14004[ppbTVOC]
+8927[ppmCO2]
+[BME BLOCK]
+29.05[degC]
+1005.48[hPaPres]
+28.81[%humid]
+39.49[KOhmsGasR]
+
+
+
+
+17:25:14.421
+[SGP BLOCK]
+34694[ppbTVOC]
+10954[ppmCO2]
+[BME BLOCK]
+29.06[degC]
+1005.49[hPaPres]
+29.22[%humid]
+27.48[KOhmsGasR]
+
+
+
+
+17:25:14.897
+[SGP BLOCK]
+54423[ppbTVOC]
+11707[ppmCO2]
+[BME BLOCK]
+29.07[degC]
+1005.49[hPaPres]
+29.94[%humid]
+22.40[KOhmsGasR]
+
+
+
+
+17:25:15.373
+[SCD BLOCK]
+26.43[degC]
+40.85[%humid]
+518.982[ppmCO2]
+
+
+[SGP BLOCK]
+60000[ppbTVOC]
+24434[ppmCO2]
+[BME BLOCK]
+29.06[degC]
+1005.49[hPaPres]
+30.77[%humid]
+20.51[KOhmsGasR]
+
+
+
+
+17:25:15.877
+[BME BLOCK]
+29.07[degC]
+1005.48[hPaPres]
+31.54[%humid]
+19.48[KOhmsGasR]
+
+
+
+
+17:25:16.353
+[BME BLOCK]
+29.08[degC]
+1005.49[hPaPres]
+32.41[%humid]
+18.03[KOhmsGasR]
+
+
+
+
+17:25:16.828
+[BME BLOCK]
+29.09[degC]
+1005.49[hPaPres]
+33.44[%humid]
+17.05[KOhmsGasR]
+
+
+
+
+17:25:17.303
+[SCD BLOCK]
+26.40[degC]
+42.00[%humid]
+515.781[ppmCO2]
+
+
+[BME BLOCK]
+29.08[degC]
+1005.49[hPaPres]
+34.69[%humid]
+16.46[KOhmsGasR]
+
+
+
+
+17:25:17.806
+[BME BLOCK]
+29.09[degC]
+1005.50[hPaPres]
+35.98[%humid]
+15.99[KOhmsGasR]
+
+
+
+
+17:25:18.282
+[BME BLOCK]
+29.11[degC]
+1005.50[hPaPres]
+37.37[%humid]
+15.73[KOhmsGasR]
+
+
+
+
+17:25:18.757
+[BME BLOCK]
+29.12[degC]
+1005.51[hPaPres]
+38.81[%humid]
+15.73[KOhmsGasR]
+
+
+
+
+17:25:19.232
+[SCD BLOCK]
+26.43[degC]
+44.63[%humid]
+509.578[ppmCO2]
+
+
+[BME BLOCK]
+29.12[degC]
+1005.51[hPaPres]
+40.36[%humid]
+15.28[KOhmsGasR]
+
+
+
+
+17:25:19.735
+[BME BLOCK]
+29.13[degC]
+1005.51[hPaPres]
+41.87[%humid]
+15.30[KOhmsGasR]
+
+
+
+
+17:25:20.211
+[BME BLOCK]
+29.14[degC]
+1005.52[hPaPres]
+43.32[%humid]
+15.55[KOhmsGasR]
+
+
+
+
+17:25:20.687
+[BME BLOCK]
+29.15[degC]
+1005.51[hPaPres]
+44.69[%humid]
+15.86[KOhmsGasR]
+
+
+
+
+17:25:21.162
+[BME BLOCK]
+29.16[degC]
+1005.51[hPaPres]
+45.95[%humid]
+15.99[KOhmsGasR]
+
+
+
+
+17:25:21.637
+[SCD BLOCK]
+26.44[degC]
+48.52[%humid]
+508.006[ppmCO2]
+
+
+[BME BLOCK]
+29.17[degC]
+1005.52[hPaPres]
+47.31[%humid]
+15.55[KOhmsGasR]
+
+
+
+
+17:25:22.140
+[BME BLOCK]
+29.19[degC]
+1005.51[hPaPres]
+48.80[%humid]
+15.26[KOhmsGasR]
+
+
+
+
+17:25:22.616
+[BME BLOCK]
+29.21[degC]
+1005.53[hPaPres]
+50.43[%humid]
+14.95[KOhmsGasR]
+
+
+
+
+17:25:23.091
+[BME BLOCK]
+29.23[degC]
+1005.52[hPaPres]
+52.12[%humid]
+14.97[KOhmsGasR]
+
+
+
+
+17:25:23.566
+[SCD BLOCK]
+26.44[degC]
+52.44[%humid]
+506.730[ppmCO2]
+
+
+[BME BLOCK]
+29.22[degC]
+1005.52[hPaPres]
+53.78[%humid]
+15.02[KOhmsGasR]
+
+
+
+
+17:25:24.069
+[BME BLOCK]
+29.23[degC]
+1005.52[hPaPres]
+55.11[%humid]
+15.32[KOhmsGasR]
+
+
+
+
+17:25:24.545
+[BME BLOCK]
+29.23[degC]
+1005.51[hPaPres]
+56.19[%humid]
+15.79[KOhmsGasR]
+
+
+
+
+17:25:25.020
+[BME BLOCK]
+29.23[degC]
+1005.52[hPaPres]
+56.98[%humid]
+16.29[KOhmsGasR]
+
+
+
+
+17:25:25.495
+[SCD BLOCK]
+26.48[degC]
+55.72[%humid]
+504.359[ppmCO2]
+
+
+[BME BLOCK]
+29.22[degC]
+1005.52[hPaPres]
+57.51[%humid]
+16.90[KOhmsGasR]
+
+
+
+
+17:25:25.998
+[BME BLOCK]
+29.22[degC]
+1005.52[hPaPres]
+57.75[%humid]
+17.60[KOhmsGasR]
+
+
+
+
+17:25:26.474
+[BME BLOCK]
+29.23[degC]
+1005.52[hPaPres]
+57.78[%humid]
+18.37[KOhmsGasR]
+
+
+
+
+17:25:26.950
+[BME BLOCK]
+29.24[degC]
+1005.52[hPaPres]
+57.68[%humid]
+19.13[KOhmsGasR]
+
+
+
+
+17:25:27.425
+[BME BLOCK]
+29.24[degC]
+1005.52[hPaPres]
+57.49[%humid]
+19.91[KOhmsGasR]
+
+
+
+
+17:25:27.900
+[SCD BLOCK]
+26.47[degC]
+58.03[%humid]
+501.201[ppmCO2]
+
+
+[BME BLOCK]
+29.24[degC]
+1005.52[hPaPres]
+57.23[%humid]
+20.43[KOhmsGasR]
+
+
+
+
+17:25:28.403
+[BME BLOCK]
+29.24[degC]
+1005.52[hPaPres]
+56.98[%humid]
+20.78[KOhmsGasR]
+
+
+
+
+17:25:28.879
+[BME BLOCK]
+29.25[degC]
+1005.53[hPaPres]
+56.79[%humid]
+20.43[KOhmsGasR]
+
+
+
+
+17:25:29.354
+[BME BLOCK]
+29.27[degC]
+1005.53[hPaPres]
+56.80[%humid]
+19.87[KOhmsGasR]
+
+
+
+
+17:25:29.829
+[SCD BLOCK]
+26.50[degC]
+59.51[%humid]
+499.528[ppmCO2]
+
+
+[BME BLOCK]
+29.26[degC]
+1005.53[hPaPres]
+56.92[%humid]
+19.78[KOhmsGasR]
+
+
+
+
+17:25:30.332
+[BME BLOCK]
+29.26[degC]
+1005.53[hPaPres]
+56.85[%humid]
+20.57[KOhmsGasR]
+
+
+
+
+17:25:30.808
+[BME BLOCK]
+29.27[degC]
+1005.53[hPaPres]
+56.59[%humid]
+21.11[KOhmsGasR]
+
+
+
+
+17:25:31.283
+[BME BLOCK]
+29.28[degC]
+1005.54[hPaPres]
+56.25[%humid]
+21.65[KOhmsGasR]
+
+
+
+
+17:25:31.758
+[BME BLOCK]
+29.29[degC]
+1005.54[hPaPres]
+55.90[%humid]
+22.17[KOhmsGasR]
+
+
+
+
+17:25:32.234
+[SCD BLOCK]
+26.50[degC]
+60.10[%humid]
+495.214[ppmCO2]
+
+
+[BME BLOCK]
+29.28[degC]
+1005.53[hPaPres]
+55.53[%humid]
+22.73[KOhmsGasR]
+
+
+
+
+17:25:32.737
+[BME BLOCK]
+29.28[degC]
+1005.54[hPaPres]
+55.22[%humid]
+22.35[KOhmsGasR]
+
+
+
+
+17:25:33.213
+[BME BLOCK]
+29.29[degC]
+1005.54[hPaPres]
+55.06[%humid]
+22.24[KOhmsGasR]
+
+
+
+
+17:25:33.688
+[BME BLOCK]
+29.30[degC]
+1005.55[hPaPres]
+54.90[%humid]
+22.45[KOhmsGasR]
+
+
+
+
+17:25:34.163
+[SCD BLOCK]
+26.51[degC]
+59.75[%humid]
+492.045[ppmCO2]
+
+
+[BME BLOCK]
+29.29[degC]
+1005.55[hPaPres]
+54.71[%humid]
+22.71[KOhmsGasR]
+
+
+
+
+17:25:34.666
+[BME BLOCK]
+29.30[degC]
+1005.55[hPaPres]
+54.52[%humid]
+23.65[KOhmsGasR]
+
+
+
+
+17:25:35.142
+[BME BLOCK]
+29.30[degC]
+1005.55[hPaPres]
+54.22[%humid]
+24.36[KOhmsGasR]
+
+
+
+
+17:25:35.617
+[BME BLOCK]
+29.31[degC]
+1005.55[hPaPres]
+53.90[%humid]
+24.95[KOhmsGasR]
+
+
+
+
+17:25:36.092
+[SCD BLOCK]
+26.52[degC]
+58.83[%humid]
+488.268[ppmCO2]
+
+
+[BME BLOCK]
+29.30[degC]
+1005.55[hPaPres]
+53.58[%humid]
+25.33[KOhmsGasR]
+
+
+
+
+17:25:36.595
+[BME BLOCK]
+29.31[degC]
+1005.55[hPaPres]
+53.26[%humid]
+25.88[KOhmsGasR]
+
+
+
+
+17:25:37.071
+[BME BLOCK]
+29.32[degC]
+1005.55[hPaPres]
+52.93[%humid]
+26.53[KOhmsGasR]
+
+
+
+
+17:25:37.546
+[BME BLOCK]
+29.33[degC]
+1005.55[hPaPres]
+52.54[%humid]
+27.20[KOhmsGasR]
+
+
+
+
+17:25:38.021
+[BME BLOCK]
+29.34[degC]
+1005.56[hPaPres]
+52.22[%humid]
+27.41[KOhmsGasR]
+
+
+
+
+17:25:38.496
+[SCD BLOCK]
+26.52[degC]
+57.88[%humid]
+482.929[ppmCO2]
+
+
+[BME BLOCK]
+29.33[degC]
+1005.57[hPaPres]
+51.98[%humid]
+26.51[KOhmsGasR]
+
+
+
+
+17:25:38.999
+[BME BLOCK]
+29.34[degC]
+1005.57[hPaPres]
+51.91[%humid]
+25.92[KOhmsGasR]
+
+
+
+
+17:25:39.475
+[BME BLOCK]
+29.35[degC]
+1005.57[hPaPres]
+51.85[%humid]
+25.98[KOhmsGasR]
+
+
+
+
+17:25:39.951
+[BME BLOCK]
+29.35[degC]
+1005.57[hPaPres]
+51.68[%humid]
+26.12[KOhmsGasR]
+
+
+
+
+17:25:40.426
+[SCD BLOCK]
+26.55[degC]
+56.98[%humid]
+470.900[ppmCO2]
+
+
+[BME BLOCK]
+29.34[degC]
+1005.58[hPaPres]
+51.42[%humid]
+26.09[KOhmsGasR]
+
+
+
+
+17:25:40.929
+[BME BLOCK]
+29.35[degC]
+1005.57[hPaPres]
+51.22[%humid]
+26.27[KOhmsGasR]
+
+
+
+
+17:25:41.405
+[BME BLOCK]
+29.36[degC]
+1005.57[hPaPres]
+51.03[%humid]
+26.15[KOhmsGasR]
+
+
+
+
+17:25:41.880
+[BME BLOCK]
+29.37[degC]
+1005.57[hPaPres]
+50.86[%humid]
+26.23[KOhmsGasR]
+
+
+
+
+17:25:42.356
+[SCD BLOCK]
+26.55[degC]
+55.99[%humid]
+442.562[ppmCO2]
+
+
+[BME BLOCK]
+29.36[degC]
+1005.57[hPaPres]
+50.76[%humid]
+25.51[KOhmsGasR]
+
+
+
+
+17:25:42.859
+[BME BLOCK]
+29.37[degC]
+1005.57[hPaPres]
+50.81[%humid]
+25.21[KOhmsGasR]
+
+
+
+
+17:25:43.335
+[BME BLOCK]
+29.38[degC]
+1005.56[hPaPres]
+50.97[%humid]
+24.73[KOhmsGasR]
+
+
+
+
+17:25:43.810
+[BME BLOCK]
+29.39[degC]
+1005.57[hPaPres]
+51.19[%humid]
+24.01[KOhmsGasR]
+
+
+
+
+17:25:44.285
+[BME BLOCK]
+29.40[degC]
+1005.57[hPaPres]
+51.55[%humid]
+22.78[KOhmsGasR]
+
+
+
+
+17:25:44.760
+[SCD BLOCK]
+26.58[degC]
+54.90[%humid]
+439.834[ppmCO2]
+
+
+[BME BLOCK]
+29.40[degC]
+1005.58[hPaPres]
+51.97[%humid]
+22.31[KOhmsGasR]
+
+
+
+
+17:25:45.263
+[BME BLOCK]
+29.40[degC]
+1005.57[hPaPres]
+52.30[%humid]
+22.66[KOhmsGasR]
+
+
+
+
+17:25:45.739
+[BME BLOCK]
+29.41[degC]
+1005.57[hPaPres]
+52.40[%humid]
+24.03[KOhmsGasR]
+
+
+
+
+17:25:46.214
+[BME BLOCK]
+29.41[degC]
+1005.57[hPaPres]
+52.26[%humid]
+25.00[KOhmsGasR]
+
+
+
+
+17:25:46.689
+[SCD BLOCK]
+26.61[degC]
+54.28[%humid]
+437.321[ppmCO2]
+
+
+[BME BLOCK]
+29.40[degC]
+1005.58[hPaPres]
+51.93[%humid]
+25.64[KOhmsGasR]
+
+
+
+
+17:25:47.192
+[BME BLOCK]
+29.41[degC]
+1005.58[hPaPres]
+51.58[%humid]
+26.41[KOhmsGasR]
+
+
+
+
+17:25:47.668
+[BME BLOCK]
+29.42[degC]
+1005.57[hPaPres]
+51.21[%humid]
+27.03[KOhmsGasR]
+
+
+
+
+17:25:48.143
+[BME BLOCK]
+29.43[degC]
+1005.56[hPaPres]
+50.90[%humid]
+27.24[KOhmsGasR]
+
+
+
+
+17:25:48.618
+[SCD BLOCK]
+26.64[degC]
+53.79[%humid]
+432.366[ppmCO2]
+
+
+[BME BLOCK]
+29.42[degC]
+1005.58[hPaPres]
+50.64[%humid]
+27.00[KOhmsGasR]
+
+
+
+
+17:25:49.121
+[BME BLOCK]
+29.42[degC]
+1005.57[hPaPres]
+50.53[%humid]
+27.10[KOhmsGasR]
+
+
+
+
+17:25:49.597
+[BME BLOCK]
+29.43[degC]
+1005.58[hPaPres]
+50.38[%humid]
+27.61[KOhmsGasR]
+
+
+
+
+17:25:50.072
+[BME BLOCK]
+29.44[degC]
+1005.58[hPaPres]
+50.10[%humid]
+28.32[KOhmsGasR]
+
+
+
+
+17:25:50.547
+[BME BLOCK]
+29.44[degC]
+1005.58[hPaPres]
+49.76[%humid]
+28.70[KOhmsGasR]
+
+
+
+
+17:25:51.022
+[SCD BLOCK]
+26.65[degC]
+53.31[%humid]
+439.364[ppmCO2]
+
+
+[BME BLOCK]
+29.44[degC]
+1005.58[hPaPres]
+49.40[%humid]
+29.26[KOhmsGasR]
+
+
+
+
+17:25:51.525
+[BME BLOCK]
+29.44[degC]
+1005.58[hPaPres]
+49.09[%humid]
+29.46[KOhmsGasR]
+
+
+
+
+17:25:52.001
+[BME BLOCK]
+29.45[degC]
+1005.57[hPaPres]
+48.85[%humid]
+29.16[KOhmsGasR]
+
+
+
+
+17:25:52.476
+[SGP BLOCK]
+59721[ppbTVOC]
+5197[ppmCO2]
+[BME BLOCK]
+29.46[degC]
+1005.57[hPaPres]
+48.73[%humid]
+29.34[KOhmsGasR]
+
+
+
+
+17:25:52.952
+[SCD BLOCK]
+26.65[degC]
+52.84[%humid]
+439.656[ppmCO2]
+
+
+[SGP BLOCK]
+58536[ppbTVOC]
+4894[ppmCO2]
+[BME BLOCK]
+29.45[degC]
+1005.56[hPaPres]
+48.53[%humid]
+29.73[KOhmsGasR]
+
+
+
+
+17:25:53.456
+[SGP BLOCK]
+56270[ppbTVOC]
+4643[ppmCO2]
+[BME BLOCK]
+29.46[degC]
+1005.56[hPaPres]
+48.22[%humid]
+30.27[KOhmsGasR]
+
+
+
+
+17:25:53.933
+[SGP BLOCK]
+54249[ppbTVOC]
+4545[ppmCO2]
+[BME BLOCK]
+29.46[degC]
+1005.56[hPaPres]
+47.90[%humid]
+30.86[KOhmsGasR]
+
+
+
+
+17:25:54.409
+[SGP BLOCK]
+52924[ppbTVOC]
+4729[ppmCO2]
+[BME BLOCK]
+29.47[degC]
+1005.56[hPaPres]
+47.57[%humid]
+31.36[KOhmsGasR]
+
+
+
+
+17:25:54.885
+[SCD BLOCK]
+26.68[degC]
+52.38[%humid]
+440.488[ppmCO2]
+
+
+[SGP BLOCK]
+54283[ppbTVOC]
+4950[ppmCO2]
+[BME BLOCK]
+29.46[degC]
+1005.56[hPaPres]
+47.24[%humid]
+31.46[KOhmsGasR]
+
+
+
+
+17:25:55.389
+[SGP BLOCK]
+52436[ppbTVOC]
+4707[ppmCO2]
+[BME BLOCK]
+29.47[degC]
+1005.57[hPaPres]
+47.00[%humid]
+30.53[KOhmsGasR]
+
+
+
+
+17:25:55.866
+[SGP BLOCK]
+49543[ppbTVOC]
+4163[ppmCO2]
+[BME BLOCK]
+29.49[degC]
+1005.58[hPaPres]
+47.05[%humid]
+28.98[KOhmsGasR]
+
+
+
+
+17:25:56.342
+[SGP BLOCK]
+45569[ppbTVOC]
+3610[ppmCO2]
+[BME BLOCK]
+29.50[degC]
+1005.59[hPaPres]
+47.41[%humid]
+27.75[KOhmsGasR]
+
+
+
+
+17:25:56.818
+[SGP BLOCK]
+41735[ppbTVOC]
+3213[ppmCO2]
+[BME BLOCK]
+29.50[degC]
+1005.58[hPaPres]
+47.81[%humid]
+27.83[KOhmsGasR]
+
+
+
+
+17:25:57.294
+[SCD BLOCK]
+26.70[degC]
+51.89[%humid]
+440.316[ppmCO2]
+
+
+[SGP BLOCK]
+35879[ppbTVOC]
+2781[ppmCO2]
+[BME BLOCK]
+29.49[degC]
+1005.57[hPaPres]
+47.97[%humid]
+28.25[KOhmsGasR]
+
+
+
+
+17:25:57.798
+[SGP BLOCK]
+30511[ppbTVOC]
+2543[ppmCO2]
+[BME BLOCK]
+29.48[degC]
+1005.56[hPaPres]
+47.86[%humid]
+29.10[KOhmsGasR]
+
+
+
+
+17:25:58.275
+[SGP BLOCK]
+25979[ppbTVOC]
+2369[ppmCO2]
+[BME BLOCK]
+29.48[degC]
+1005.57[hPaPres]
+47.55[%humid]
+30.04[KOhmsGasR]
+
+
+
+
+17:25:58.751
+[SGP BLOCK]
+21134[ppbTVOC]
+2155[ppmCO2]
+[BME BLOCK]
+29.48[degC]
+1005.57[hPaPres]
+47.15[%humid]
+31.00[KOhmsGasR]
+
+
+
+
+17:25:59.227
+[SCD BLOCK]
+26.71[degC]
+50.10[%humid]
+440.570[ppmCO2]
+
+
+[SGP BLOCK]
+16498[ppbTVOC]
+2025[ppmCO2]
+[BME BLOCK]
+29.46[degC]
+1005.58[hPaPres]
+46.66[%humid]
+31.83[KOhmsGasR]
+
+
+
+
+17:25:59.731
+[SGP BLOCK]
+15051[ppbTVOC]
+1908[ppmCO2]
+[BME BLOCK]
+29.46[degC]
+1005.57[hPaPres]
+46.13[%humid]
+32.96[KOhmsGasR]
+
+
+
+
+17:26:00.208
+[SGP BLOCK]
+13790[ppbTVOC]
+1825[ppmCO2]
+[BME BLOCK]
+29.46[degC]
+1005.57[hPaPres]
+45.58[%humid]
+34.04[KOhmsGasR]
+
+
+
+
+17:26:00.684
+[SGP BLOCK]
+12327[ppbTVOC]
+1723[ppmCO2]
+[BME BLOCK]
+29.46[degC]
+1005.57[hPaPres]
+44.99[%humid]
+35.14[KOhmsGasR]
+
+
+
+
+17:26:01.160
+[SCD BLOCK]
+26.70[degC]
+48.74[%humid]
+444.109[ppmCO2]
+
+
+[SGP BLOCK]
+10605[ppbTVOC]
+1597[ppmCO2]
+[BME BLOCK]
+29.45[degC]
+1005.57[hPaPres]
+44.39[%humid]
+36.12[KOhmsGasR]
+
+
+
+
+17:26:01.664
+[SGP BLOCK]
+9400[ppbTVOC]
+1487[ppmCO2]
+[BME BLOCK]
+29.45[degC]
+1005.56[hPaPres]
+43.79[%humid]
+37.35[KOhmsGasR]
+
+
+
+
+17:26:02.141
+[SGP BLOCK]
+7577[ppbTVOC]
+1384[ppmCO2]
+[BME BLOCK]
+29.45[degC]
+1005.56[hPaPres]
+43.22[%humid]
+38.64[KOhmsGasR]
+
+
+
+
+17:26:02.617
+[SGP BLOCK]
+6579[ppbTVOC]
+1281[ppmCO2]
+[BME BLOCK]
+29.45[degC]
+1005.56[hPaPres]
+42.63[%humid]
+39.90[KOhmsGasR]
+
+
+
+
+17:26:03.093
+[SGP BLOCK]
+5897[ppbTVOC]
+1185[ppmCO2]
+[BME BLOCK]
+29.45[degC]
+1005.56[hPaPres]
+42.05[%humid]
+41.01[KOhmsGasR]
+
+
+
+
+17:26:03.569
+[SCD BLOCK]
+26.67[degC]
+46.45[%humid]
+446.248[ppmCO2]
+
+
+[SGP BLOCK]
+5129[ppbTVOC]
+1107[ppmCO2]
+[BME BLOCK]
+29.44[degC]
+1005.55[hPaPres]
+41.44[%humid]
+41.98[KOhmsGasR]
+
+
+
+
+17:26:04.073
+[SGP BLOCK]
+4402[ppbTVOC]
+1017[ppmCO2]
+[BME BLOCK]
+29.44[degC]
+1005.55[hPaPres]
+40.90[%humid]
+43.30[KOhmsGasR]
+
+
+
+
+17:26:04.551
+[SGP BLOCK]
+3840[ppbTVOC]
+983[ppmCO2]
+[BME BLOCK]
+29.44[degC]
+1005.55[hPaPres]
+40.39[%humid]
+44.52[KOhmsGasR]
+
+
+
+
+17:26:05.027
+[SGP BLOCK]
+3093[ppbTVOC]
+883[ppmCO2]
+[BME BLOCK]
+29.44[degC]
+1005.54[hPaPres]
+39.88[%humid]
+45.67[KOhmsGasR]
+
+
+
+
+17:26:05.503
+[SCD BLOCK]
+26.68[degC]
+44.09[%humid]
+447.633[ppmCO2]
+
+
+[SGP BLOCK]
+2808[ppbTVOC]
+844[ppmCO2]
+[BME BLOCK]
+29.43[degC]
+1005.55[hPaPres]
+39.37[%humid]
+46.31[KOhmsGasR]
+
+
+
+
+17:26:06.007
+[SGP BLOCK]
+2526[ppbTVOC]
+824[ppmCO2]
+[BME BLOCK]
+29.43[degC]
+1005.55[hPaPres]
+38.93[%humid]
+48.15[KOhmsGasR]
+
+
+
+
+17:26:06.484
+[SGP BLOCK]
+2272[ppbTVOC]
+804[ppmCO2]
+[BME BLOCK]
+29.43[degC]
+1005.55[hPaPres]
+38.51[%humid]
+49.09[KOhmsGasR]
+
+
+
+
+17:26:06.960
+[SGP BLOCK]
+2000[ppbTVOC]
+787[ppmCO2]
+[BME BLOCK]
+29.44[degC]
+1005.55[hPaPres]
+38.10[%humid]
+50.01[KOhmsGasR]
+
+
+
+
+17:26:07.436
+[SCD BLOCK]
+26.65[degC]
+42.37[%humid]
+448.404[ppmCO2]
+
+
+[SGP BLOCK]
+1720[ppbTVOC]
+765[ppmCO2]
+[BME BLOCK]
+29.42[degC]
+1005.54[hPaPres]
+37.71[%humid]
+50.48[KOhmsGasR]
+
+
+
+
+17:26:07.940
+[SGP BLOCK]
+1478[ppbTVOC]
+755[ppmCO2]
+[BME BLOCK]
+29.42[degC]
+1005.55[hPaPres]
+37.38[%humid]
+51.33[KOhmsGasR]
+
+
+
+
+17:26:08.417
+[SGP BLOCK]
+1308[ppbTVOC]
+747[ppmCO2]
+[BME BLOCK]
+29.43[degC]
+1005.54[hPaPres]
+37.08[%humid]
+51.96[KOhmsGasR]
+
+
+
+
+17:26:08.893
+[SGP BLOCK]
+1220[ppbTVOC]
+737[ppmCO2]
+[BME BLOCK]
+29.43[degC]
+1005.54[hPaPres]
+36.80[%humid]
+52.60[KOhmsGasR]
+
+
+
+
+17:26:09.369
+[SGP BLOCK]
+1102[ppbTVOC]
+735[ppmCO2]
+[BME BLOCK]
+29.43[degC]
+1005.54[hPaPres]
+36.54[%humid]
+53.09[KOhmsGasR]
+
+
+
+
+17:26:09.845
+[SCD BLOCK]
+26.68[degC]
+41.59[%humid]
+450.690[ppmCO2]
+
+
+[SGP BLOCK]
+1032[ppbTVOC]
+729[ppmCO2]
+[BME BLOCK]
+29.42[degC]
+1005.55[hPaPres]
+36.30[%humid]
+53.66[KOhmsGasR]
+
+
+
+
+17:26:10.350
+[SGP BLOCK]
+940[ppbTVOC]
+712[ppmCO2]
+[BME BLOCK]
+29.42[degC]
+1005.54[hPaPres]
+36.04[%humid]
+54.48[KOhmsGasR]
+
+
+
+
+17:26:10.827
+[SGP BLOCK]
+835[ppbTVOC]
+698[ppmCO2]
+[BME BLOCK]
+29.42[degC]
+1005.54[hPaPres]
+35.84[%humid]
+55.04[KOhmsGasR]
+
+
+
+
+17:26:11.304
+[SGP BLOCK]
+757[ppbTVOC]
+682[ppmCO2]
+[BME BLOCK]
+29.42[degC]
+1005.53[hPaPres]
+35.62[%humid]
+55.65[KOhmsGasR]
+
+
+
+
+17:26:11.780
+[SCD BLOCK]
+26.65[degC]
+41.19[%humid]
+453.855[ppmCO2]
+
+
+[SGP BLOCK]
+715[ppbTVOC]
+676[ppmCO2]
+[BME BLOCK]
+29.41[degC]
+1005.53[hPaPres]
+35.41[%humid]
+56.65[KOhmsGasR]
+
+
+
+
+17:26:12.284
+[SGP BLOCK]
+624[ppbTVOC]
+648[ppmCO2]
+[BME BLOCK]
+29.41[degC]
+1005.53[hPaPres]
+35.21[%humid]
+57.14[KOhmsGasR]
+
+
+
+
+17:26:12.761
+[SGP BLOCK]
+556[ppbTVOC]
+642[ppmCO2]
+[BME BLOCK]
+29.41[degC]
+1005.53[hPaPres]
+35.01[%humid]
+57.92[KOhmsGasR]
+
+
+
+
+17:26:13.237
+[SGP BLOCK]
+501[ppbTVOC]
+614[ppmCO2]
+[BME BLOCK]
+29.41[degC]
+1005.53[hPaPres]
+34.83[%humid]
+58.43[KOhmsGasR]
+
+
+
+
+17:26:13.713
+[SCD BLOCK]
+26.64[degC]
+40.69[%humid]
+456.182[ppmCO2]
+
+
+[SGP BLOCK]
+450[ppbTVOC]
+604[ppmCO2]
+[BME BLOCK]
+29.40[degC]
+1005.54[hPaPres]
+34.63[%humid]
+59.41[KOhmsGasR]
+
+
+
+
+17:26:14.217
+[SGP BLOCK]
+402[ppbTVOC]
+582[ppmCO2]
+[BME BLOCK]
+29.39[degC]
+1005.54[hPaPres]
+34.44[%humid]
+60.12[KOhmsGasR]
+
+
+
+
+17:26:14.694
+[SGP BLOCK]
+359[ppbTVOC]
+563[ppmCO2]
+[BME BLOCK]
+29.40[degC]
+1005.54[hPaPres]
+34.27[%humid]
+60.81[KOhmsGasR]
+
+
+
+
+17:26:15.171
+[SGP BLOCK]
+329[ppbTVOC]
+556[ppmCO2]
+[BME BLOCK]
+29.40[degC]
+1005.53[hPaPres]
+34.09[%humid]
+61.69[KOhmsGasR]
+
+
+
+
+17:26:15.647
+[SGP BLOCK]
+274[ppbTVOC]
+542[ppmCO2]
+[BME BLOCK]
+29.40[degC]
+1005.53[hPaPres]
+33.89[%humid]
+62.55[KOhmsGasR]
+
+
+
+
+17:26:16.123
+[SCD BLOCK]
+26.68[degC]
+39.82[%humid]
+458.408[ppmCO2]
+
+
+[SGP BLOCK]
+246[ppbTVOC]
+532[ppmCO2]
+[BME BLOCK]
+29.39[degC]
+1005.53[hPaPres]
+33.69[%humid]
+63.19[KOhmsGasR]
+
+
+
+
+17:26:16.627
+[SGP BLOCK]
+226[ppbTVOC]
+512[ppmCO2]
+[BME BLOCK]
+29.39[degC]
+1005.52[hPaPres]
+33.52[%humid]
+63.81[KOhmsGasR]
+
+
+
+
+17:26:17.104
+[SGP BLOCK]
+211[ppbTVOC]
+510[ppmCO2]
+[BME BLOCK]
+29.39[degC]
+1005.53[hPaPres]
+33.35[%humid]
+64.63[KOhmsGasR]
+
+
+
+
+17:26:17.580
+[SGP BLOCK]
+192[ppbTVOC]
+490[ppmCO2]
+[BME BLOCK]
+29.39[degC]
+1005.53[hPaPres]
+33.16[%humid]
+65.52[KOhmsGasR]
+
+
+
+
+17:26:18.056
+[SCD BLOCK]
+26.68[degC]
+38.82[%humid]
+461.230[ppmCO2]
+
+
+[SGP BLOCK]
+173[ppbTVOC]
+490[ppmCO2]
+[BME BLOCK]
+29.38[degC]
+1005.53[hPaPres]
+32.97[%humid]
+65.67[KOhmsGasR]
+
+
+
+
+17:26:18.560
+[SGP BLOCK]
+159[ppbTVOC]
+478[ppmCO2]
+[BME BLOCK]
+29.38[degC]
+1005.53[hPaPres]
+32.80[%humid]
+66.75[KOhmsGasR]
+
+
+
+
+17:26:19.037
+[SGP BLOCK]
+144[ppbTVOC]
+473[ppmCO2]
+[BME BLOCK]
+29.38[degC]
+1005.53[hPaPres]
+32.66[%humid]
+66.96[KOhmsGasR]
+
+
+
+
+17:26:19.513
+[SGP BLOCK]
+128[ppbTVOC]
+470[ppmCO2]
+[BME BLOCK]
+29.38[degC]
+1005.53[hPaPres]
+32.51[%humid]
+68.03[KOhmsGasR]
+
+
+
+
+17:26:19.989
+[SCD BLOCK]
+26.65[degC]
+38.14[%humid]
+465.093[ppmCO2]
+
+
+[SGP BLOCK]
+117[ppbTVOC]
+467[ppmCO2]
+[BME BLOCK]
+29.37[degC]
+1005.52[hPaPres]
+32.35[%humid]
+67.92[KOhmsGasR]
+
+
+
+
+17:26:20.493
+[SGP BLOCK]
+97[ppbTVOC]
+465[ppmCO2]
+[BME BLOCK]
+29.36[degC]
+1005.53[hPaPres]
+32.25[%humid]
+68.74[KOhmsGasR]
+
+
+
+
+17:26:20.970
+[SGP BLOCK]
+88[ppbTVOC]
+460[ppmCO2]
+[BME BLOCK]
+29.36[degC]
+1005.53[hPaPres]
+32.13[%humid]
+69.08[KOhmsGasR]
+
+
+
+
+17:26:21.448
+[SGP BLOCK]
+78[ppbTVOC]
+455[ppmCO2]
+[BME BLOCK]
+29.37[degC]
+1005.54[hPaPres]
+32.05[%humid]
+69.58[KOhmsGasR]
+
+
+
+
+17:26:21.924
+[SGP BLOCK]
+71[ppbTVOC]
+463[ppmCO2]
+[BME BLOCK]
+29.37[degC]
+1005.55[hPaPres]
+31.96[%humid]
+69.81[KOhmsGasR]
+
+
+
+
+17:26:22.400
+[SCD BLOCK]
+26.64[degC]
+38.03[%humid]
+463.979[ppmCO2]
+
+
+[SGP BLOCK]
+58[ppbTVOC]
+456[ppmCO2]
+[BME BLOCK]
+29.35[degC]
+1005.54[hPaPres]
+31.88[%humid]
+69.47[KOhmsGasR]
+
+
+
+
+17:26:22.904
+[SGP BLOCK]
+47[ppbTVOC]
+452[ppmCO2]
+[BME BLOCK]
+29.35[degC]
+1005.54[hPaPres]
+31.80[%humid]
+70.33[KOhmsGasR]
+
+
+
+
+17:26:23.381
+[SGP BLOCK]
+38[ppbTVOC]
+451[ppmCO2]
+[BME BLOCK]
+29.35[degC]
+1005.54[hPaPres]
+31.74[%humid]
+70.50[KOhmsGasR]
+
+
+
+
+17:26:23.857
+[SGP BLOCK]
+31[ppbTVOC]
+446[ppmCO2]
+[BME BLOCK]
+29.35[degC]
+1005.53[hPaPres]
+31.69[%humid]
+70.91[KOhmsGasR]
+
+
+
+
+17:26:24.333
+[SCD BLOCK]
+26.61[degC]
+38.01[%humid]
+464.432[ppmCO2]
+
+
+[SGP BLOCK]
+22[ppbTVOC]
+441[ppmCO2]
+[BME BLOCK]
+29.34[degC]
+1005.54[hPaPres]
+31.61[%humid]
+71.39[KOhmsGasR]
+
+
+
+
+17:26:24.837
+[SGP BLOCK]
+12[ppbTVOC]
+444[ppmCO2]
+[BME BLOCK]
+29.34[degC]
+1005.53[hPaPres]
+31.57[%humid]
+71.69[KOhmsGasR]
+
+
+
+
+17:26:25.314
+[SGP BLOCK]
+9[ppbTVOC]
+437[ppmCO2]
+[BME BLOCK]
+29.34[degC]
+1005.54[hPaPres]
+31.52[%humid]
+72.42[KOhmsGasR]
+
+
+
+
+17:26:25.790
+[SGP BLOCK]
+0[ppbTVOC]
+421[ppmCO2]
+[BME BLOCK]
+29.34[degC]
+1005.55[hPaPres]
+31.47[%humid]
+72.11[KOhmsGasR]
+
+
+
+
+17:26:26.266
+[SCD BLOCK]
+26.59[degC]
+38.08[%humid]
+465.000[ppmCO2]
+
+
+[BME BLOCK]
+29.33[degC]
+1005.54[hPaPres]
+31.42[%humid]
+72.23[KOhmsGasR]
+
+
+
+
+17:26:26.769
+[BME BLOCK]
+29.33[degC]
+1005.54[hPaPres]
+31.37[%humid]
+72.54[KOhmsGasR]
+
+
+
+
+17:26:27.246
+[BME BLOCK]
+29.33[degC]
+1005.54[hPaPres]
+31.33[%humid]
+73.04[KOhmsGasR]
+
+
+
+
+17:26:27.722
+[BME BLOCK]
+29.33[degC]
+1005.54[hPaPres]
+31.30[%humid]
+73.80[KOhmsGasR]
+
+
+
+
+17:26:28.198
+[BME BLOCK]
+29.34[degC]
+1005.54[hPaPres]
+31.27[%humid]
+73.86[KOhmsGasR]
+
+
+
+
+17:26:28.673
+[SCD BLOCK]
+26.58[degC]
+38.04[%humid]
+465.864[ppmCO2]
+
+
+[BME BLOCK]
+29.32[degC]
+1005.53[hPaPres]
+31.22[%humid]
+73.80[KOhmsGasR]
+
+
+
+
+17:26:29.176
+[BME BLOCK]
+29.32[degC]
+1005.53[hPaPres]
+31.19[%humid]
+73.99[KOhmsGasR]
+
+
+
+
+17:26:29.652
+[BME BLOCK]
+29.32[degC]
+1005.54[hPaPres]
+31.15[%humid]
+74.44[KOhmsGasR]
+
+
+
+
+17:26:30.127
+[BME BLOCK]
+29.32[degC]
+1005.54[hPaPres]
+31.11[%humid]
+74.77[KOhmsGasR]
+
+
+
+
+17:26:30.602
+[SCD BLOCK]
+26.59[degC]
+38.11[%humid]
+466.273[ppmCO2]
+
+
+[BME BLOCK]
+29.31[degC]
+1005.54[hPaPres]
+31.08[%humid]
+74.50[KOhmsGasR]
+
+
+
+
+17:26:31.105
+[BME BLOCK]
+29.31[degC]
+1005.55[hPaPres]
+31.04[%humid]
+75.16[KOhmsGasR]
+
+
+
+
+17:26:31.581
+[BME BLOCK]
+29.31[degC]
+1005.54[hPaPres]
+31.02[%humid]
+75.09[KOhmsGasR]
+
+
+
+
+17:26:32.056
+[BME BLOCK]
+29.31[degC]
+1005.55[hPaPres]
+30.98[%humid]
+75.63[KOhmsGasR]
+
+
+
+
+17:26:32.531
+[SCD BLOCK]
+26.62[degC]
+38.05[%humid]
+465.620[ppmCO2]
+
+
+[BME BLOCK]
+29.30[degC]
+1005.56[hPaPres]
+30.94[%humid]
+75.76[KOhmsGasR]
+
+
+
+
+17:26:33.033
+[BME BLOCK]
+29.30[degC]
+1005.55[hPaPres]
+30.91[%humid]
+76.23[KOhmsGasR]
+
+
+
+
+17:26:33.509
+[BME BLOCK]
+29.30[degC]
+1005.55[hPaPres]
+30.89[%humid]
+75.83[KOhmsGasR]
+
+
+
+
+17:26:33.985
+[BME BLOCK]
+29.30[degC]
+1005.55[hPaPres]
+30.86[%humid]
+76.51[KOhmsGasR]
+
+
+
+
+17:26:34.460
+[BME BLOCK]
+29.30[degC]
+1005.55[hPaPres]
+30.83[%humid]
+76.85[KOhmsGasR]
+
+
+
+
+17:26:34.935
+[SCD BLOCK]
+26.62[degC]
+37.99[%humid]
+464.448[ppmCO2]
+
+
+[BME BLOCK]
+29.29[degC]
+1005.55[hPaPres]
+30.81[%humid]
+76.78[KOhmsGasR]
+
+
+
+
+17:26:35.438
+[BME BLOCK]
+29.29[degC]
+1005.55[hPaPres]
+30.77[%humid]
+76.78[KOhmsGasR]
+
+
+
+
+17:26:35.914
+[BME BLOCK]
+29.29[degC]
+1005.54[hPaPres]
+30.73[%humid]
+76.65[KOhmsGasR]
+
+
+
+
+17:26:36.389
+[BME BLOCK]
+29.29[degC]
+1005.54[hPaPres]
+30.72[%humid]
+77.20[KOhmsGasR]
+
+
+
+
+17:26:36.864
+[SCD BLOCK]
+26.62[degC]
+37.87[%humid]
+463.529[ppmCO2]
+
+
+[BME BLOCK]
+29.28[degC]
+1005.54[hPaPres]
+30.67[%humid]
+76.65[KOhmsGasR]
+
+
+
+
+17:26:37.367
+[BME BLOCK]
+29.28[degC]
+1005.54[hPaPres]
+30.64[%humid]
+77.41[KOhmsGasR]
+
+
+
+
+17:26:37.843
+[BME BLOCK]
+29.28[degC]
+1005.53[hPaPres]
+30.61[%humid]
+77.69[KOhmsGasR]
+
