@@ -12,7 +12,7 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
 </p>
 
 <p align="center">
-  <em>Smart Espresso Machine – Emissions Control Unit (ECU Final Product)</em>
+  <em>Smart Emissions Monitor – Emissions Control Unit (ECU Final Product)</em>
 </p>
 
 <p align="center">
@@ -28,7 +28,7 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
 </p>
 
 <p align="center">
-  <em>Smart Espresso Machine – Emissions Control Unit (ECU Prototype)</em>
+  <em>Smart Emissions Monitor – Emissions Control Unit (ECU Prototype)</em>
 </p>
 
 <p align="center">
