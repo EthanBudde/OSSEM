@@ -16,11 +16,19 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
 </p>
 
 <p align="center">
+  <img src="img/sensors_pcb.png" width="500">
+</p>
+
+<p align="center">
+  <em>Emissions Control Unit Sensors</em>
+</p>
+
+<p align="center">
   <img src="img/espresso_machine_with_ECU.png" width="500">
 </p>
 
 <p align="center">
-  <em>Smart Espresso Machine – Emissions Control Unit (ECU)</em>
+  <em>Smart Espresso Machine – Emissions Control Unit (ECU Prototype)</em>
 </p>
 
 <p align="center">
@@ -28,7 +36,7 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
 </p>
 
 <p align="center">
-  <em>Smart Espresso Machine – Schematic v1.8.2</em>
+  <em>Smart Emissions Monitor – Schematic v1.8.2</em>
 </p>
 
 <p align="center">
@@ -36,7 +44,7 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
 </p>
 
 <p align="center">
-  <em>Smart Espresso Machine – PCB v1.8.2 </em>
+  <em>Smart Emissions Monitor – PCB v1.8.2 </em>
 </p>
 
 <p align="center">
@@ -44,7 +52,7 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
 </p>
 
 <p align="center">
-  <em>Smart Espresso Machine – 3D PCB v1.8 Front</em>
+  <em>Smart Emissions Monitor – 3D PCB v1.8 Front</em>
 </p>
 
 <p align="center">
@@ -52,7 +60,7 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
 </p>
 
 <p align="center">
-  <em>Smart Espresso Machine – 3D PCB v1.8 Back</em>
+  <em>Smart Emissions Monitor – 3D PCB v1.8 Back</em>
 </p>
 
 <p align="center">
@@ -60,7 +68,7 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
 </p>
 
 <p align="center">
-  <em>Smart Espresso Machine – PCB v1.8 front</em>
+  <em>Smart Emissions Monitor – PCB v1.8 front</em>
 </p>
 
 <p align="center">
@@ -68,7 +76,7 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
 </p>
 
 <p align="center">
-  <em>Smart Espresso Machine – PCB v1.8 back</em>
+  <em>Smart Emissions Monitor – PCB v1.8 back</em>
 </p>
 
 <p align="center">
@@ -76,7 +84,7 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
 </p>
 
 <p align="center">
-  <em>Smart Espresso Machine – PCB v1.8 back with dimensions</em>
+  <em>Smart Emissions Monitor – PCB v1.8 back with dimensions</em>
 </p>
 
 ## Acknowledgments

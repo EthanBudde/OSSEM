@@ -8,7 +8,7 @@
 		(title "Integrated ECU System")
 		(date "2026-05-28")
 		(rev "1.8.2")
-		(company "OSSEM (Open-Source Smart Espresso Machine)")
+		(company "OSSEM (Open-Source Smart Emissions Monitor)")
 		(comment 1 "EE Hardware Engineers: David Mazhnikov, Roman Sulza")
 	)
 	(lib_symbols
