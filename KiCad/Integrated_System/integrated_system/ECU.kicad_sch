@@ -4159,10 +4159,10 @@
 		)
 		(uuid "3af5e8e5-fc6a-4b37-a417-8ad1098304ac")
 	)
-	(text_box "SW3 Control Fan Speed"
+	(text_box "SW3 Control Fan Speed. Bodged a wire GPIO pin 21 after fabrication."
 		(exclude_from_sim no)
-		(at 177.8 128.27 0)
-		(size 16.51 7.62)
+		(at 177.8 124.46 0)
+		(size 16.51 15.24)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)

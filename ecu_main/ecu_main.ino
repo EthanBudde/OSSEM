@@ -17,7 +17,7 @@
 const int FAN1_PIN = 26;
 const int FAN2_PIN = 25;
 const int BUTTON1_PIN = 13;
-const int BUTTON2_PIN = 36;
+const int BUTTON2_PIN = 21;
 
 const int PWM_FREQ = 25000;
 const int PWM_RESOLUTION = 8;
@@ -416,10 +416,10 @@ void readButton(int pin, int work){
 
       if (stableButtonState[work] == LOW) {
         switch(pin){
-          case(BUTTON1_PIN):
+          case(BUTTON2_PIN):
             fanControl();
             break;
-          case(BUTTON2_PIN):
+          case(BUTTON1_PIN):
             //fanControl();
             break;
           default:
