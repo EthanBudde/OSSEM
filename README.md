@@ -8,6 +8,14 @@ This project focuses on building an open-source smart espresso machine based on 
 Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab at Portland State University, the machine will be adapted to support PTR-MS and UV-VIS spectroscopy for measuring volatile organic compounds (VOCs) released during espresso extraction. The result will be a flexible, open source platform that supports repeatable espresso brewing and controlled emissions research.
 
 <p align="center">
+  <img src="img/final_product2.png" width="500">
+</p>
+
+<p align="center">
+  <em>Smart Espresso Machine – Emissions Control Unit (ECU Final Product)</em>
+</p>
+
+<p align="center">
   <img src="img/espresso_machine_with_ECU.png" width="500">
 </p>
 
@@ -16,11 +24,11 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
 </p>
 
 <p align="center">
-  <img src="img/ECU_schematic_v1.8.png" width="500">
+  <img src="img/ECU_schematic_v1.8.2.png" width="500">
 </p>
 
 <p align="center">
-  <em>Smart Espresso Machine – Schematic v1.8</em>
+  <em>Smart Espresso Machine – Schematic v1.8.2</em>
 </p>
 
 <p align="center">
@@ -28,7 +36,7 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
 </p>
 
 <p align="center">
-  <em>Smart Espresso Machine – PCB v1.8 </em>
+  <em>Smart Espresso Machine – PCB v1.8.2 </em>
 </p>
 
 <p align="center">
