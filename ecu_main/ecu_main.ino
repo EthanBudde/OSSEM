@@ -24,18 +24,17 @@ const int PWM_RESOLUTION = 8;
 
 bool trigger = false;
 
-int fanMode = 1;
-int reading[2];
+int fanMode = 0;
+int reading[3];
 
 int fanSpeed[] = {
+  135,
   0,
-  90,
-  160,
   255
 };
 
-int lastButtonReading[2];
-int stableButtonState[2] = {1, 1};
+int lastButtonReading[3];
+int stableButtonState[3] = {0, 1, 1};
 unsigned long lastDebounceTime = 0;
 const unsigned long debounceDelay = 50;
 
@@ -266,10 +265,11 @@ void loop() {
   readButton(BUTTON2_PIN, 2);
   
   // timestamp
-  if(trigger) {
+  if(trigger == true) {
 	  Serial.print("!");
     trigger = false;
   }
+
   if(dumbTimestamps == false){
 	  Serial.println(myTZ.dateTime("H:i:s.v"));
 	}else if(dumbTimestamps == true){
@@ -385,25 +385,16 @@ void sgpRead(){
 
 void fanControl(){
   fanMode++;
-  if (fanMode > 3) {		
+  if (fanMode > 2) {		
     fanMode = 0;
   }
  
   ledcWrite(FAN1_PIN, fanSpeed[fanMode]);
   ledcWrite(FAN2_PIN, fanSpeed[fanMode]);
-
-  //Serial.print("Fan mode: ");
-  Serial.print(fanMode);
-  //Serial.print(" | PWM: ");
-  Serial.println(fanSpeed[fanMode]);
 }
 
 void shadeToggle(){
-	if((t_dataBegin == 0)&&(dumbTimestamps)){
-    t_dataBegin = millis();
-  } else { 
-    trigger = true;
-  }
+  trigger = true;
 }
 
 
@@ -417,10 +408,12 @@ void readButton(int pin, int work){
       if (stableButtonState[work] == LOW) {
         switch(pin){
           case(BUTTON2_PIN):
-            fanControl();
+            //Serial.println("button2");
+            shadeToggle();
             break;
           case(BUTTON1_PIN):
-            //fanControl();
+            //Serial.println("button1");
+            fanControl();
             break;
           default:
             Serial.println("undefined button input detected.");
