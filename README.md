@@ -32,6 +32,14 @@ Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab a
 </p>
 
 <p align="center">
+  <img src="img/block_diagram.png" width="500">
+</p>
+
+<p align="center">
+  <em>Smart Emissions Monitor – Block Diagram</em>
+</p>
+
+<p align="center">
   <img src="img/ECU_schematic_v1.8.2.png" width="500">
 </p>
 
