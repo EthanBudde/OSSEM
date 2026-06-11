@@ -3,7 +3,7 @@ OSSEM organization repo
 
 Espresso brewing is a thermo-fluid process where temperature, pressure, flow rate, and time directly effect extraction and flavor. Commercial smart espresso machines offer advanced control, but are expensive, closed-source, and difficult to adapt for experimental research. Existing open-source modifications improve accessibility but do not fully support research-grade measurement or instrumentation. 
 
-This project focuses on building an open-source smart espresso machine based on the Gaggia Classic Pro, using platforms such as Gaggiuino and Gaggia Mate for embedded control and data logging. The system will allow precise control of brewing parameters, including temperature, pressure, flow profiling, and shot timing. 
+This project focuses on building an open-source smart emissions monitor based on the Gaggia Classic Pro, using platforms such as Gaggiuino and Gaggia Mate for embedded control and data logging. The system will allow precise control of brewing parameters, including temperature, pressure, flow profiling, and shot timing. 
 
 Working with the Healthy Buildings Research Lab and the Coffee Telesensing Lab at Portland State University, the machine will be adapted to support PTR-MS and UV-VIS spectroscopy for measuring volatile organic compounds (VOCs) released during espresso extraction. The result will be a flexible, open source platform that supports repeatable espresso brewing and controlled emissions research.
 
